@@ -1,0 +1,17 @@
+{
+  "required": true,
+  "package": "duperez.moresigns.common.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "refmap": "moresigns.refmap.json",
+  "mixins": [
+    "accessor.RecipeManagerAccessor"
+  ],
+  "client": [
+    "CanvasSignMaterialMixin",
+    "HideBlockBreakProgressMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "minVersion": "0.8"
+}

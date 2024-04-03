@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "w#w",
+    "w#w",
+    " / "
+  ],
+  "key": {
+    "w": {
+      "tag": "minecraft:planks"
+    },
+    "#": {
+      "item": "moresigns:canvas"
+    },
+    "/": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "moresigns:canvas_sign",
+    "count": 3
+  }
+}

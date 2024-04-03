@@ -1,0 +1,30 @@
+
+modLoader="javafml"
+loaderVersion="[40,)"
+license="MIT License"
+
+[[mods]]
+modId="moresigns"
+version="1.18.2-1.2.3"
+displayName="moreSigns"
+displayURL="https://github.com/vectorwing/moresigns"
+logoFile="logo.png"
+logoBlur=false
+authors="duperez"
+description="A Sign expansion for Minecraft!"
+itemIcon="moresigns:black_canvas_sign"
+configBackground="minecraft:textures/block/bricks.png"
+
+[[dependencies.moresigns]]
+    modId="forge"
+    mandatory=true
+    versionRange="[40.1.46,)"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.moresigns]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.18.2]"
+    ordering="NONE"
+    side="BOTH"

@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "moresigns:canvas"
+    }
+  ],
+  "result": {
+    "item": "moresigns:canvas_rug",
+    "count": 2
+  }
+}

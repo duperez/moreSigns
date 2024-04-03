@@ -1,0 +1,23 @@
+{
+
+  "block.moresigns.canvas_rug": "Canvas Rug",
+
+  "block.moresigns.canvas_sign": "Canvas Sign",
+  "block.moresigns.white_canvas_sign": "White Canvas Sign",
+  "block.moresigns.orange_canvas_sign": "Orange Canvas Sign",
+  "block.moresigns.magenta_canvas_sign": "Magenta Canvas Sign",
+  "block.moresigns.light_blue_canvas_sign": "Light Blue Canvas Sign",
+  "block.moresigns.yellow_canvas_sign": "Yellow Canvas Sign",
+  "block.moresigns.lime_canvas_sign": "Lime Canvas Sign",
+  "block.moresigns.pink_canvas_sign": "Pink Canvas Sign",
+  "block.moresigns.gray_canvas_sign": "Gray Canvas Sign",
+  "block.moresigns.light_gray_canvas_sign": "Light Gray Canvas Sign",
+  "block.moresigns.cyan_canvas_sign": "Cyan Canvas Sign",
+  "block.moresigns.purple_canvas_sign": "Purple Canvas Sign",
+  "block.moresigns.blue_canvas_sign": "Blue Canvas Sign",
+  "block.moresigns.brown_canvas_sign": "Brown Canvas Sign",
+  "block.moresigns.green_canvas_sign": "Green Canvas Sign",
+  "block.moresigns.red_canvas_sign": "Red Canvas Sign",
+  "block.moresigns.black_canvas_sign": "Black Canvas Sign",
+  "item.moresigns.canvas": "Canvas"
+}

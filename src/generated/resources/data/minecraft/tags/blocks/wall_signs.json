@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "moresigns:canvas_wall_sign",
+    "moresigns:white_canvas_wall_sign",
+    "moresigns:orange_canvas_wall_sign",
+    "moresigns:magenta_canvas_wall_sign",
+    "moresigns:light_blue_canvas_wall_sign",
+    "moresigns:yellow_canvas_wall_sign",
+    "moresigns:lime_canvas_wall_sign",
+    "moresigns:pink_canvas_wall_sign",
+    "moresigns:gray_canvas_wall_sign",
+    "moresigns:light_gray_canvas_wall_sign",
+    "moresigns:cyan_canvas_wall_sign",
+    "moresigns:purple_canvas_wall_sign",
+    "moresigns:blue_canvas_wall_sign",
+    "moresigns:brown_canvas_wall_sign",
+    "moresigns:green_canvas_wall_sign",
+    "moresigns:red_canvas_wall_sign",
+    "moresigns:black_canvas_wall_sign"
+  ]
+}
