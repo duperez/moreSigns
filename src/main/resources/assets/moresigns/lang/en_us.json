@@ -19,5 +19,7 @@
   "block.moresigns.green_canvas_sign": "Green Canvas Sign",
   "block.moresigns.red_canvas_sign": "Red Canvas Sign",
   "block.moresigns.black_canvas_sign": "Black Canvas Sign",
-  "item.moresigns.canvas": "Canvas"
+  "block.moresigns.orange_purple_canvas_sign": "Gradient Canvas Sign",
+  "item.moresigns.canvas": "Canvas",
+  "itemGroup.moresignstab": "More Signs"
 }

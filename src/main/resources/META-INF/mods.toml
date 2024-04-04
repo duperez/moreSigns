@@ -6,12 +6,12 @@ license="MIT License"
 [[mods]]
 modId="moresigns"
 version="1.18.2-1.2.3"
-displayName="moreSigns"
-displayURL="https://github.com/vectorwing/moresigns"
+displayName="More Signs"
+displayURL="https://github.com/duperez/moreSigns"
 logoFile="logo.png"
 logoBlur=false
-authors="duperez"
-description="A Sign expansion for Minecraft!"
+authors="duperez, LoosaZ"
+description="A Mod that adds a bigger variety of signs to Minecraft, enhancing the looks on your pretty words!"
 itemIcon="moresigns:black_canvas_sign"
 configBackground="minecraft:textures/block/bricks.png"
 
