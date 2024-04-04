@@ -19,7 +19,7 @@ public class MoreSigns {
     public static final String MODID = "moresigns";
     public static final Logger LOGGER = LogManager.getLogger();
 
-    public static final CreativeModeTab CREATIVE_TAB = new CreativeModeTab(MoreSigns.MODID) {
+    public static final CreativeModeTab CREATIVE_TAB = new CreativeModeTab("moresignstab") {
         @Nonnull
         @Override
         public ItemStack makeIcon() {
