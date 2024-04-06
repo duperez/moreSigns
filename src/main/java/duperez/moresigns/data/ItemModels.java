@@ -42,12 +42,14 @@ public class ItemModels extends ItemModelProvider
 				ModItems.PINK_CANVAS_SIGN.get(),
 				ModItems.GRAY_CANVAS_SIGN.get(),
 				ModItems.LIGHT_GRAY_CANVAS_SIGN.get(),
+				ModItems.ORANGE_PURPLE_CANVAS_SIGN.get(),
 				ModItems.CYAN_CANVAS_SIGN.get(),
 				ModItems.PURPLE_CANVAS_SIGN.get(),
 				ModItems.BLUE_CANVAS_SIGN.get(),
 				ModItems.BROWN_CANVAS_SIGN.get(),
 				ModItems.GREEN_CANVAS_SIGN.get(),
 				ModItems.RED_CANVAS_SIGN.get(),
+				ModItems.GREEN_GRADIENT_CANVAS_SIGN.get(),
 				ModItems.BLACK_CANVAS_SIGN.get()
 		);
 		takeAll(items, spriteBlockItems.toArray(new Item[0])).forEach(item -> withExistingParent(itemName(item), GENERATED).texture("layer0", resourceItem(itemName(item))));
