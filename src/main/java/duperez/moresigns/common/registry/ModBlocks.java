@@ -26,6 +26,8 @@ public class ModBlocks
 	public static final RegistryObject<Block> CANVAS_RUG = BLOCKS.register("canvas_rug",
 			() -> new CanvasRugBlock(Block.Properties.copy(Blocks.WHITE_CARPET).sound(SoundType.GRASS).strength(0.2F)));
 
+	// SIGN BLOCK classes declaration
+
 	public static final RegistryObject<Block> CANVAS_SIGN = BLOCKS.register("canvas_sign",
 			() -> new StandingCanvasSignBlock(null));
 	public static final RegistryObject<Block> WHITE_CANVAS_SIGN = BLOCKS.register("white_canvas_sign",
@@ -60,9 +62,12 @@ public class ModBlocks
 			() -> new StandingCanvasSignBlock(DyeColor.RED.getName()));
 	public static final RegistryObject<Block> BLACK_CANVAS_SIGN = BLOCKS.register("black_canvas_sign",
 			() -> new StandingCanvasSignBlock(DyeColor.BLACK.getName()));
-
 	public static final RegistryObject<Block> ORANGE_PURPLE_SIGN = BLOCKS.register("orange_purple_canvas_sign",
 			() -> new StandingCanvasSignBlock("orange_purple"));
+	public static final RegistryObject<Block> GREEN_GRADIENT_SIGN = BLOCKS.register("green_gradient_canvas_sign",
+			() -> new StandingCanvasSignBlock("green_gradient"));
+
+	// WALL_SIGN classes declaration
 
 	public static final RegistryObject<Block> CANVAS_WALL_SIGN = BLOCKS.register("canvas_wall_sign",
 			() -> new WallCanvasSignBlock(Block.Properties.copy(Blocks.OAK_SIGN).lootFrom(CANVAS_SIGN)));
@@ -100,4 +105,6 @@ public class ModBlocks
 			() -> new WallCanvasSignBlock(Block.Properties.copy(Blocks.OAK_SIGN).lootFrom(BLACK_CANVAS_SIGN), DyeColor.BLACK));
 	public static final RegistryObject<Block> ORANGE_PURPLE_CANVAS_WALL_SIGN = BLOCKS.register("orange_purple_canvas_wall_sign",
 			() -> new WallCanvasSignBlock(Block.Properties.copy(Blocks.OAK_SIGN).lootFrom(ORANGE_PURPLE_SIGN), "orange_purple"));
+	public static final RegistryObject<Block> GREEN_GRADIENT_WALL_SIGN = BLOCKS.register("green_gradient_canvas_wall_sign",
+			() -> new WallCanvasSignBlock(Block.Properties.copy(Blocks.OAK_SIGN).lootFrom(GREEN_GRADIENT_SIGN), "green_gradient"));
 }

@@ -1,6 +1,7 @@
 package duperez.moresigns.data;
 
 import duperez.moresigns.common.registry.ModBlocks;
+import duperez.moresigns.common.registry.ModEntityTypes;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.tags.BlockTagsProvider;
 import net.minecraftforge.common.data.ExistingFileHelper;
@@ -37,6 +38,7 @@ public class BlockTags extends BlockTagsProvider
 				ModBlocks.GREEN_CANVAS_SIGN.get(),
 				ModBlocks.RED_CANVAS_SIGN.get(),
 				ModBlocks.ORANGE_PURPLE_SIGN.get(),
+				ModBlocks.GREEN_GRADIENT_SIGN.get(),
 				ModBlocks.BLACK_CANVAS_SIGN.get());
 		tag(net.minecraft.tags.BlockTags.WALL_SIGNS).add(
 				ModBlocks.CANVAS_WALL_SIGN.get(),
@@ -56,6 +58,7 @@ public class BlockTags extends BlockTagsProvider
 				ModBlocks.GREEN_CANVAS_WALL_SIGN.get(),
 				ModBlocks.RED_CANVAS_WALL_SIGN.get(),
 				ModBlocks.ORANGE_PURPLE_CANVAS_WALL_SIGN.get(),
+				ModBlocks.GREEN_GRADIENT_WALL_SIGN.get(),
 				ModBlocks.BLACK_CANVAS_WALL_SIGN.get());
 	}
 }

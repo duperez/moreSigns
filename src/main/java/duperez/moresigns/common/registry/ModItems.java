@@ -64,8 +64,9 @@ public class ModItems {
             () -> new SignItem(basicItem(), ModBlocks.RED_CANVAS_SIGN.get(), ModBlocks.RED_CANVAS_WALL_SIGN.get()));
     public static final RegistryObject<Item> BLACK_CANVAS_SIGN = ITEMS.register("black_canvas_sign",
             () -> new SignItem(basicItem(), ModBlocks.BLACK_CANVAS_SIGN.get(), ModBlocks.BLACK_CANVAS_WALL_SIGN.get()));
-
     public static final RegistryObject<Item> ORANGE_PURPLE_CANVAS_SIGN = ITEMS.register("orange_purple_canvas_sign",
             () -> new SignItem(basicItem(), ModBlocks.ORANGE_PURPLE_SIGN.get(), ModBlocks.ORANGE_PURPLE_CANVAS_WALL_SIGN.get()));
+    public static final RegistryObject<Item> GREEN_GRADIENT_CANVAS_SIGN = ITEMS.register("green_gradient_canvas_sign",
+            () -> new SignItem(basicItem(), ModBlocks.GREEN_GRADIENT_SIGN.get(), ModBlocks.GREEN_GRADIENT_WALL_SIGN.get()));
 
 }

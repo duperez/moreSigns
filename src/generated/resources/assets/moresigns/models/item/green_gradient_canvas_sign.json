@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "moresigns:item/green_gradient_canvas_sign"
+  }
+}
