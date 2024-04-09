@@ -18,7 +18,7 @@ public class ModAtlases
 	public static final Material BLANK_CANVAS_SIGN_MATERIAL = new Material(Sheets.SIGN_SHEET, new ResourceLocation(MoreSigns.MODID, "entity/signs/canvas"));
 
 	public static final Map<String, Material> DYED_CANVAS_SIGN_MATERIALS =
-			Stream.of("white", "orange", "magenta", "light_blue", "yellow", "lime", "pink", "gray", "light_gray", "cyan", "purple", "blue", "brown", "green", "red", "black", "orange_purple")
+			Stream.of("white", "orange", "magenta", "light_blue", "yellow", "lime", "pink", "gray", "light_gray", "cyan", "purple", "blue", "brown", "green", "red", "black", "orange_purple", "green_gradient")
 					.collect(Collectors.toMap(Function.identity(), ModAtlases::getSignMaterial));
 
 
