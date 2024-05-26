@@ -3,6 +3,7 @@ package duperez.moresigns.data;
 import com.google.common.collect.Sets;
 import duperez.moresigns.common.registry.ModItems;
 import net.minecraft.data.DataGenerator;
+import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.client.model.generators.ItemModelProvider;
@@ -20,8 +21,8 @@ public class ItemModels extends ItemModelProvider
 {
 	public static final String GENERATED = "item/generated";
 
-	public ItemModels(DataGenerator generator, ExistingFileHelper existingFileHelper) {
-		super(generator, MoreSigns.MODID, existingFileHelper);
+	public ItemModels(PackOutput output, ExistingFileHelper existingFileHelper) {
+		super(output, MoreSigns.MODID, existingFileHelper);
 	}
 
 	@Override
@@ -63,7 +64,7 @@ public class ItemModels extends ItemModelProvider
 	}
 
 	private String itemName(Item item) {
-		return item.getRegistryName().getPath();
+		return ForgeRegistries.ITEMS.getKey(item).getPath();
 	}
 
 	public ResourceLocation resourceItem(String path) {

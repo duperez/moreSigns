@@ -1,21 +1,25 @@
 package duperez.moresigns.data;
 
+import duperez.moresigns.MoreSigns;
 import duperez.moresigns.common.registry.ModBlocks;
 import duperez.moresigns.common.registry.ModEntityTypes;
+import net.minecraft.core.HolderLookup;
 import net.minecraft.data.DataGenerator;
-import net.minecraft.data.tags.BlockTagsProvider;
+import net.minecraft.data.PackOutput;
+import net.minecraftforge.common.data.BlockTagsProvider;
 import net.minecraftforge.common.data.ExistingFileHelper;
 
 import javax.annotation.Nullable;
+import java.util.concurrent.CompletableFuture;
 
 public class BlockTags extends BlockTagsProvider
 {
-	public BlockTags(DataGenerator generatorIn, String modId, @Nullable ExistingFileHelper existingFileHelper) {
-		super(generatorIn, modId, existingFileHelper);
+	public BlockTags(PackOutput output, CompletableFuture<HolderLookup.Provider> lookupProvider, @Nullable ExistingFileHelper existingFileHelper) {
+		super(output, lookupProvider, MoreSigns.MODID, existingFileHelper);
 	}
 
 	@Override
-	protected void addTags() {
+	protected void addTags(HolderLookup.Provider provider) {
 		this.registerMinecraftTags();
 	}
 

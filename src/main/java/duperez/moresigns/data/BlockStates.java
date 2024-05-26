@@ -4,6 +4,7 @@ import com.google.common.collect.Sets;
 import duperez.moresigns.common.registry.ModBlocks;
 import net.minecraft.core.Direction;
 import net.minecraft.data.DataGenerator;
+import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.DoublePlantBlock;
@@ -17,6 +18,7 @@ import net.minecraftforge.client.model.generators.ConfiguredModel;
 import net.minecraftforge.client.model.generators.ModelFile;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import duperez.moresigns.MoreSigns;
+import net.minecraftforge.registries.ForgeRegistries;
 
 import javax.annotation.Nullable;
 import java.util.List;
@@ -27,12 +29,12 @@ public class BlockStates extends BlockStateProvider
 {
 	private static final int DEFAULT_ANGLE_OFFSET = 180;
 
-	public BlockStates(DataGenerator gen, ExistingFileHelper exFileHelper) {
-		super(gen, MoreSigns.MODID, exFileHelper);
+	public BlockStates(PackOutput output, ExistingFileHelper existingFileHelper) {
+		super(output, MoreSigns.MODID, existingFileHelper);
 	}
 
 	private String blockName(Block block) {
-		return block.getRegistryName().getPath();
+		return ForgeRegistries.BLOCKS.getKey(block).getPath();
 	}
 
 	public ResourceLocation resourceBlock(String path) {
