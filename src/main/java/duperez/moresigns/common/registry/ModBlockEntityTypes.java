@@ -9,7 +9,7 @@ import duperez.moresigns.MoreSigns;
 
 public class ModBlockEntityTypes
 {
-	public static final DeferredRegister<BlockEntityType<?>> TILES = DeferredRegister.create(ForgeRegistries.BLOCK_ENTITIES, MoreSigns.MODID);
+	public static final DeferredRegister<BlockEntityType<?>> TILES = DeferredRegister.create(ForgeRegistries.BLOCK_ENTITY_TYPES, MoreSigns.MODID);
 
 	public static final RegistryObject<BlockEntityType<CanvasSignBlockEntity>> CANVAS_SIGN = TILES.register("canvas_sign",
 			() -> BlockEntityType.Builder.of(CanvasSignBlockEntity::new,
