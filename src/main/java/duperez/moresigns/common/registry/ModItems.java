@@ -1,6 +1,7 @@
 package duperez.moresigns.common.registry;
 
 import com.google.common.collect.Sets;
+import duperez.moresigns.common.item.FuelItem;
 import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
@@ -29,6 +30,9 @@ public class ModItems {
     public static Item.Properties basicItem() {
         return new Item.Properties();
     }
+
+    public static final RegistryObject<Item> CANVAS = registerWithTab("canvas", () -> new FuelItem(basicItem(), 400));
+
     public static final RegistryObject<Item> CANVAS_SIGN = registerWithTab("canvas_sign",
             () -> new SignItem(basicItem(), ModBlocks.CANVAS_SIGN.get(), ModBlocks.CANVAS_WALL_SIGN.get()));
     public static final RegistryObject<Item> WHITE_CANVAS_SIGN = registerWithTab("white_canvas_sign",

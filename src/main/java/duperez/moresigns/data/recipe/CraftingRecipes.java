@@ -2,6 +2,8 @@ package duperez.moresigns.data.recipe;
 
 import net.minecraft.advancements.critereon.InventoryChangeTrigger;
 import net.minecraft.data.recipes.*;
+import net.minecraft.tags.ItemTags;
+import net.minecraft.world.item.Items;
 import net.minecraftforge.common.Tags;
 import duperez.moresigns.common.registry.ModItems;
 import duperez.moresigns.common.tag.ModTags;
@@ -15,15 +17,21 @@ public class CraftingRecipes
 	}
 
 	private static void recipesCanvasSigns(Consumer<FinishedRecipe> consumer) {
-		//ShapedRecipeBuilder.shaped(ModItems.CANVAS_SIGN.get(), 3)
-		//		.pattern("w#w")
-		//		.pattern("w#w")
-		//		.pattern(" / ")
-		//		.define('w', ItemTags.PLANKS)
-		//		.define('#', ModItems.CANVAS.get())
-		//		.define('/', Items.STICK)
-		//		.unlockedBy("has_canvas", InventoryChangeTrigger.TriggerInstance.hasItems(ModItems.CANVAS.get()))
-		//		.save(consumer);
+
+		ShapedRecipeBuilder.shaped(RecipeCategory.DECORATIONS, ModItems.CANVAS.get(), 3)
+				.pattern("###")
+				.pattern("###")
+				.define('#', Items.STRING)
+				.unlockedBy("has_string", InventoryChangeTrigger.TriggerInstance.hasItems(Items.STRING))
+				.save(consumer);
+
+		ShapelessRecipeBuilder.shapeless(RecipeCategory.DECORATIONS, ModItems.CANVAS.get(), 1)
+				.requires(ModTags.CANVAS_SIGNS)
+				.requires(Tags.Items.DYES_WHITE)
+				.unlockedBy("has_canvas_sign", InventoryChangeTrigger.TriggerInstance.hasItems(ModItems.CANVAS_SIGN.get()))
+				.group("canvas_sign")
+				.save(consumer);
+
 		ShapelessRecipeBuilder.shapeless(RecipeCategory.DECORATIONS, ModItems.WHITE_CANVAS_SIGN.get(), 1)
 				.requires(ModTags.CANVAS_SIGNS)
 				.requires(Tags.Items.DYES_WHITE)

@@ -1,12 +1,12 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "##",
-    "##"
+    "###",
+    "###"
   ],
   "key": {
     "#": {
-      "item": "moresigns:straw"
+      "item": "minecraft:string"
     }
   },
   "result": {
