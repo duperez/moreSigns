@@ -6,7 +6,7 @@ license = "MIT License"
 
 [[mods]]
 modId="moresigns"
-version = "1.20.1-1.2.4"
+version = "1.20.x-1.2.5"
 displayName="More Signs"
 displayURL="https://github.com/duperez/moreSigns"
 logoFile="logo.png"
