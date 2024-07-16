@@ -66,7 +66,14 @@ public class ModBlocks
 			() -> new StandingCanvasSignBlock("orange_purple"));
 	public static final RegistryObject<Block> GREEN_GRADIENT_SIGN = BLOCKS.register("green_gradient_canvas_sign",
 			() -> new StandingCanvasSignBlock("green_gradient"));
-
+	public static final RegistryObject<Block> ANTHONY_SIGN = BLOCKS.register("anthony_canvas_sign",
+			() -> new StandingCanvasSignBlock("anthony"));
+	public static final RegistryObject<Block> HOTPINK_SIGN = BLOCKS.register("hotpink_canvas_sign",
+			() -> new StandingCanvasSignBlock("hotpink"));
+	public static final RegistryObject<Block> INDIGO_SIGN = BLOCKS.register("indigo_canvas_sign",
+			() -> new StandingCanvasSignBlock("indigo"));
+	public static final RegistryObject<Block> LIGHT_PINK_SIGN = BLOCKS.register("light_pink_canvas_sign",
+			() -> new StandingCanvasSignBlock("light_pink"));
 	// WALL_SIGN classes declaration
 
 	public static final RegistryObject<Block> CANVAS_WALL_SIGN = BLOCKS.register("canvas_wall_sign",
@@ -107,4 +114,14 @@ public class ModBlocks
 			() -> new WallCanvasSignBlock(Block.Properties.copy(Blocks.OAK_SIGN).lootFrom(ORANGE_PURPLE_SIGN), "orange_purple"));
 	public static final RegistryObject<Block> GREEN_GRADIENT_WALL_SIGN = BLOCKS.register("green_gradient_canvas_wall_sign",
 			() -> new WallCanvasSignBlock(Block.Properties.copy(Blocks.OAK_SIGN).lootFrom(GREEN_GRADIENT_SIGN), "green_gradient"));
+	public static final RegistryObject<Block> ANTHONY_WALL_SIGN = BLOCKS.register("anthony_canvas_wall_sign",
+			() -> new WallCanvasSignBlock(Block.Properties.copy(Blocks.OAK_SIGN).lootFrom(ANTHONY_SIGN), "anthony"));
+	public static final RegistryObject<Block> HOTPINK_WALL_SIGN = BLOCKS.register("hotpink_canvas_wall_sign",
+			() -> new WallCanvasSignBlock(Block.Properties.copy(Blocks.OAK_SIGN).lootFrom(HOTPINK_SIGN), "hotpink"));
+	public static final RegistryObject<Block> INDIGO_WALL_SIGN = BLOCKS.register("indigo_canvas_wall_sign",
+			() -> new WallCanvasSignBlock(Block.Properties.copy(Blocks.OAK_SIGN).lootFrom(INDIGO_SIGN), "indigo"));
+	public static final RegistryObject<Block> LIGHT_PINK_WALL_SIGN = BLOCKS.register("light_pink_canvas_wall_sign",
+			() -> new WallCanvasSignBlock(Block.Properties.copy(Blocks.OAK_SIGN).lootFrom(LIGHT_PINK_SIGN), "light_pink"));
+
+
 }

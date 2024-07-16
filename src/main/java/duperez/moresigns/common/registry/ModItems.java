@@ -1,9 +1,7 @@
 package duperez.moresigns.common.registry;
 
 import com.google.common.collect.Sets;
-import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.item.Items;
 import net.minecraft.world.item.SignItem;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -67,5 +65,13 @@ public class ModItems {
             () -> new SignItem(basicItem(), ModBlocks.ORANGE_PURPLE_SIGN.get(), ModBlocks.ORANGE_PURPLE_CANVAS_WALL_SIGN.get()));
     public static final RegistryObject<Item> GREEN_GRADIENT_CANVAS_SIGN = registerWithTab("green_gradient_canvas_sign",
             () -> new SignItem(basicItem(), ModBlocks.GREEN_GRADIENT_SIGN.get(), ModBlocks.GREEN_GRADIENT_WALL_SIGN.get()));
+    public static final RegistryObject<Item> ANTHONY_CANVAS_SIGN = registerWithTab("anthony_canvas_sign",
+            () -> new SignItem(basicItem(), ModBlocks.ANTHONY_SIGN.get(), ModBlocks.ANTHONY_WALL_SIGN.get()));
+    public static final RegistryObject<Item> HOTPINK_CANVAS_SIGN = registerWithTab("hotpink_canvas_sign",
+            () -> new SignItem(basicItem(), ModBlocks.HOTPINK_SIGN.get(), ModBlocks.HOTPINK_WALL_SIGN.get()));
+    public static final RegistryObject<Item> INDIGO_CANVAS_SIGN = registerWithTab("indigo_canvas_sign",
+            () -> new SignItem(basicItem(), ModBlocks.INDIGO_SIGN.get(), ModBlocks.INDIGO_WALL_SIGN.get()));
+    public static final RegistryObject<Item> LIGHT_PINK_CANVAS_SIGN = registerWithTab("light_pink_canvas_sign",
+            () -> new SignItem(basicItem(), ModBlocks.LIGHT_PINK_SIGN.get(), ModBlocks.LIGHT_PINK_WALL_SIGN.get()));
 
 }
