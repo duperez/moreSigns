@@ -128,7 +128,7 @@ public class ModBlocks
 			() -> new WallCanvasSignBlock(Block.Properties.copy(Blocks.OAK_SIGN).lootFrom(LIGHT_PINK_SIGN), "light_pink"));
 	public static final RegistryObject<Block> LOOSAZ_WALL_SIGN = BLOCKS.register("loosaz_canvas_wall_sign",
 			() -> new WallCanvasSignBlock(Block.Properties.copy(Blocks.OAK_SIGN).lootFrom(LOOSAZ_SIGN), "loosaz"));
-	public static final RegistryObject<Block> SPADES_WALL_SIGN = BLOCKS.register("loosaz_canvas_wall_sign",
+	public static final RegistryObject<Block> SPADES_WALL_SIGN = BLOCKS.register("spades_canvas_wall_sign",
 			() -> new WallCanvasSignBlock(Block.Properties.copy(Blocks.OAK_SIGN).lootFrom(SPADES_SIGN), "spades"));
 
 }
