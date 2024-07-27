@@ -73,5 +73,8 @@ public class ModItems {
             () -> new SignItem(basicItem(), ModBlocks.INDIGO_SIGN.get(), ModBlocks.INDIGO_WALL_SIGN.get()));
     public static final RegistryObject<Item> LIGHT_PINK_CANVAS_SIGN = registerWithTab("light_pink_canvas_sign",
             () -> new SignItem(basicItem(), ModBlocks.LIGHT_PINK_SIGN.get(), ModBlocks.LIGHT_PINK_WALL_SIGN.get()));
-
+    public static final RegistryObject<Item> LOOSAZ_CANVAS_SIGN = registerWithTab("loosaz_canvas_sign",
+            () -> new SignItem(basicItem(), ModBlocks.LOOSAZ_SIGN.get(), ModBlocks.LOOSAZ_WALL_SIGN.get()));
+    public static final RegistryObject<Item> SPADES_CANVAS_SIGN = registerWithTab("spades_canvas_sign",
+            () -> new SignItem(basicItem(), ModBlocks.SPADES_SIGN.get(), ModBlocks.SPADES_WALL_SIGN.get()));
 }

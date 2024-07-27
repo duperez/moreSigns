@@ -47,6 +47,8 @@ public class BlockTags extends BlockTagsProvider
 				ModBlocks.HOTPINK_SIGN.get(),
 				ModBlocks.INDIGO_SIGN.get(),
 				ModBlocks.LIGHT_PINK_SIGN.get(),
+				ModBlocks.LOOSAZ_SIGN.get(),
+				ModBlocks.SPADES_SIGN.get(),
 				ModBlocks.ANTHONY_SIGN.get());
 		tag(net.minecraft.tags.BlockTags.WALL_SIGNS).add(
 				ModBlocks.CANVAS_WALL_SIGN.get(),
@@ -71,6 +73,8 @@ public class BlockTags extends BlockTagsProvider
 				ModBlocks.HOTPINK_WALL_SIGN.get(),
 				ModBlocks.INDIGO_WALL_SIGN.get(),
 				ModBlocks.LIGHT_PINK_WALL_SIGN.get(),
+				ModBlocks.LOOSAZ_WALL_SIGN.get(),
+				ModBlocks.SPADES_WALL_SIGN.get(),
 				ModBlocks.ANTHONY_WALL_SIGN.get());
 	}
 }

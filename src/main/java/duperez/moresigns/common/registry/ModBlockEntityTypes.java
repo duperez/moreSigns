@@ -37,6 +37,8 @@ public class ModBlockEntityTypes
 							ModBlocks.HOTPINK_SIGN.get(),
 							ModBlocks.INDIGO_SIGN.get(),
 							ModBlocks.LIGHT_PINK_SIGN.get(),
+							ModBlocks.LOOSAZ_SIGN.get(),
+							ModBlocks.SPADES_SIGN.get(),
 							ModBlocks.WHITE_CANVAS_WALL_SIGN.get(),
 							ModBlocks.ORANGE_CANVAS_WALL_SIGN.get(),
 							ModBlocks.MAGENTA_CANVAS_WALL_SIGN.get(),
@@ -58,6 +60,8 @@ public class ModBlockEntityTypes
 							ModBlocks.HOTPINK_WALL_SIGN.get(),
 							ModBlocks.INDIGO_WALL_SIGN.get(),
 							ModBlocks.LIGHT_PINK_WALL_SIGN.get(),
+							ModBlocks.LOOSAZ_WALL_SIGN.get(),
+							ModBlocks.SPADES_WALL_SIGN.get(),
 							ModBlocks.BLACK_CANVAS_WALL_SIGN.get())
 					.build(null));
 }

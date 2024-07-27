@@ -74,6 +74,10 @@ public class ModBlocks
 			() -> new StandingCanvasSignBlock("indigo"));
 	public static final RegistryObject<Block> LIGHT_PINK_SIGN = BLOCKS.register("light_pink_canvas_sign",
 			() -> new StandingCanvasSignBlock("light_pink"));
+	public static final RegistryObject<Block> LOOSAZ_SIGN = BLOCKS.register("loosaz_canvas_sign",
+			() -> new StandingCanvasSignBlock("loosaz"));
+	public static final RegistryObject<Block> SPADES_SIGN = BLOCKS.register("spades_canvas_sign",
+			() -> new StandingCanvasSignBlock("spades"));
 	// WALL_SIGN classes declaration
 
 	public static final RegistryObject<Block> CANVAS_WALL_SIGN = BLOCKS.register("canvas_wall_sign",
@@ -122,6 +126,9 @@ public class ModBlocks
 			() -> new WallCanvasSignBlock(Block.Properties.copy(Blocks.OAK_SIGN).lootFrom(INDIGO_SIGN), "indigo"));
 	public static final RegistryObject<Block> LIGHT_PINK_WALL_SIGN = BLOCKS.register("light_pink_canvas_wall_sign",
 			() -> new WallCanvasSignBlock(Block.Properties.copy(Blocks.OAK_SIGN).lootFrom(LIGHT_PINK_SIGN), "light_pink"));
-
+	public static final RegistryObject<Block> LOOSAZ_WALL_SIGN = BLOCKS.register("loosaz_canvas_wall_sign",
+			() -> new WallCanvasSignBlock(Block.Properties.copy(Blocks.OAK_SIGN).lootFrom(LOOSAZ_SIGN), "loosaz"));
+	public static final RegistryObject<Block> SPADES_WALL_SIGN = BLOCKS.register("loosaz_canvas_wall_sign",
+			() -> new WallCanvasSignBlock(Block.Properties.copy(Blocks.OAK_SIGN).lootFrom(SPADES_SIGN), "spades"));
 
 }

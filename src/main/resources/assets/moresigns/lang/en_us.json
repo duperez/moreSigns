@@ -25,6 +25,8 @@
   "block.moresigns.hotpink_canvas_sign": "hotpink Custom Sign",
   "block.moresigns.indigo_canvas_sign": "Indigo's Custom Sign",
   "block.moresigns.light_pink_canvas_sign": "lightpink Custom Sign",
+  "block.moresigns.loosaz_canvas_sign": "LoosaZ's Custom Sign",
+  "block.moresigns.spades_canvas_sign": "Spades's Custom Sign",
   "item.moresigns.canvas": "Canvas",
   "itemGroup.moresignstab": "TSMP Custom Signs"
 }
