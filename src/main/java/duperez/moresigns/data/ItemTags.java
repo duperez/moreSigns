@@ -45,6 +45,12 @@ public class ItemTags extends ItemTagsProvider
 				.add(ModItems.RED_CANVAS_SIGN.get())
 				.add(ModItems.GREEN_GRADIENT_CANVAS_SIGN.get())
 				.add(ModItems.ORANGE_PURPLE_CANVAS_SIGN.get())
+				.add(ModItems.ANTHONY_CANVAS_SIGN.get())
+				.add(ModItems.HOTPINK_CANVAS_SIGN.get())
+				.add(ModItems.INDIGO_CANVAS_SIGN.get())
+				.add(ModItems.LIGHT_PINK_CANVAS_SIGN.get())
+				.add(ModItems.LOOSAZ_CANVAS_SIGN.get())
+				.add(ModItems.SPADES_CANVAS_SIGN.get())
 				.add(ModItems.BLACK_CANVAS_SIGN.get());
 	}
 }
