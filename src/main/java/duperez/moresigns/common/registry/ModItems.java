@@ -77,4 +77,24 @@ public class ModItems {
             () -> new SignItem(basicItem(), ModBlocks.LOOSAZ_SIGN.get(), ModBlocks.LOOSAZ_WALL_SIGN.get()));
     public static final RegistryObject<Item> SPADES_CANVAS_SIGN = registerWithTab("spades_canvas_sign",
             () -> new SignItem(basicItem(), ModBlocks.SPADES_SIGN.get(), ModBlocks.SPADES_WALL_SIGN.get()));
+    public static final RegistryObject<Item> JINX_CANVAS_SIGN = registerWithTab("jinx_canvas_sign",
+            () -> new SignItem(basicItem(), ModBlocks.JINX_SIGN.get(), ModBlocks.JINX_WALL_SIGN.get()));
+    public static final RegistryObject<Item> ANHANGA_CANVAS_SIGN = registerWithTab("anhanga_canvas_sign",
+            () -> new SignItem(basicItem(), ModBlocks.ANHANGA_SIGN.get(), ModBlocks.ANHANGA_WALL_SIGN.get()));
+    public static final RegistryObject<Item> GOLD_CANVAS_SIGN = registerWithTab("gold_canvas_sign",
+            () -> new SignItem(basicItem(), ModBlocks.GOLD_SIGN.get(), ModBlocks.GOLD_WALL_SIGN.get()));
+    public static final RegistryObject<Item> MABHETIEL_CANVAS_SIGN = registerWithTab("mabhetiel_canvas_sign",
+            () -> new SignItem(basicItem(), ModBlocks.MABHETIEL_SIGN.get(), ModBlocks.MABHETIEL_WALL_SIGN.get()));
+    public static final RegistryObject<Item> POMPOM_CANVAS_SIGN = registerWithTab("pompom_canvas_sign",
+            () -> new SignItem(basicItem(), ModBlocks.POMPOM_SIGN.get(), ModBlocks.POMPOM_WALL_SIGN.get()));
+    public static final RegistryObject<Item> RABBIT_CANVAS_SIGN = registerWithTab("rabbit_canvas_sign",
+            () -> new SignItem(basicItem(), ModBlocks.RABBIT_SIGN.get(), ModBlocks.RABBIT_WALL_SIGN.get()));
+    public static final RegistryObject<Item> SODA_CANVAS_SIGN = registerWithTab("soda_canvas_sign",
+            () -> new SignItem(basicItem(), ModBlocks.SODA_SIGN.get(), ModBlocks.SODA_WALL_SIGN.get()));
+    public static final RegistryObject<Item> CYBER_CANVAS_SIGN = registerWithTab("cyber_canvas_sign",
+            () -> new SignItem(basicItem(), ModBlocks.CYBER_SIGN.get(), ModBlocks.CYBER_WALL_SIGN.get()));
+    public static final RegistryObject<Item> AUTISM_CANVAS_SIGN = registerWithTab("autism_canvas_sign",
+            () -> new SignItem(basicItem(), ModBlocks.AUTISM_SIGN.get(), ModBlocks.AUTISM_WALL_SIGN.get()));
+    public static final RegistryObject<Item> MARY_CANVAS_SIGN = registerWithTab("mary_canvas_sign",
+            () -> new SignItem(basicItem(), ModBlocks.MARY_SIGN.get(), ModBlocks.MARY_WALL_SIGN.get()));
 }

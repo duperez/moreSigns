@@ -49,6 +49,16 @@ public class BlockTags extends BlockTagsProvider
 				ModBlocks.LIGHT_PINK_SIGN.get(),
 				ModBlocks.LOOSAZ_SIGN.get(),
 				ModBlocks.SPADES_SIGN.get(),
+				ModBlocks.JINX_SIGN.get(),
+				ModBlocks.ANHANGA_SIGN.get(),
+				ModBlocks.GOLD_SIGN.get(),
+				ModBlocks.MABHETIEL_SIGN.get(),
+				ModBlocks.POMPOM_SIGN.get(),
+				ModBlocks.RABBIT_SIGN.get(),
+				ModBlocks.SODA_SIGN.get(),
+				ModBlocks.CYBER_SIGN.get(),
+				ModBlocks.AUTISM_SIGN.get(),
+				ModBlocks.MARY_SIGN.get(),
 				ModBlocks.ANTHONY_SIGN.get());
 		tag(net.minecraft.tags.BlockTags.WALL_SIGNS).add(
 				ModBlocks.CANVAS_WALL_SIGN.get(),
@@ -75,6 +85,16 @@ public class BlockTags extends BlockTagsProvider
 				ModBlocks.LIGHT_PINK_WALL_SIGN.get(),
 				ModBlocks.LOOSAZ_WALL_SIGN.get(),
 				ModBlocks.SPADES_WALL_SIGN.get(),
+				ModBlocks.JINX_WALL_SIGN.get(),
+				ModBlocks.ANHANGA_WALL_SIGN.get(),
+				ModBlocks.GOLD_WALL_SIGN.get(),
+				ModBlocks.MABHETIEL_WALL_SIGN.get(),
+				ModBlocks.POMPOM_WALL_SIGN.get(),
+				ModBlocks.RABBIT_WALL_SIGN.get(),
+				ModBlocks.SODA_WALL_SIGN.get(),
+				ModBlocks.CYBER_WALL_SIGN.get(),
+				ModBlocks.AUTISM_WALL_SIGN.get(),
+				ModBlocks.MARY_WALL_SIGN.get(),
 				ModBlocks.ANTHONY_WALL_SIGN.get());
 	}
 }

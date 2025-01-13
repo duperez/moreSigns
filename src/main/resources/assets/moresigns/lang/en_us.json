@@ -27,6 +27,16 @@
   "block.moresigns.light_pink_canvas_sign": "Pastel's Custom Sign",
   "block.moresigns.loosaz_canvas_sign": "LoosaZ's Custom Sign",
   "block.moresigns.spades_canvas_sign": "Spades's Custom Sign",
+  "block.moresigns.jinx_canvas_sign": "Jinx's Custom Sign",
+  "block.moresigns.anhanga_canvas_sign": "Anhanga's Custom Sign",
+  "block.moresigns.gold_canvas_sign": "Gold Custom Sign",
+  "block.moresigns.mabhetiel_canvas_sign": "Mabhetiel's Custom Sign",
+  "block.moresigns.rabbit_canvas_sign": "Rabbit's Custom Sign",
+  "block.moresigns.pompom_canvas_sign": "PomPom's Custom Sign",
+  "block.moresigns.soda_canvas_sign": "Soda's Custom Sign",
+  "block.moresigns.cyber_canvas_sign": "Cyber's Custom Sign",
+  "block.moresigns.autism_canvas_sign": "THE TISM Custom Sign",
+  "block.moresigns.mary_canvas_sign": "Mary's Custom Sign",
   "item.moresigns.canvas": "Canvas",
   "itemGroup.moresignstab": "TSMP Custom Signs"
 }

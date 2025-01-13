@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "moresigns:item/soda_canvas_sign"
+  }
+}

@@ -51,6 +51,16 @@ public class ItemTags extends ItemTagsProvider
 				.add(ModItems.LIGHT_PINK_CANVAS_SIGN.get())
 				.add(ModItems.LOOSAZ_CANVAS_SIGN.get())
 				.add(ModItems.SPADES_CANVAS_SIGN.get())
+				.add(ModItems.JINX_CANVAS_SIGN.get())
+				.add(ModItems.ANHANGA_CANVAS_SIGN.get())
+				.add(ModItems.GOLD_CANVAS_SIGN.get())
+				.add(ModItems.MABHETIEL_CANVAS_SIGN.get())
+				.add(ModItems.POMPOM_CANVAS_SIGN.get())
+				.add(ModItems.RABBIT_CANVAS_SIGN.get())
+				.add(ModItems.SODA_CANVAS_SIGN.get())
+				.add(ModItems.CYBER_CANVAS_SIGN.get())
+				.add(ModItems.AUTISM_CANVAS_SIGN.get())
+				.add(ModItems.MARY_CANVAS_SIGN.get())
 				.add(ModItems.BLACK_CANVAS_SIGN.get());
 	}
 }

@@ -57,6 +57,16 @@ public class ItemModels extends ItemModelProvider
 				ModItems.LIGHT_PINK_CANVAS_SIGN.get(),
 				ModItems.LOOSAZ_CANVAS_SIGN.get(),
 				ModItems.SPADES_CANVAS_SIGN.get(),
+				ModItems.ANHANGA_CANVAS_SIGN.get(),
+				ModItems.JINX_CANVAS_SIGN.get(),
+				ModItems.GOLD_CANVAS_SIGN.get(),
+				ModItems.MABHETIEL_CANVAS_SIGN.get(),
+				ModItems.POMPOM_CANVAS_SIGN.get(),
+				ModItems.RABBIT_CANVAS_SIGN.get(),
+				ModItems.SODA_CANVAS_SIGN.get(),
+				ModItems.CYBER_CANVAS_SIGN.get(),
+				ModItems.AUTISM_CANVAS_SIGN.get(),
+				ModItems.MARY_CANVAS_SIGN.get(),
 				ModItems.GREEN_GRADIENT_CANVAS_SIGN.get(),
 				ModItems.BLACK_CANVAS_SIGN.get()
 		);
