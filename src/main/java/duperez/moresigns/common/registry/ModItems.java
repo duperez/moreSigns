@@ -97,4 +97,6 @@ public class ModItems {
             () -> new SignItem(basicItem(), ModBlocks.AUTISM_SIGN.get(), ModBlocks.AUTISM_WALL_SIGN.get()));
     public static final RegistryObject<Item> MARY_CANVAS_SIGN = registerWithTab("mary_canvas_sign",
             () -> new SignItem(basicItem(), ModBlocks.MARY_SIGN.get(), ModBlocks.MARY_WALL_SIGN.get()));
+    public static final RegistryObject<Item> MEG_CANVAS_SIGN = registerWithTab("meg_canvas_sign",
+            () -> new SignItem(basicItem(), ModBlocks.MEG_SIGN.get(), ModBlocks.MEG_WALL_SIGN.get()));
 }

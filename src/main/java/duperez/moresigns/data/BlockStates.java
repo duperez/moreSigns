@@ -86,6 +86,7 @@ public class BlockStates extends BlockStateProvider
 				ModBlocks.CYBER_SIGN.get(),
 				ModBlocks.AUTISM_SIGN.get(),
 				ModBlocks.MARY_SIGN.get(),
+				ModBlocks.MEG_SIGN.get(),
 				ModBlocks.CANVAS_WALL_SIGN.get(),
 				ModBlocks.WHITE_CANVAS_WALL_SIGN.get(),
 				ModBlocks.ORANGE_CANVAS_WALL_SIGN.get(),
@@ -112,6 +113,7 @@ public class BlockStates extends BlockStateProvider
 				ModBlocks.SPADES_WALL_SIGN.get(),
 				ModBlocks.JINX_WALL_SIGN.get(),
 				ModBlocks.ANHANGA_WALL_SIGN.get(),
+				ModBlocks.ANTHONY_WALL_SIGN.get(),
 				ModBlocks.MABHETIEL_WALL_SIGN.get(),
 				ModBlocks.GOLD_WALL_SIGN.get(),
 				ModBlocks.POMPOM_WALL_SIGN.get(),
@@ -120,6 +122,7 @@ public class BlockStates extends BlockStateProvider
 				ModBlocks.CYBER_WALL_SIGN.get(),
 				ModBlocks.AUTISM_WALL_SIGN.get(),
 				ModBlocks.MARY_WALL_SIGN.get(),
+				ModBlocks.MEG_WALL_SIGN.get(),
 				ModBlocks.GREEN_GRADIENT_WALL_SIGN.get());
 
 		for (Block sign : canvasSigns) {

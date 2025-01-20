@@ -59,6 +59,7 @@ public class BlockTags extends BlockTagsProvider
 				ModBlocks.CYBER_SIGN.get(),
 				ModBlocks.AUTISM_SIGN.get(),
 				ModBlocks.MARY_SIGN.get(),
+				ModBlocks.MEG_SIGN.get(),
 				ModBlocks.ANTHONY_SIGN.get());
 		tag(net.minecraft.tags.BlockTags.WALL_SIGNS).add(
 				ModBlocks.CANVAS_WALL_SIGN.get(),
@@ -95,6 +96,7 @@ public class BlockTags extends BlockTagsProvider
 				ModBlocks.CYBER_WALL_SIGN.get(),
 				ModBlocks.AUTISM_WALL_SIGN.get(),
 				ModBlocks.MARY_WALL_SIGN.get(),
+				ModBlocks.MEG_WALL_SIGN.get(),
 				ModBlocks.ANTHONY_WALL_SIGN.get());
 	}
 }

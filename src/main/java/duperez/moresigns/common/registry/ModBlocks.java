@@ -98,6 +98,8 @@ public class ModBlocks
 			() -> new StandingCanvasSignBlock("autism"));
 	public static final RegistryObject<Block> MARY_SIGN = BLOCKS.register("mary_canvas_sign",
 			() -> new StandingCanvasSignBlock("mary"));
+	public static final RegistryObject<Block> MEG_SIGN = BLOCKS.register("meg_canvas_sign",
+			() -> new StandingCanvasSignBlock("meg"));
 
 	// WALL_SIGN classes declaration
 
@@ -171,4 +173,6 @@ public class ModBlocks
 			() -> new WallCanvasSignBlock(Block.Properties.copy(Blocks.OAK_SIGN).lootFrom(AUTISM_SIGN), "autism"));
 	public static final RegistryObject<Block> MARY_WALL_SIGN = BLOCKS.register("mary_canvas_wall_sign",
 			() -> new WallCanvasSignBlock(Block.Properties.copy(Blocks.OAK_SIGN).lootFrom(MARY_SIGN), "mary"));
+	public static final RegistryObject<Block> MEG_WALL_SIGN = BLOCKS.register("meg_canvas_wall_sign",
+			() -> new WallCanvasSignBlock(Block.Properties.copy(Blocks.OAK_SIGN).lootFrom(MEG_SIGN), "meg"));
 }

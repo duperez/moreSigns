@@ -49,6 +49,7 @@ public class ModBlockEntityTypes
 							ModBlocks.CYBER_SIGN.get(),
 							ModBlocks.AUTISM_SIGN.get(),
 							ModBlocks.MARY_SIGN.get(),
+							ModBlocks.MEG_SIGN.get(),
 							ModBlocks.WHITE_CANVAS_WALL_SIGN.get(),
 							ModBlocks.ORANGE_CANVAS_WALL_SIGN.get(),
 							ModBlocks.MAGENTA_CANVAS_WALL_SIGN.get(),
@@ -79,8 +80,10 @@ public class ModBlockEntityTypes
 							ModBlocks.RABBIT_WALL_SIGN.get(),
 							ModBlocks.SODA_WALL_SIGN.get(),
 							ModBlocks.CYBER_WALL_SIGN.get(),
+							ModBlocks.JINX_WALL_SIGN.get(),
 							ModBlocks.AUTISM_WALL_SIGN.get(),
 							ModBlocks.MARY_WALL_SIGN.get(),
+							ModBlocks.MEG_WALL_SIGN.get(),
 							ModBlocks.BLACK_CANVAS_WALL_SIGN.get())
 					.build(null));
 }
