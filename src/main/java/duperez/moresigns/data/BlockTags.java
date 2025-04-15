@@ -68,6 +68,7 @@ public class BlockTags extends BlockTagsProvider
 				ModBlocks.MONA_SIGN.get(),
 				ModBlocks.MOON_SIGN.get(),
 				ModBlocks.UKO_SIGN.get(),
+				ModBlocks.JAY_SIGN.get(),
 				ModBlocks.ANTHONY_SIGN.get());
 		tag(net.minecraft.tags.BlockTags.WALL_SIGNS).add(
 				ModBlocks.CANVAS_WALL_SIGN.get(),
@@ -113,6 +114,7 @@ public class BlockTags extends BlockTagsProvider
 				ModBlocks.MONA_WALL_SIGN.get(),
 				ModBlocks.MOON_WALL_SIGN.get(),
 				ModBlocks.UKO_WALL_SIGN.get(),
+				ModBlocks.JAY_WALL_SIGN.get(),
 				ModBlocks.ANTHONY_WALL_SIGN.get());
 	}
 }

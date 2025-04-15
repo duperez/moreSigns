@@ -76,6 +76,7 @@ public class ItemModels extends ItemModelProvider
 				ModItems.MONA_CANVAS_SIGN.get(),
 				ModItems.MOON_CANVAS_SIGN.get(),
 				ModItems.UKO_CANVAS_SIGN.get(),
+				ModItems.JAY_CANVAS_SIGN.get(),
 				ModItems.GREEN_GRADIENT_CANVAS_SIGN.get(),
 				ModItems.BLACK_CANVAS_SIGN.get()
 		);

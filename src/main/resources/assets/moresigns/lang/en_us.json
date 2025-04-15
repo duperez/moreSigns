@@ -46,6 +46,7 @@
   "block.moresigns.mona_canvas_sign": "Mona's Custom Sign",
   "block.moresigns.moon_canvas_sign": "Moon's Custom Sign",
   "block.moresigns.uko_canvas_sign": "Uko's Custom Sign",
+  "block.moresigns.jay_canvas_sign": "Jay's Custom Sign",
   "item.moresigns.canvas": "Canvas",
   "itemGroup.moresignstab": "TSMP Custom Signs"
 }

@@ -58,6 +58,7 @@ public class ModBlockEntityTypes
 							ModBlocks.MOON_SIGN.get(),
 							ModBlocks.MICHAEL_SIGN.get(),
 							ModBlocks.UKO_SIGN.get(),
+							ModBlocks.JAY_SIGN.get(),
 							ModBlocks.WHITE_CANVAS_WALL_SIGN.get(),
 							ModBlocks.ORANGE_CANVAS_WALL_SIGN.get(),
 							ModBlocks.MAGENTA_CANVAS_WALL_SIGN.get(),
@@ -100,6 +101,7 @@ public class ModBlockEntityTypes
 							ModBlocks.MONA_WALL_SIGN.get(),
 							ModBlocks.MOON_WALL_SIGN.get(),
 							ModBlocks.UKO_WALL_SIGN.get(),
+							ModBlocks.JAY_WALL_SIGN.get(),
 							ModBlocks.BLACK_CANVAS_WALL_SIGN.get())
 					.build(null));
 }

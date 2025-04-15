@@ -115,4 +115,6 @@ public class ModItems {
             () -> new SignItem(basicItem(), ModBlocks.MOON_SIGN.get(), ModBlocks.MOON_WALL_SIGN.get()));
     public static final RegistryObject<Item> UKO_CANVAS_SIGN = registerWithTab("uko_canvas_sign",
             () -> new SignItem(basicItem(), ModBlocks.UKO_SIGN.get(), ModBlocks.UKO_WALL_SIGN.get()));
+    public static final RegistryObject<Item> JAY_CANVAS_SIGN = registerWithTab("jay_canvas_sign",
+            () -> new SignItem(basicItem(), ModBlocks.JAY_SIGN.get(), ModBlocks.JAY_WALL_SIGN.get()));
 }

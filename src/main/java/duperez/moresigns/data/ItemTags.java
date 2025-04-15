@@ -70,6 +70,7 @@ public class ItemTags extends ItemTagsProvider
 				.add(ModItems.MONA_CANVAS_SIGN.get())
 				.add(ModItems.MOON_CANVAS_SIGN.get())
 				.add(ModItems.UKO_CANVAS_SIGN.get())
+				.add(ModItems.JAY_CANVAS_SIGN.get())
 				.add(ModItems.BLACK_CANVAS_SIGN.get());
 	}
 }
