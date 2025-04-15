@@ -99,4 +99,20 @@ public class ModItems {
             () -> new SignItem(basicItem(), ModBlocks.MARY_SIGN.get(), ModBlocks.MARY_WALL_SIGN.get()));
     public static final RegistryObject<Item> MEG_CANVAS_SIGN = registerWithTab("meg_canvas_sign",
             () -> new SignItem(basicItem(), ModBlocks.MEG_SIGN.get(), ModBlocks.MEG_WALL_SIGN.get()));
+    public static final RegistryObject<Item> DELTA_CANVAS_SIGN = registerWithTab("delta_canvas_sign",
+            () -> new SignItem(basicItem(), ModBlocks.DELTA_SIGN.get(), ModBlocks.DELTA_WALL_SIGN.get()));
+    public static final RegistryObject<Item> JACK_CANVAS_SIGN = registerWithTab("jack_canvas_sign",
+            () -> new SignItem(basicItem(), ModBlocks.JACK_SIGN.get(), ModBlocks.JACK_WALL_SIGN.get()));
+    public static final RegistryObject<Item> KALYPSO_CANVAS_SIGN = registerWithTab("kalypso_canvas_sign",
+            () -> new SignItem(basicItem(), ModBlocks.KALYPSO_SIGN.get(), ModBlocks.KALYPSO_WALL_SIGN.get()));
+    public static final RegistryObject<Item> M1_CANVAS_SIGN = registerWithTab("m1_canvas_sign",
+            () -> new SignItem(basicItem(), ModBlocks.M1_SIGN.get(), ModBlocks.M1_WALL_SIGN.get()));
+    public static final RegistryObject<Item> MICHAEL_CANVAS_SIGN = registerWithTab("michael_canvas_sign",
+            () -> new SignItem(basicItem(), ModBlocks.MICHAEL_SIGN.get(), ModBlocks.MICHAEL_WALL_SIGN.get()));
+    public static final RegistryObject<Item> MONA_CANVAS_SIGN = registerWithTab("mona_canvas_sign",
+            () -> new SignItem(basicItem(), ModBlocks.MONA_SIGN.get(), ModBlocks.MONA_WALL_SIGN.get()));
+    public static final RegistryObject<Item> MOON_CANVAS_SIGN = registerWithTab("moon_canvas_sign",
+            () -> new SignItem(basicItem(), ModBlocks.MOON_SIGN.get(), ModBlocks.MOON_WALL_SIGN.get()));
+    public static final RegistryObject<Item> UKO_CANVAS_SIGN = registerWithTab("uko_canvas_sign",
+            () -> new SignItem(basicItem(), ModBlocks.UKO_SIGN.get(), ModBlocks.UKO_WALL_SIGN.get()));
 }

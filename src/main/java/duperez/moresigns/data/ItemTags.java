@@ -62,6 +62,14 @@ public class ItemTags extends ItemTagsProvider
 				.add(ModItems.AUTISM_CANVAS_SIGN.get())
 				.add(ModItems.MARY_CANVAS_SIGN.get())
 				.add(ModItems.MEG_CANVAS_SIGN.get())
+				.add(ModItems.DELTA_CANVAS_SIGN.get())
+				.add(ModItems.JACK_CANVAS_SIGN.get())
+				.add(ModItems.KALYPSO_CANVAS_SIGN.get())
+				.add(ModItems.M1_CANVAS_SIGN.get())
+				.add(ModItems.MICHAEL_CANVAS_SIGN.get())
+				.add(ModItems.MONA_CANVAS_SIGN.get())
+				.add(ModItems.MOON_CANVAS_SIGN.get())
+				.add(ModItems.UKO_CANVAS_SIGN.get())
 				.add(ModItems.BLACK_CANVAS_SIGN.get());
 	}
 }

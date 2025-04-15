@@ -38,6 +38,14 @@
   "block.moresigns.autism_canvas_sign": "THE TISM Custom Sign",
   "block.moresigns.mary_canvas_sign": "Mary's Custom Sign",
   "block.moresigns.meg_canvas_sign": "Meg's Custom Sign",
+  "block.moresigns.delta_canvas_sign": "Delta's Custom Sign",
+  "block.moresigns.jack_canvas_sign": "Jack's Custom Sign",
+  "block.moresigns.kalypso_canvas_sign": "kalypso's Custom Sign",
+  "block.moresigns.m1_canvas_sign": "M1's Custom Sign",
+  "block.moresigns.michael_canvas_sign": "Michael's Custom Sign",
+  "block.moresigns.mona_canvas_sign": "Mona's Custom Sign",
+  "block.moresigns.moon_canvas_sign": "Moon's Custom Sign",
+  "block.moresigns.uko_canvas_sign": "Uko's Custom Sign",
   "item.moresigns.canvas": "Canvas",
   "itemGroup.moresignstab": "TSMP Custom Signs"
 }

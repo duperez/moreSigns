@@ -68,6 +68,14 @@ public class ItemModels extends ItemModelProvider
 				ModItems.AUTISM_CANVAS_SIGN.get(),
 				ModItems.MARY_CANVAS_SIGN.get(),
 				ModItems.MEG_CANVAS_SIGN.get(),
+				ModItems.DELTA_CANVAS_SIGN.get(),
+				ModItems.JACK_CANVAS_SIGN.get(),
+				ModItems.KALYPSO_CANVAS_SIGN.get(),
+				ModItems.M1_CANVAS_SIGN.get(),
+				ModItems.MICHAEL_CANVAS_SIGN.get(),
+				ModItems.MONA_CANVAS_SIGN.get(),
+				ModItems.MOON_CANVAS_SIGN.get(),
+				ModItems.UKO_CANVAS_SIGN.get(),
 				ModItems.GREEN_GRADIENT_CANVAS_SIGN.get(),
 				ModItems.BLACK_CANVAS_SIGN.get()
 		);

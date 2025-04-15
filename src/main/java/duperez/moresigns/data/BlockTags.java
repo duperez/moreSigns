@@ -60,6 +60,14 @@ public class BlockTags extends BlockTagsProvider
 				ModBlocks.AUTISM_SIGN.get(),
 				ModBlocks.MARY_SIGN.get(),
 				ModBlocks.MEG_SIGN.get(),
+				ModBlocks.DELTA_SIGN.get(),
+				ModBlocks.JACK_SIGN.get(),
+				ModBlocks.KALYPSO_SIGN.get(),
+				ModBlocks.M1_SIGN.get(),
+				ModBlocks.MICHAEL_SIGN.get(),
+				ModBlocks.MONA_SIGN.get(),
+				ModBlocks.MOON_SIGN.get(),
+				ModBlocks.UKO_SIGN.get(),
 				ModBlocks.ANTHONY_SIGN.get());
 		tag(net.minecraft.tags.BlockTags.WALL_SIGNS).add(
 				ModBlocks.CANVAS_WALL_SIGN.get(),
@@ -97,6 +105,14 @@ public class BlockTags extends BlockTagsProvider
 				ModBlocks.AUTISM_WALL_SIGN.get(),
 				ModBlocks.MARY_WALL_SIGN.get(),
 				ModBlocks.MEG_WALL_SIGN.get(),
+				ModBlocks.DELTA_WALL_SIGN.get(),
+				ModBlocks.JACK_WALL_SIGN.get(),
+				ModBlocks.KALYPSO_WALL_SIGN.get(),
+				ModBlocks.M1_WALL_SIGN.get(),
+				ModBlocks.MICHAEL_WALL_SIGN.get(),
+				ModBlocks.MONA_WALL_SIGN.get(),
+				ModBlocks.MOON_WALL_SIGN.get(),
+				ModBlocks.UKO_WALL_SIGN.get(),
 				ModBlocks.ANTHONY_WALL_SIGN.get());
 	}
 }
