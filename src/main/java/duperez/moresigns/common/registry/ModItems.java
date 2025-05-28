@@ -117,4 +117,24 @@ public class ModItems {
             () -> new SignItem(basicItem(), ModBlocks.UKO_SIGN.get(), ModBlocks.UKO_WALL_SIGN.get()));
     public static final RegistryObject<Item> JAY_CANVAS_SIGN = registerWithTab("jay_canvas_sign",
             () -> new SignItem(basicItem(), ModBlocks.JAY_SIGN.get(), ModBlocks.JAY_WALL_SIGN.get()));
+    public static final RegistryObject<Item> CELYNE_CANVAS_SIGN = registerWithTab("celyne_canvas_sign",
+            () -> new SignItem(basicItem(), ModBlocks.CELYNE_SIGN.get(), ModBlocks.CELYNE_WALL_SIGN.get()));
+    public static final RegistryObject<Item> PEPPER_CANVAS_SIGN = registerWithTab("pepper_canvas_sign",
+            () -> new SignItem(basicItem(), ModBlocks.PEPPER_SIGN.get(), ModBlocks.PEPPER_WALL_SIGN.get()));
+    public static final RegistryObject<Item> EPSILON_CANVAS_SIGN = registerWithTab("epsilon_canvas_sign",
+            () -> new SignItem(basicItem(), ModBlocks.EPSILON_SIGN.get(), ModBlocks.EPSILON_WALL_SIGN.get()));
+    public static final RegistryObject<Item> HAVARTI_CANVAS_SIGN = registerWithTab("havarti_canvas_sign",
+            () -> new SignItem(basicItem(), ModBlocks.HAVARTI_SIGN.get(), ModBlocks.HAVARTI_WALL_SIGN.get()));
+    public static final RegistryObject<Item> MINERVA_CANVAS_SIGN = registerWithTab("minerva_canvas_sign",
+            () -> new SignItem(basicItem(), ModBlocks.MINERVA_SIGN.get(), ModBlocks.MINERVA_WALL_SIGN.get()));
+    public static final RegistryObject<Item> RUNE_CANVAS_SIGN = registerWithTab("rune_canvas_sign",
+            () -> new SignItem(basicItem(), ModBlocks.RUNE_SIGN.get(), ModBlocks.RUNE_WALL_SIGN.get()));
+    public static final RegistryObject<Item> LAMBDA_CANVAS_SIGN = registerWithTab("lambda_canvas_sign",
+            () -> new SignItem(basicItem(), ModBlocks.LAMBDA_SIGN.get(), ModBlocks.LAMBDA_WALL_SIGN.get()));
+    public static final RegistryObject<Item> OMICRON_CANVAS_SIGN = registerWithTab("omicron_canvas_sign",
+            () -> new SignItem(basicItem(), ModBlocks.OMICRON_SIGN.get(), ModBlocks.OMICRON_WALL_SIGN.get()));
+    public static final RegistryObject<Item> PSI_CANVAS_SIGN = registerWithTab("psi_canvas_sign",
+            () -> new SignItem(basicItem(), ModBlocks.PSI_SIGN.get(), ModBlocks.PSI_WALL_SIGN.get()));
+    public static final RegistryObject<Item> TAU_CANVAS_SIGN = registerWithTab("tau_canvas_sign",
+            () -> new SignItem(basicItem(), ModBlocks.TAU_SIGN.get(), ModBlocks.TAU_WALL_SIGN.get()));
 }

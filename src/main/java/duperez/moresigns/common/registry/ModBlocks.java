@@ -118,6 +118,26 @@ public class ModBlocks
 			() -> new StandingCanvasSignBlock("uko"));
 	public static final RegistryObject<Block> JAY_SIGN = BLOCKS.register("jay_canvas_sign",
 			() -> new StandingCanvasSignBlock("jay"));
+	public static final RegistryObject<Block> CELYNE_SIGN = BLOCKS.register("celyne_canvas_sign",
+			() -> new StandingCanvasSignBlock("celyne"));
+	public static final RegistryObject<Block> PEPPER_SIGN = BLOCKS.register("pepper_canvas_sign",
+			() -> new StandingCanvasSignBlock("pepper"));
+	public static final RegistryObject<Block> EPSILON_SIGN = BLOCKS.register("epsilon_canvas_sign",
+			() -> new StandingCanvasSignBlock("epsilon"));
+	public static final RegistryObject<Block> HAVARTI_SIGN = BLOCKS.register("havarti_canvas_sign",
+			() -> new StandingCanvasSignBlock("havarti"));
+	public static final RegistryObject<Block> MINERVA_SIGN = BLOCKS.register("minerva_canvas_sign",
+			() -> new StandingCanvasSignBlock("minerva"));
+	public static final RegistryObject<Block> RUNE_SIGN = BLOCKS.register("rune_canvas_sign",
+			() -> new StandingCanvasSignBlock("rune"));
+	public static final RegistryObject<Block> LAMBDA_SIGN = BLOCKS.register("lambda_canvas_sign",
+			() -> new StandingCanvasSignBlock("lambda"));
+	public static final RegistryObject<Block> OMICRON_SIGN = BLOCKS.register("omicron_canvas_sign",
+			() -> new StandingCanvasSignBlock("omicron"));
+	public static final RegistryObject<Block> PSI_SIGN = BLOCKS.register("psi_canvas_sign",
+			() -> new StandingCanvasSignBlock("psi"));
+	public static final RegistryObject<Block> TAU_SIGN = BLOCKS.register("tau_canvas_sign",
+			() -> new StandingCanvasSignBlock("tau"));
 
 	// WALL_SIGN classes declaration
 
@@ -211,4 +231,25 @@ public class ModBlocks
 			() -> new WallCanvasSignBlock(Block.Properties.copy(Blocks.OAK_SIGN).lootFrom(UKO_SIGN), "uko"));
 	public static final RegistryObject<Block> JAY_WALL_SIGN = BLOCKS.register("jay_canvas_wall_sign",
 			() -> new WallCanvasSignBlock(Block.Properties.copy(Blocks.OAK_SIGN).lootFrom(JAY_SIGN), "jay"));
+	public static final RegistryObject<Block> CELYNE_WALL_SIGN = BLOCKS.register("celyne_canvas_wall_sign",
+			() -> new WallCanvasSignBlock(Block.Properties.copy(Blocks.OAK_SIGN).lootFrom(CELYNE_SIGN), "celyne"));
+	public static final RegistryObject<Block> PEPPER_WALL_SIGN = BLOCKS.register("pepper_canvas_wall_sign",
+			() -> new WallCanvasSignBlock(Block.Properties.copy(Blocks.OAK_SIGN).lootFrom(PEPPER_SIGN), "pepper"));
+	public static final RegistryObject<Block> EPSILON_WALL_SIGN = BLOCKS.register("epsilon_canvas_wall_sign",
+			() -> new WallCanvasSignBlock(Block.Properties.copy(Blocks.OAK_SIGN).lootFrom(EPSILON_SIGN), "epsilon"));
+	public static final RegistryObject<Block> HAVARTI_WALL_SIGN = BLOCKS.register("havarti_canvas_wall_sign",
+			() -> new WallCanvasSignBlock(Block.Properties.copy(Blocks.OAK_SIGN).lootFrom(HAVARTI_SIGN), "havarti"));
+	public static final RegistryObject<Block> MINERVA_WALL_SIGN = BLOCKS.register("minerva_canvas_wall_sign",
+			() -> new WallCanvasSignBlock(Block.Properties.copy(Blocks.OAK_SIGN).lootFrom(MINERVA_SIGN), "minerva"));
+	public static final RegistryObject<Block> RUNE_WALL_SIGN = BLOCKS.register("rune_canvas_wall_sign",
+			() -> new WallCanvasSignBlock(Block.Properties.copy(Blocks.OAK_SIGN).lootFrom(RUNE_SIGN), "rune"));
+	public static final RegistryObject<Block> LAMBDA_WALL_SIGN = BLOCKS.register("lambda_canvas_wall_sign",
+			() -> new WallCanvasSignBlock(Block.Properties.copy(Blocks.OAK_SIGN).lootFrom(LAMBDA_SIGN), "lambda"));
+	public static final RegistryObject<Block> OMICRON_WALL_SIGN = BLOCKS.register("omicron_canvas_wall_sign",
+			() -> new WallCanvasSignBlock(Block.Properties.copy(Blocks.OAK_SIGN).lootFrom(OMICRON_SIGN), "omicron"));
+	public static final RegistryObject<Block> PSI_WALL_SIGN = BLOCKS.register("psi_canvas_wall_sign",
+			() -> new WallCanvasSignBlock(Block.Properties.copy(Blocks.OAK_SIGN).lootFrom(PSI_SIGN), "psi"));
+	public static final RegistryObject<Block> TAU_WALL_SIGN = BLOCKS.register("tau_canvas_wall_sign",
+			() -> new WallCanvasSignBlock(Block.Properties.copy(Blocks.OAK_SIGN).lootFrom(TAU_SIGN), "tau"));
+
 }

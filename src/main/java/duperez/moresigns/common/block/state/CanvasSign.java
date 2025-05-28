@@ -16,6 +16,16 @@ public interface CanvasSign {
      */
     default boolean isDarkBackground() {
         String backgroundDye = this.getBackgroundColor();
-        return backgroundDye != null && ImmutableList.of("gray", "purple", "brown", "green", "red", "black", "white", "indigo", "loosaz", "lime", "jinx", "spades", "rabbit", "gold", "mary", "cyber", "meg", "delta", "jay", "kalypso", "m1", "michael", "mona", "moon", "uko").contains(backgroundDye);
+        return backgroundDye != null && ImmutableList.of(
+                "gray", "purple", "brown", "green",
+                "red", "black", "white", "indigo",
+                "loosaz", "lime", "jinx", "spades",
+                "rabbit", "gold", "mary", "cyber",
+                "meg", "delta", "jay", "kalypso",
+                "m1", "michael", "mona", "moon",
+                "uko", "celyne", "pepper","epsilon",
+                "havarti", "minerva", "rune"
+
+        ).contains(backgroundDye);
     }
 }
