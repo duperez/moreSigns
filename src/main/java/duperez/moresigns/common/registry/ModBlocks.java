@@ -138,6 +138,10 @@ public class ModBlocks
 			() -> new StandingCanvasSignBlock("psi"));
 	public static final RegistryObject<Block> TAU_SIGN = BLOCKS.register("tau_canvas_sign",
 			() -> new StandingCanvasSignBlock("tau"));
+	public static final RegistryObject<Block> WICKY_SIGN = BLOCKS.register("wicky_canvas_sign",
+			() -> new StandingCanvasSignBlock("wicky"));
+	public static final RegistryObject<Block> YUN_SIGN = BLOCKS.register("yun_canvas_sign",
+			() -> new StandingCanvasSignBlock("yun"));
 
 	// WALL_SIGN classes declaration
 
@@ -251,5 +255,9 @@ public class ModBlocks
 			() -> new WallCanvasSignBlock(Block.Properties.copy(Blocks.OAK_SIGN).lootFrom(PSI_SIGN), "psi"));
 	public static final RegistryObject<Block> TAU_WALL_SIGN = BLOCKS.register("tau_canvas_wall_sign",
 			() -> new WallCanvasSignBlock(Block.Properties.copy(Blocks.OAK_SIGN).lootFrom(TAU_SIGN), "tau"));
+	public static final RegistryObject<Block> WICKY_WALL_SIGN = BLOCKS.register("wicky_canvas_wall_sign",
+			() -> new WallCanvasSignBlock(Block.Properties.copy(Blocks.OAK_SIGN).lootFrom(WICKY_SIGN), "wicky"));
+	public static final RegistryObject<Block> YUN_WALL_SIGN = BLOCKS.register("yun_canvas_wall_sign",
+			() -> new WallCanvasSignBlock(Block.Properties.copy(Blocks.OAK_SIGN).lootFrom(YUN_SIGN), "yun"));
 
 }

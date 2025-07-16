@@ -87,6 +87,8 @@ public class ItemModels extends ItemModelProvider
 				ModItems.OMICRON_CANVAS_SIGN.get(),
 				ModItems.PSI_CANVAS_SIGN.get(),
 				ModItems.TAU_CANVAS_SIGN.get(),
+				ModItems.WICKY_CANVAS_SIGN.get(),
+				ModItems.YUN_CANVAS_SIGN.get(),
 				ModItems.BLACK_CANVAS_SIGN.get()
 		);
 		takeAll(items, spriteBlockItems.toArray(new Item[0])).forEach(item -> withExistingParent(itemName(item), GENERATED).texture("layer0", resourceItem(itemName(item))));

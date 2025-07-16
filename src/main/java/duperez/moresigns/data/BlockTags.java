@@ -79,6 +79,8 @@ public class BlockTags extends BlockTagsProvider
 				ModBlocks.OMICRON_SIGN.get(),
 				ModBlocks.PSI_SIGN.get(),
 				ModBlocks.TAU_SIGN.get(),
+				ModBlocks.WICKY_SIGN.get(),
+				ModBlocks.YUN_SIGN.get(),
 				ModBlocks.ANTHONY_SIGN.get());
 		tag(net.minecraft.tags.BlockTags.WALL_SIGNS).add(
 				ModBlocks.CANVAS_WALL_SIGN.get(),
@@ -135,6 +137,8 @@ public class BlockTags extends BlockTagsProvider
 				ModBlocks.OMICRON_WALL_SIGN.get(),
 				ModBlocks.PSI_WALL_SIGN.get(),
 				ModBlocks.TAU_WALL_SIGN.get(),
+				ModBlocks.WICKY_WALL_SIGN.get(),
+				ModBlocks.YUN_WALL_SIGN.get(),
 				ModBlocks.ANTHONY_WALL_SIGN.get());
 	}
 }

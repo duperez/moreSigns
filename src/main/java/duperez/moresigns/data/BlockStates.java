@@ -106,6 +106,8 @@ public class BlockStates extends BlockStateProvider
 				ModBlocks.OMICRON_SIGN.get(),
 				ModBlocks.PSI_SIGN.get(),
 				ModBlocks.TAU_SIGN.get(),
+				ModBlocks.WICKY_SIGN.get(),
+				ModBlocks.YUN_SIGN.get(),
 				ModBlocks.CANVAS_WALL_SIGN.get(),
 				ModBlocks.WHITE_CANVAS_WALL_SIGN.get(),
 				ModBlocks.ORANGE_CANVAS_WALL_SIGN.get(),
@@ -161,6 +163,8 @@ public class BlockStates extends BlockStateProvider
 				ModBlocks.OMICRON_WALL_SIGN.get(),
 				ModBlocks.PSI_WALL_SIGN.get(),
 				ModBlocks.TAU_WALL_SIGN.get(),
+				ModBlocks.WICKY_WALL_SIGN.get(),
+				ModBlocks.YUN_WALL_SIGN.get(),
 				ModBlocks.GREEN_GRADIENT_WALL_SIGN.get());
 
 		for (Block sign : canvasSigns) {
