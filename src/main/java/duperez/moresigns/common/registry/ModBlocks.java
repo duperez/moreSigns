@@ -142,6 +142,12 @@ public class ModBlocks
 			() -> new StandingCanvasSignBlock("wicky"));
 	public static final RegistryObject<Block> YUN_SIGN = BLOCKS.register("yun_canvas_sign",
 			() -> new StandingCanvasSignBlock("yun"));
+	public static final RegistryObject<Block> JUPITER_SIGN = BLOCKS.register("jupiter_canvas_sign",
+			() -> new StandingCanvasSignBlock("jupiter"));
+	public static final RegistryObject<Block> BENNY_SIGN = BLOCKS.register("benny_canvas_sign",
+			() -> new StandingCanvasSignBlock("benny"));
+	public static final RegistryObject<Block> TINKER_SIGN = BLOCKS.register("tinker_canvas_sign",
+			() -> new StandingCanvasSignBlock("tinker"));
 
 	// WALL_SIGN classes declaration
 
@@ -259,5 +265,11 @@ public class ModBlocks
 			() -> new WallCanvasSignBlock(Block.Properties.copy(Blocks.OAK_SIGN).lootFrom(WICKY_SIGN), "wicky"));
 	public static final RegistryObject<Block> YUN_WALL_SIGN = BLOCKS.register("yun_canvas_wall_sign",
 			() -> new WallCanvasSignBlock(Block.Properties.copy(Blocks.OAK_SIGN).lootFrom(YUN_SIGN), "yun"));
+	public static final RegistryObject<Block> JUPITER_WALL_SIGN = BLOCKS.register("jupiter_canvas_wall_sign",
+			() -> new WallCanvasSignBlock(Block.Properties.copy(Blocks.OAK_SIGN).lootFrom(JUPITER_SIGN), "jupiter"));
+	public static final RegistryObject<Block> BENNY_WALL_SIGN = BLOCKS.register("benny_canvas_wall_sign",
+			() -> new WallCanvasSignBlock(Block.Properties.copy(Blocks.OAK_SIGN).lootFrom(BENNY_SIGN), "benny"));
+	public static final RegistryObject<Block> TINKER_WALL_SIGN = BLOCKS.register("tinker_canvas_wall_sign",
+			() -> new WallCanvasSignBlock(Block.Properties.copy(Blocks.OAK_SIGN).lootFrom(TINKER_SIGN), "tinker"));
 
 }

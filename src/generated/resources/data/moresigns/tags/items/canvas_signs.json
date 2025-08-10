@@ -56,6 +56,9 @@
     "moresigns:tau_canvas_sign",
     "moresigns:wicky_canvas_sign",
     "moresigns:yun_canvas_sign",
+    "moresigns:jupiter_canvas_sign",
+    "moresigns:benny_canvas_sign",
+    "moresigns:tinker_canvas_sign",
     "moresigns:black_canvas_sign"
   ]
 }

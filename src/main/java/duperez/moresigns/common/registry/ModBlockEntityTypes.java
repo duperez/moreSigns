@@ -71,6 +71,9 @@ public class ModBlockEntityTypes
 							ModBlocks.TAU_SIGN.get(),
 							ModBlocks.WICKY_SIGN.get(),
 							ModBlocks.YUN_SIGN.get(),
+							ModBlocks.JUPITER_SIGN.get(),
+							ModBlocks.BENNY_SIGN.get(),
+							ModBlocks.TINKER_SIGN.get(),
 							ModBlocks.WHITE_CANVAS_WALL_SIGN.get(),
 							ModBlocks.ORANGE_CANVAS_WALL_SIGN.get(),
 							ModBlocks.MAGENTA_CANVAS_WALL_SIGN.get(),
@@ -126,6 +129,9 @@ public class ModBlockEntityTypes
 							ModBlocks.TAU_WALL_SIGN.get(),
 							ModBlocks.WICKY_WALL_SIGN.get(),
 							ModBlocks.YUN_WALL_SIGN.get(),
+							ModBlocks.JUPITER_WALL_SIGN.get(),
+							ModBlocks.BENNY_WALL_SIGN.get(),
+							ModBlocks.TINKER_WALL_SIGN.get(),
 							ModBlocks.BLACK_CANVAS_WALL_SIGN.get())
 					.build(null));
 }

@@ -89,6 +89,9 @@ public class ItemModels extends ItemModelProvider
 				ModItems.TAU_CANVAS_SIGN.get(),
 				ModItems.WICKY_CANVAS_SIGN.get(),
 				ModItems.YUN_CANVAS_SIGN.get(),
+				ModItems.JUPITER_CANVAS_SIGN.get(),
+				ModItems.BENNY_CANVAS_SIGN.get(),
+				ModItems.TINKER_CANVAS_SIGN.get(),
 				ModItems.BLACK_CANVAS_SIGN.get()
 		);
 		takeAll(items, spriteBlockItems.toArray(new Item[0])).forEach(item -> withExistingParent(itemName(item), GENERATED).texture("layer0", resourceItem(itemName(item))));

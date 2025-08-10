@@ -83,6 +83,9 @@ public class ItemTags extends ItemTagsProvider
 				.add(ModItems.TAU_CANVAS_SIGN.get())
 				.add(ModItems.WICKY_CANVAS_SIGN.get())
 				.add(ModItems.YUN_CANVAS_SIGN.get())
+				.add(ModItems.JUPITER_CANVAS_SIGN.get())
+				.add(ModItems.BENNY_CANVAS_SIGN.get())
+				.add(ModItems.TINKER_CANVAS_SIGN.get())
 				.add(ModItems.BLACK_CANVAS_SIGN.get());
 	}
 }

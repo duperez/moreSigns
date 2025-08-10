@@ -59,6 +59,9 @@
   "block.moresigns.tau_canvas_sign": "Tau's Custom Sign",
   "block.moresigns.wicky_canvas_sign": "Wicky's Custom Sign",
   "block.moresigns.yun_canvas_sign": "Yun's Custom Sign",
+  "block.moresigns.jupiter_canvas_sign": "Jupiter's Custom Sign",
+  "block.moresigns.benny_canvas_sign": "Benny's Custom Sign",
+  "block.moresigns.tinker_canvas_sign": "Tink's Custom Sign",
   "item.moresigns.canvas": "Canvas",
   "itemGroup.moresignstab": "TSMP Custom Signs"
 }

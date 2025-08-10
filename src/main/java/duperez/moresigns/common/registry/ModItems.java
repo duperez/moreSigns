@@ -139,6 +139,12 @@ public class ModItems {
             () -> new SignItem(basicItem(), ModBlocks.TAU_SIGN.get(), ModBlocks.TAU_WALL_SIGN.get()));
     public static final RegistryObject<Item> YUN_CANVAS_SIGN = registerWithTab("yun_canvas_sign",
             () -> new SignItem(basicItem(), ModBlocks.YUN_SIGN.get(), ModBlocks.YUN_WALL_SIGN.get()));
+    public static final RegistryObject<Item> JUPITER_CANVAS_SIGN = registerWithTab("jupiter_canvas_sign",
+            () -> new SignItem(basicItem(), ModBlocks.JUPITER_SIGN.get(), ModBlocks.JUPITER_WALL_SIGN.get()));
+    public static final RegistryObject<Item> BENNY_CANVAS_SIGN = registerWithTab("benny_canvas_sign",
+            () -> new SignItem(basicItem(), ModBlocks.BENNY_SIGN.get(), ModBlocks.BENNY_WALL_SIGN.get()));
+    public static final RegistryObject<Item> TINKER_CANVAS_SIGN = registerWithTab("tinker_canvas_sign",
+            () -> new SignItem(basicItem(), ModBlocks.TINKER_SIGN.get(), ModBlocks.TINKER_WALL_SIGN.get()));
     public static final RegistryObject<Item> WICKY_CANVAS_SIGN = registerWithTab("wicky_canvas_sign",
             () -> new SignItem(basicItem(), ModBlocks.WICKY_SIGN.get(), ModBlocks.WICKY_WALL_SIGN.get()));
 }
