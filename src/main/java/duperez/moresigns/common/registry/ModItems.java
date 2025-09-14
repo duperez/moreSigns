@@ -147,4 +147,12 @@ public class ModItems {
             () -> new SignItem(basicItem(), ModBlocks.TINKER_SIGN.get(), ModBlocks.TINKER_WALL_SIGN.get()));
     public static final RegistryObject<Item> WICKY_CANVAS_SIGN = registerWithTab("wicky_canvas_sign",
             () -> new SignItem(basicItem(), ModBlocks.WICKY_SIGN.get(), ModBlocks.WICKY_WALL_SIGN.get()));
+    public static final RegistryObject<Item> ABADOM_CANVAS_SIGN = registerWithTab("abadom_canvas_sign",
+            () -> new SignItem(basicItem(), ModBlocks.ABADOM_SIGN.get(), ModBlocks.ABADOM_WALL_SIGN.get()));
+    public static final RegistryObject<Item> APOLIOM_CANVAS_SIGN = registerWithTab("apoliom_canvas_sign",
+            () -> new SignItem(basicItem(), ModBlocks.APOLIOM_SIGN.get(), ModBlocks.APOLIOM_WALL_SIGN.get()));
+    public static final RegistryObject<Item> CLOWN_CANVAS_SIGN = registerWithTab("clown_canvas_sign",
+            () -> new SignItem(basicItem(), ModBlocks.CLOWN_SIGN.get(), ModBlocks.CLOWN_WALL_SIGN.get()));
+    public static final RegistryObject<Item> SILVIR_CANVAS_SIGN = registerWithTab("silvir_canvas_sign",
+            () -> new SignItem(basicItem(), ModBlocks.SILVIR_SIGN.get(), ModBlocks.SILVIR_WALL_SIGN.get()));
 }

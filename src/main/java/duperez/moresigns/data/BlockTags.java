@@ -84,6 +84,10 @@ public class BlockTags extends BlockTagsProvider
 				ModBlocks.JUPITER_SIGN.get(),
 				ModBlocks.BENNY_SIGN.get(),
 				ModBlocks.TINKER_SIGN.get(),
+				ModBlocks.ABADOM_SIGN.get(),
+				ModBlocks.APOLIOM_SIGN.get(),
+				ModBlocks.CLOWN_SIGN.get(),
+				ModBlocks.SILVIR_SIGN.get(),
 				ModBlocks.ANTHONY_SIGN.get());
 		tag(net.minecraft.tags.BlockTags.WALL_SIGNS).add(
 				ModBlocks.CANVAS_WALL_SIGN.get(),
@@ -145,6 +149,10 @@ public class BlockTags extends BlockTagsProvider
 				ModBlocks.JUPITER_WALL_SIGN.get(),
 				ModBlocks.BENNY_WALL_SIGN.get(),
 				ModBlocks.TINKER_WALL_SIGN.get(),
+				ModBlocks.ABADOM_WALL_SIGN.get(),
+				ModBlocks.APOLIOM_WALL_SIGN.get(),
+				ModBlocks.CLOWN_WALL_SIGN.get(),
+				ModBlocks.SILVIR_WALL_SIGN.get(),
 				ModBlocks.ANTHONY_WALL_SIGN.get());
 	}
 }

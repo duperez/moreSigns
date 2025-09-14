@@ -24,7 +24,8 @@ public interface CanvasSign {
                 "meg", "delta", "jay", "kalypso",
                 "m1", "michael", "mona", "moon",
                 "uko", "celyne", "pepper","epsilon",
-                "havarti", "minerva", "rune", "wicky"
+                "havarti", "minerva", "rune", "wicky",
+                "abadom", "apoliom"
 
         ).contains(backgroundDye);
     }

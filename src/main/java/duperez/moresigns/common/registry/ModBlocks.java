@@ -148,6 +148,14 @@ public class ModBlocks
 			() -> new StandingCanvasSignBlock("benny"));
 	public static final RegistryObject<Block> TINKER_SIGN = BLOCKS.register("tinker_canvas_sign",
 			() -> new StandingCanvasSignBlock("tinker"));
+	public static final RegistryObject<Block> ABADOM_SIGN = BLOCKS.register("abadom_canvas_sign",
+			() -> new StandingCanvasSignBlock("abadom"));
+	public static final RegistryObject<Block> APOLIOM_SIGN = BLOCKS.register("apoliom_canvas_sign",
+			() -> new StandingCanvasSignBlock("apoliom"));
+	public static final RegistryObject<Block> CLOWN_SIGN = BLOCKS.register("clown_canvas_sign",
+			() -> new StandingCanvasSignBlock("clown"));
+	public static final RegistryObject<Block> SILVIR_SIGN = BLOCKS.register("silvir_canvas_sign",
+			() -> new StandingCanvasSignBlock("silvir"));
 
 	// WALL_SIGN classes declaration
 
@@ -271,5 +279,13 @@ public class ModBlocks
 			() -> new WallCanvasSignBlock(Block.Properties.copy(Blocks.OAK_SIGN).lootFrom(BENNY_SIGN), "benny"));
 	public static final RegistryObject<Block> TINKER_WALL_SIGN = BLOCKS.register("tinker_canvas_wall_sign",
 			() -> new WallCanvasSignBlock(Block.Properties.copy(Blocks.OAK_SIGN).lootFrom(TINKER_SIGN), "tinker"));
+	public static final RegistryObject<Block> ABADOM_WALL_SIGN = BLOCKS.register("abadom_canvas_wall_sign",
+			() -> new WallCanvasSignBlock(Block.Properties.copy(Blocks.OAK_SIGN).lootFrom(ABADOM_SIGN), "abadom"));
+	public static final RegistryObject<Block> APOLIOM_WALL_SIGN = BLOCKS.register("apoliom_canvas_wall_sign",
+			() -> new WallCanvasSignBlock(Block.Properties.copy(Blocks.OAK_SIGN).lootFrom(APOLIOM_SIGN), "apoliom"));
+	public static final RegistryObject<Block> CLOWN_WALL_SIGN = BLOCKS.register("clown_canvas_wall_sign",
+			() -> new WallCanvasSignBlock(Block.Properties.copy(Blocks.OAK_SIGN).lootFrom(CLOWN_SIGN), "clown"));
+	public static final RegistryObject<Block> SILVIR_WALL_SIGN = BLOCKS.register("silvir_canvas_wall_sign",
+			() -> new WallCanvasSignBlock(Block.Properties.copy(Blocks.OAK_SIGN).lootFrom(SILVIR_SIGN), "silvir"));
 
 }

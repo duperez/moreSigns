@@ -62,6 +62,10 @@
   "block.moresigns.jupiter_canvas_sign": "Jupiter's Custom Sign",
   "block.moresigns.benny_canvas_sign": "Benny's Custom Sign",
   "block.moresigns.tinker_canvas_sign": "Tink's Custom Sign",
+  "block.moresigns.abadom_canvas_sign": "Abadom's Custom Sign",
+  "block.moresigns.apoliom_canvas_sign": "Apoliom's Custom Sign",
+  "block.moresigns.clown_canvas_sign": "Clown's Custom Sign",
+  "block.moresigns.silvir_canvas_sign": "Caladrius' Custom Sign",
   "item.moresigns.canvas": "Canvas",
   "itemGroup.moresignstab": "TSMP Custom Signs"
 }
