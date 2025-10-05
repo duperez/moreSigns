@@ -66,6 +66,8 @@
   "block.moresigns.apoliom_canvas_sign": "Apoliom's Custom Sign",
   "block.moresigns.clown_canvas_sign": "Clown's Custom Sign",
   "block.moresigns.silvir_canvas_sign": "Caladrius' Custom Sign",
+  "block.moresigns.monsieur_canvas_sign": "Monsieur's Custom Sign",
+  "block.moresigns.inkaris_canvas_sign": "Inkaris' Custom Sign",
   "item.moresigns.canvas": "Canvas",
   "itemGroup.moresignstab": "TSMP Custom Signs"
 }

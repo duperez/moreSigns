@@ -88,6 +88,8 @@ public class BlockTags extends BlockTagsProvider
 				ModBlocks.APOLIOM_SIGN.get(),
 				ModBlocks.CLOWN_SIGN.get(),
 				ModBlocks.SILVIR_SIGN.get(),
+				ModBlocks.MONSIEUR_SIGN.get(),
+				ModBlocks.INKARIS_SIGN.get(),
 				ModBlocks.ANTHONY_SIGN.get());
 		tag(net.minecraft.tags.BlockTags.WALL_SIGNS).add(
 				ModBlocks.CANVAS_WALL_SIGN.get(),
@@ -153,6 +155,8 @@ public class BlockTags extends BlockTagsProvider
 				ModBlocks.APOLIOM_WALL_SIGN.get(),
 				ModBlocks.CLOWN_WALL_SIGN.get(),
 				ModBlocks.SILVIR_WALL_SIGN.get(),
+				ModBlocks.MONSIEUR_WALL_SIGN.get(),
+				ModBlocks.INKARIS_WALL_SIGN.get(),
 				ModBlocks.ANTHONY_WALL_SIGN.get());
 	}
 }

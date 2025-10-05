@@ -25,7 +25,7 @@ public interface CanvasSign {
                 "m1", "michael", "mona", "moon",
                 "uko", "celyne", "pepper","epsilon",
                 "havarti", "minerva", "rune", "wicky",
-                "abadom", "apoliom"
+                "abadom", "apoliom", "monsieur", "inkaris"
 
         ).contains(backgroundDye);
     }

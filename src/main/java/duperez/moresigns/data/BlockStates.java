@@ -114,6 +114,8 @@ public class BlockStates extends BlockStateProvider
 				ModBlocks.ABADOM_SIGN.get(),
 				ModBlocks.APOLIOM_SIGN.get(),
 				ModBlocks.SILVIR_SIGN.get(),
+				ModBlocks.MONSIEUR_SIGN.get(),
+				ModBlocks.INKARIS_SIGN.get(),
 				ModBlocks.CLOWN_SIGN.get(),
 				ModBlocks.CANVAS_WALL_SIGN.get(),
 				ModBlocks.WHITE_CANVAS_WALL_SIGN.get(),
@@ -179,6 +181,8 @@ public class BlockStates extends BlockStateProvider
 				ModBlocks.APOLIOM_WALL_SIGN.get(),
 				ModBlocks.CLOWN_WALL_SIGN.get(),
 				ModBlocks.SILVIR_WALL_SIGN.get(),
+				ModBlocks.MONSIEUR_WALL_SIGN.get(),
+				ModBlocks.INKARIS_WALL_SIGN.get(),
 				ModBlocks.GREEN_GRADIENT_WALL_SIGN.get());
 
 		for (Block sign : canvasSigns) {

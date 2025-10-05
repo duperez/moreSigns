@@ -156,6 +156,10 @@ public class ModBlocks
 			() -> new StandingCanvasSignBlock("clown"));
 	public static final RegistryObject<Block> SILVIR_SIGN = BLOCKS.register("silvir_canvas_sign",
 			() -> new StandingCanvasSignBlock("silvir"));
+	public static final RegistryObject<Block> MONSIEUR_SIGN = BLOCKS.register("monsieur_canvas_sign",
+			() -> new StandingCanvasSignBlock("monsieur"));
+	public static final RegistryObject<Block> INKARIS_SIGN = BLOCKS.register("inkaris_canvas_sign",
+			() -> new StandingCanvasSignBlock("inkaris"));
 
 	// WALL_SIGN classes declaration
 
@@ -287,5 +291,9 @@ public class ModBlocks
 			() -> new WallCanvasSignBlock(Block.Properties.copy(Blocks.OAK_SIGN).lootFrom(CLOWN_SIGN), "clown"));
 	public static final RegistryObject<Block> SILVIR_WALL_SIGN = BLOCKS.register("silvir_canvas_wall_sign",
 			() -> new WallCanvasSignBlock(Block.Properties.copy(Blocks.OAK_SIGN).lootFrom(SILVIR_SIGN), "silvir"));
+	public static final RegistryObject<Block> MONSIEUR_WALL_SIGN = BLOCKS.register("monsieur_canvas_wall_sign",
+			() -> new WallCanvasSignBlock(Block.Properties.copy(Blocks.OAK_SIGN).lootFrom(MONSIEUR_SIGN), "monsieur"));
+	public static final RegistryObject<Block> INKARIS_WALL_SIGN = BLOCKS.register("inkaris_canvas_wall_sign",
+			() -> new WallCanvasSignBlock(Block.Properties.copy(Blocks.OAK_SIGN).lootFrom(INKARIS_SIGN), "inkaris"));
 
 }
