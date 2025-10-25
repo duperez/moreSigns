@@ -159,4 +159,8 @@ public class ModItems {
             () -> new SignItem(basicItem(), ModBlocks.MONSIEUR_SIGN.get(), ModBlocks.MONSIEUR_WALL_SIGN.get()));
     public static final RegistryObject<Item> INKARIS_CANVAS_SIGN = registerWithTab("inkaris_canvas_sign",
             () -> new SignItem(basicItem(), ModBlocks.INKARIS_SIGN.get(), ModBlocks.INKARIS_WALL_SIGN.get()));
+    public static final RegistryObject<Item> LOKY_CANVAS_SIGN = registerWithTab("loky_canvas_sign",
+            () -> new SignItem(basicItem(), ModBlocks.LOKY_SIGN.get(), ModBlocks.LOKY_WALL_SIGN.get()));
+    public static final RegistryObject<Item> DESGRACA_CANVAS_SIGN = registerWithTab("desgraca_canvas_sign",
+            () -> new SignItem(basicItem(), ModBlocks.DESGRACA_SIGN.get(), ModBlocks.DESGRACA_WALL_SIGN.get()));
 }

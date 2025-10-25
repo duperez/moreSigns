@@ -68,6 +68,8 @@
   "block.moresigns.silvir_canvas_sign": "Caladrius' Custom Sign",
   "block.moresigns.monsieur_canvas_sign": "Monsieur's Custom Sign",
   "block.moresigns.inkaris_canvas_sign": "Inkaris' Custom Sign",
+  "block.moresigns.loky_canvas_sign": "Yellow's Custom Sign",
+  "block.moresigns.desgraca_canvas_sign": "Desgraça's Custom Sign",
   "item.moresigns.canvas": "Canvas",
   "itemGroup.moresignstab": "TSMP Custom Signs"
 }

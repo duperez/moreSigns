@@ -80,6 +80,8 @@ public class ModBlockEntityTypes
 							ModBlocks.SILVIR_SIGN.get(),
 							ModBlocks.MONSIEUR_SIGN.get(),
 							ModBlocks.INKARIS_SIGN.get(),
+							ModBlocks.LOKY_SIGN.get(),
+							ModBlocks.DESGRACA_SIGN.get(),
 							ModBlocks.WHITE_CANVAS_WALL_SIGN.get(),
 							ModBlocks.ORANGE_CANVAS_WALL_SIGN.get(),
 							ModBlocks.MAGENTA_CANVAS_WALL_SIGN.get(),
@@ -144,6 +146,8 @@ public class ModBlockEntityTypes
 							ModBlocks.SILVIR_WALL_SIGN.get(),
 							ModBlocks.MONSIEUR_WALL_SIGN.get(),
 							ModBlocks.INKARIS_WALL_SIGN.get(),
+							ModBlocks.LOKY_WALL_SIGN.get(),
+							ModBlocks.DESGRACA_WALL_SIGN.get(),
 							ModBlocks.BLACK_CANVAS_WALL_SIGN.get())
 					.build(null));
 }
