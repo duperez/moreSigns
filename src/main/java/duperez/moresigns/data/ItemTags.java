@@ -94,6 +94,8 @@ public class ItemTags extends ItemTagsProvider
 				.add(ModItems.INKARIS_CANVAS_SIGN.get())
 				.add(ModItems.LOKY_CANVAS_SIGN.get())
 				.add(ModItems.DESGRACA_CANVAS_SIGN.get())
+				.add(ModItems.AALIYAH_CANVAS_SIGN.get())
+				.add(ModItems.ALBIOM_CANVAS_SIGN.get())
 				.add(ModItems.BLACK_CANVAS_SIGN.get());
 	}
 }

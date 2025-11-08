@@ -164,6 +164,10 @@ public class ModBlocks
 			() -> new StandingCanvasSignBlock("loky"));
 	public static final RegistryObject<Block> DESGRACA_SIGN = BLOCKS.register("desgraca_canvas_sign",
 			() -> new StandingCanvasSignBlock("desgraca"));
+	public static final RegistryObject<Block> AALIYAH_SIGN = BLOCKS.register("aaliyah_canvas_sign",
+			() -> new StandingCanvasSignBlock("aaliyah"));
+	public static final RegistryObject<Block> ALBIOM_SIGN = BLOCKS.register("albiom_canvas_sign",
+			() -> new StandingCanvasSignBlock("albiom"));
 
 	// WALL_SIGN classes declaration
 
@@ -303,5 +307,9 @@ public class ModBlocks
 			() -> new WallCanvasSignBlock(Block.Properties.copy(Blocks.OAK_SIGN).lootFrom(LOKY_SIGN), "loky"));
 	public static final RegistryObject<Block> DESGRACA_WALL_SIGN = BLOCKS.register("desgraca_canvas_wall_sign",
 			() -> new WallCanvasSignBlock(Block.Properties.copy(Blocks.OAK_SIGN).lootFrom(DESGRACA_SIGN), "desgraca"));
+	public static final RegistryObject<Block> AALIYAH_WALL_SIGN = BLOCKS.register("aaliyah_canvas_wall_sign",
+			() -> new WallCanvasSignBlock(Block.Properties.copy(Blocks.OAK_SIGN).lootFrom(AALIYAH_SIGN), "aaliyah"));
+	public static final RegistryObject<Block> ALBIOM_WALL_SIGN = BLOCKS.register("albiom_canvas_wall_sign",
+			() -> new WallCanvasSignBlock(Block.Properties.copy(Blocks.OAK_SIGN).lootFrom(ALBIOM_SIGN), "albiom"));
 
 }

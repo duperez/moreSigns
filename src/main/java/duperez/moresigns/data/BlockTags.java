@@ -92,6 +92,8 @@ public class BlockTags extends BlockTagsProvider
 				ModBlocks.INKARIS_SIGN.get(),
 				ModBlocks.LOKY_SIGN.get(),
 				ModBlocks.DESGRACA_SIGN.get(),
+				ModBlocks.AALIYAH_SIGN.get(),
+				ModBlocks.ALBIOM_SIGN.get(),
 				ModBlocks.ANTHONY_SIGN.get());
 		tag(net.minecraft.tags.BlockTags.WALL_SIGNS).add(
 				ModBlocks.CANVAS_WALL_SIGN.get(),
@@ -161,6 +163,8 @@ public class BlockTags extends BlockTagsProvider
 				ModBlocks.INKARIS_WALL_SIGN.get(),
 				ModBlocks.LOKY_WALL_SIGN.get(),
 				ModBlocks.DESGRACA_WALL_SIGN.get(),
+				ModBlocks.AALIYAH_WALL_SIGN.get(),
+				ModBlocks.ALBIOM_WALL_SIGN.get(),
 				ModBlocks.ANTHONY_WALL_SIGN.get());
 	}
 }

@@ -26,7 +26,7 @@ public interface CanvasSign {
                 "uko", "celyne", "pepper","epsilon",
                 "havarti", "minerva", "rune", "wicky",
                 "abadom", "apoliom", "monsieur", "inkaris",
-                "loky", "light_gray"
+                "loky", "light_gray", "aaliyah"
 
         ).contains(backgroundDye);
     }

@@ -70,6 +70,8 @@
   "block.moresigns.inkaris_canvas_sign": "Inkaris' Custom Sign",
   "block.moresigns.loky_canvas_sign": "Yellow's Custom Sign",
   "block.moresigns.desgraca_canvas_sign": "Desgraça's Custom Sign",
+  "block.moresigns.aaliyah_canvas_sign": "Aaliyah's Custom Sign",
+  "block.moresigns.albiom_canvas_sign": "Albiom's Custom Sign",
   "item.moresigns.canvas": "Canvas",
   "itemGroup.moresignstab": "TSMP Custom Signs"
 }

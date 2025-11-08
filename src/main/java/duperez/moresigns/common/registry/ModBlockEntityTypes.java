@@ -82,6 +82,8 @@ public class ModBlockEntityTypes
 							ModBlocks.INKARIS_SIGN.get(),
 							ModBlocks.LOKY_SIGN.get(),
 							ModBlocks.DESGRACA_SIGN.get(),
+							ModBlocks.AALIYAH_SIGN.get(),
+							ModBlocks.ALBIOM_SIGN.get(),
 							ModBlocks.WHITE_CANVAS_WALL_SIGN.get(),
 							ModBlocks.ORANGE_CANVAS_WALL_SIGN.get(),
 							ModBlocks.MAGENTA_CANVAS_WALL_SIGN.get(),
@@ -148,6 +150,8 @@ public class ModBlockEntityTypes
 							ModBlocks.INKARIS_WALL_SIGN.get(),
 							ModBlocks.LOKY_WALL_SIGN.get(),
 							ModBlocks.DESGRACA_WALL_SIGN.get(),
+							ModBlocks.AALIYAH_WALL_SIGN.get(),
+							ModBlocks.ALBIOM_WALL_SIGN.get(),
 							ModBlocks.BLACK_CANVAS_WALL_SIGN.get())
 					.build(null));
 }

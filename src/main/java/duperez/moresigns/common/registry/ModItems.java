@@ -163,4 +163,8 @@ public class ModItems {
             () -> new SignItem(basicItem(), ModBlocks.LOKY_SIGN.get(), ModBlocks.LOKY_WALL_SIGN.get()));
     public static final RegistryObject<Item> DESGRACA_CANVAS_SIGN = registerWithTab("desgraca_canvas_sign",
             () -> new SignItem(basicItem(), ModBlocks.DESGRACA_SIGN.get(), ModBlocks.DESGRACA_WALL_SIGN.get()));
+    public static final RegistryObject<Item> AALIYAH_CANVAS_SIGN = registerWithTab("aaliyah_canvas_sign",
+            () -> new SignItem(basicItem(), ModBlocks.AALIYAH_SIGN.get(), ModBlocks.AALIYAH_WALL_SIGN.get()));
+    public static final RegistryObject<Item> ALBIOM_CANVAS_SIGN = registerWithTab("albiom_canvas_sign",
+            () -> new SignItem(basicItem(), ModBlocks.ALBIOM_SIGN.get(), ModBlocks.ALBIOM_WALL_SIGN.get()));
 }
