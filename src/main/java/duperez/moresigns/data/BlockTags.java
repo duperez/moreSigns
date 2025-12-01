@@ -94,6 +94,11 @@ public class BlockTags extends BlockTagsProvider
 				ModBlocks.DESGRACA_SIGN.get(),
 				ModBlocks.AALIYAH_SIGN.get(),
 				ModBlocks.ALBIOM_SIGN.get(),
+				ModBlocks.LUIS_SIGN.get(),
+				ModBlocks.RONALD_SIGN.get(),
+				ModBlocks.SCRATCH_SIGN.get(),
+				ModBlocks.MATIAS_SIGN.get(),
+				ModBlocks.SARAH_SIGN.get(),
 				ModBlocks.ANTHONY_SIGN.get());
 		tag(net.minecraft.tags.BlockTags.WALL_SIGNS).add(
 				ModBlocks.CANVAS_WALL_SIGN.get(),
@@ -165,6 +170,12 @@ public class BlockTags extends BlockTagsProvider
 				ModBlocks.DESGRACA_WALL_SIGN.get(),
 				ModBlocks.AALIYAH_WALL_SIGN.get(),
 				ModBlocks.ALBIOM_WALL_SIGN.get(),
+				ModBlocks.ALBIOM_WALL_SIGN.get(),
+				ModBlocks.LUIS_WALL_SIGN.get(),
+				ModBlocks.RONALD_WALL_SIGN.get(),
+				ModBlocks.SCRATCH_WALL_SIGN.get(),
+				ModBlocks.MATIAS_WALL_SIGN.get(),
+				ModBlocks.SARAH_WALL_SIGN.get(),
 				ModBlocks.ANTHONY_WALL_SIGN.get());
 	}
 }

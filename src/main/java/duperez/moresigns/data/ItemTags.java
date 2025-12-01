@@ -96,6 +96,11 @@ public class ItemTags extends ItemTagsProvider
 				.add(ModItems.DESGRACA_CANVAS_SIGN.get())
 				.add(ModItems.AALIYAH_CANVAS_SIGN.get())
 				.add(ModItems.ALBIOM_CANVAS_SIGN.get())
+				.add(ModItems.LUIS_CANVAS_SIGN.get())
+				.add(ModItems.RONALD_CANVAS_SIGN.get())
+				.add(ModItems.SCRATCH_CANVAS_SIGN.get())
+				.add(ModItems.MATIAS_CANVAS_SIGN.get())
+				.add(ModItems.SARAH_CANVAS_SIGN.get())
 				.add(ModItems.BLACK_CANVAS_SIGN.get());
 	}
 }

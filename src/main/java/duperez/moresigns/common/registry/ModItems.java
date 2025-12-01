@@ -167,4 +167,14 @@ public class ModItems {
             () -> new SignItem(basicItem(), ModBlocks.AALIYAH_SIGN.get(), ModBlocks.AALIYAH_WALL_SIGN.get()));
     public static final RegistryObject<Item> ALBIOM_CANVAS_SIGN = registerWithTab("albiom_canvas_sign",
             () -> new SignItem(basicItem(), ModBlocks.ALBIOM_SIGN.get(), ModBlocks.ALBIOM_WALL_SIGN.get()));
+    public static final RegistryObject<Item> LUIS_CANVAS_SIGN = registerWithTab("luis_canvas_sign",
+            () -> new SignItem(basicItem(), ModBlocks.LUIS_SIGN.get(), ModBlocks.LUIS_WALL_SIGN.get()));
+    public static final RegistryObject<Item> RONALD_CANVAS_SIGN = registerWithTab("ronald_canvas_sign",
+            () -> new SignItem(basicItem(), ModBlocks.RONALD_SIGN.get(), ModBlocks.RONALD_WALL_SIGN.get()));
+    public static final RegistryObject<Item> SCRATCH_CANVAS_SIGN = registerWithTab("scratch_canvas_sign",
+            () -> new SignItem(basicItem(), ModBlocks.SCRATCH_SIGN.get(), ModBlocks.SCRATCH_WALL_SIGN.get()));
+    public static final RegistryObject<Item> MATIAS_CANVAS_SIGN = registerWithTab("matias_canvas_sign",
+            () -> new SignItem(basicItem(), ModBlocks.MATIAS_SIGN.get(), ModBlocks.MATIAS_WALL_SIGN.get()));
+    public static final RegistryObject<Item> SARAH_CANVAS_SIGN = registerWithTab("sarah_canvas_sign",
+            () -> new SignItem(basicItem(), ModBlocks.SARAH_SIGN.get(), ModBlocks.SARAH_WALL_SIGN.get()));
 }

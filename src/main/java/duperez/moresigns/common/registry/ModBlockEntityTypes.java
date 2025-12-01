@@ -84,6 +84,11 @@ public class ModBlockEntityTypes
 							ModBlocks.DESGRACA_SIGN.get(),
 							ModBlocks.AALIYAH_SIGN.get(),
 							ModBlocks.ALBIOM_SIGN.get(),
+							ModBlocks.LUIS_SIGN.get(),
+							ModBlocks.RONALD_SIGN.get(),
+							ModBlocks.SCRATCH_SIGN.get(),
+							ModBlocks.MATIAS_SIGN.get(),
+							ModBlocks.SARAH_SIGN.get(),
 							ModBlocks.WHITE_CANVAS_WALL_SIGN.get(),
 							ModBlocks.ORANGE_CANVAS_WALL_SIGN.get(),
 							ModBlocks.MAGENTA_CANVAS_WALL_SIGN.get(),
@@ -152,6 +157,11 @@ public class ModBlockEntityTypes
 							ModBlocks.DESGRACA_WALL_SIGN.get(),
 							ModBlocks.AALIYAH_WALL_SIGN.get(),
 							ModBlocks.ALBIOM_WALL_SIGN.get(),
+							ModBlocks.LUIS_WALL_SIGN.get(),
+							ModBlocks.RONALD_WALL_SIGN.get(),
+							ModBlocks.SCRATCH_WALL_SIGN.get(),
+							ModBlocks.MATIAS_WALL_SIGN.get(),
+							ModBlocks.SARAH_WALL_SIGN.get(),
 							ModBlocks.BLACK_CANVAS_WALL_SIGN.get())
 					.build(null));
 }

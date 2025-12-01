@@ -72,6 +72,11 @@
   "block.moresigns.desgraca_canvas_sign": "Desgraça's Custom Sign",
   "block.moresigns.aaliyah_canvas_sign": "Aaliyah's Custom Sign",
   "block.moresigns.albiom_canvas_sign": "Albiom's Custom Sign",
+  "block.moresigns.luis_canvas_sign": "Luis' Custom Sign",
+  "block.moresigns.ronald_canvas_sign": "Ronald's Custom Sign",
+  "block.moresigns.scratch_canvas_sign": "Scratch's Custom Sign",
+  "block.moresigns.matias_canvas_sign": "Matias' Custom Sign",
+  "block.moresigns.sarah_canvas_sign": "Sarah's Custom Sign",
   "item.moresigns.canvas": "Canvas",
   "itemGroup.moresignstab": "TSMP Custom Signs"
 }
