@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "moresigns:item/kuzco_canvas_sign"
+  }
+}

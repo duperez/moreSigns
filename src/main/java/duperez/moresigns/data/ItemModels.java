@@ -107,6 +107,15 @@ public class ItemModels extends ItemModelProvider
 				ModItems.SCRATCH_CANVAS_SIGN.get(),
 				ModItems.MATIAS_CANVAS_SIGN.get(),
 				ModItems.SARAH_CANVAS_SIGN.get(),
+				ModItems.INDIBOT_CANVAS_SIGN.get(),
+				ModItems.YAN_CANVAS_SIGN.get(),
+				ModItems.AVALOM_CANVAS_SIGN.get(),
+				ModItems.LOBO_CANVAS_SIGN.get(),
+				ModItems.GUIDE_CANVAS_SIGN.get(),
+				ModItems.ELYOLAI_CANVAS_SIGN.get(),
+				ModItems.KUZCO_CANVAS_SIGN.get(),
+				ModItems.PATO_CANVAS_SIGN.get(),
+				ModItems.KEEPER_CANVAS_SIGN.get(),
 				ModItems.BLACK_CANVAS_SIGN.get()
 		);
 		takeAll(items, spriteBlockItems.toArray(new Item[0])).forEach(item -> withExistingParent(itemName(item), GENERATED).texture("layer0", resourceItem(itemName(item))));

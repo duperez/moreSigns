@@ -177,4 +177,22 @@ public class ModItems {
             () -> new SignItem(basicItem(), ModBlocks.MATIAS_SIGN.get(), ModBlocks.MATIAS_WALL_SIGN.get()));
     public static final RegistryObject<Item> SARAH_CANVAS_SIGN = registerWithTab("sarah_canvas_sign",
             () -> new SignItem(basicItem(), ModBlocks.SARAH_SIGN.get(), ModBlocks.SARAH_WALL_SIGN.get()));
+    public static final RegistryObject<Item> INDIBOT_CANVAS_SIGN = registerWithTab("indibot_canvas_sign",
+            () -> new SignItem(basicItem(), ModBlocks.INDIBOT_SIGN.get(), ModBlocks.INDIBOT_WALL_SIGN.get()));
+    public static final RegistryObject<Item> YAN_CANVAS_SIGN = registerWithTab("yan_canvas_sign",
+            () -> new SignItem(basicItem(), ModBlocks.YAN_SIGN.get(), ModBlocks.YAN_WALL_SIGN.get()));
+    public static final RegistryObject<Item> AVALOM_CANVAS_SIGN = registerWithTab("avalom_canvas_sign",
+            () -> new SignItem(basicItem(), ModBlocks.AVALOM_SIGN.get(), ModBlocks.AVALOM_WALL_SIGN.get()));
+    public static final RegistryObject<Item> LOBO_CANVAS_SIGN = registerWithTab("lobo_canvas_sign",
+            () -> new SignItem(basicItem(), ModBlocks.LOBO_SIGN.get(), ModBlocks.LOBO_WALL_SIGN.get()));
+    public static final RegistryObject<Item> GUIDE_CANVAS_SIGN = registerWithTab("guide_canvas_sign",
+            () -> new SignItem(basicItem(), ModBlocks.GUIDE_SIGN.get(), ModBlocks.GUIDE_WALL_SIGN.get()));
+    public static final RegistryObject<Item> ELYOLAI_CANVAS_SIGN = registerWithTab("elyolai_canvas_sign",
+            () -> new SignItem(basicItem(), ModBlocks.ELYOLAI_SIGN.get(), ModBlocks.ELYOLAI_WALL_SIGN.get()));
+    public static final RegistryObject<Item> KUZCO_CANVAS_SIGN = registerWithTab("kuzco_canvas_sign",
+            () -> new SignItem(basicItem(), ModBlocks.KUZCO_SIGN.get(), ModBlocks.KUZCO_WALL_SIGN.get()));
+    public static final RegistryObject<Item> PATO_CANVAS_SIGN = registerWithTab("pato_canvas_sign",
+            () -> new SignItem(basicItem(), ModBlocks.PATO_SIGN.get(), ModBlocks.PATO_WALL_SIGN.get()));
+    public static final RegistryObject<Item> KEEPER_CANVAS_SIGN = registerWithTab("keeper_canvas_sign",
+            () -> new SignItem(basicItem(), ModBlocks.KEEPER_SIGN.get(), ModBlocks.KEEPER_WALL_SIGN.get()));
 }

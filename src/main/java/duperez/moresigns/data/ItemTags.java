@@ -101,6 +101,15 @@ public class ItemTags extends ItemTagsProvider
 				.add(ModItems.SCRATCH_CANVAS_SIGN.get())
 				.add(ModItems.MATIAS_CANVAS_SIGN.get())
 				.add(ModItems.SARAH_CANVAS_SIGN.get())
+				.add(ModItems.INDIBOT_CANVAS_SIGN.get())
+				.add(ModItems.YAN_CANVAS_SIGN.get())
+				.add(ModItems.AVALOM_CANVAS_SIGN.get())
+				.add(ModItems.LOBO_CANVAS_SIGN.get())
+				.add(ModItems.GUIDE_CANVAS_SIGN.get())
+				.add(ModItems.ELYOLAI_CANVAS_SIGN.get())
+				.add(ModItems.KUZCO_CANVAS_SIGN.get())
+				.add(ModItems.PATO_CANVAS_SIGN.get())
+				.add(ModItems.KEEPER_CANVAS_SIGN.get())
 				.add(ModItems.BLACK_CANVAS_SIGN.get());
 	}
 }

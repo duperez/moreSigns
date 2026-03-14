@@ -77,6 +77,15 @@
   "block.moresigns.scratch_canvas_sign": "Scratch's Custom Sign",
   "block.moresigns.matias_canvas_sign": "Matias' Custom Sign",
   "block.moresigns.sarah_canvas_sign": "Sarah's Custom Sign",
+  "block.moresigns.indibot_canvas_sign": "Indigo's Custom Sign",
+  "block.moresigns.yan_canvas_sign": "Yannick's Custom Sign",
+  "block.moresigns.avalom_canvas_sign": "Avalom's Custom Sign",
+  "block.moresigns.lobo_canvas_sign": "TNPC42's Custom Sign",
+  "block.moresigns.guide_canvas_sign": "The Guide's Custom Sign",
+  "block.moresigns.elyolai_canvas_sign": "Elyolai's Custom Sign",
+  "block.moresigns.kuzco_canvas_sign": "Kuzco's Custom Sign",
+  "block.moresigns.pato_canvas_sign": "Pacato's Custom Sign",
+  "block.moresigns.keeper_canvas_sign": "The Keeper's Custom Sign",
   "item.moresigns.canvas": "Canvas",
   "itemGroup.moresignstab": "TSMP Custom Signs"
 }

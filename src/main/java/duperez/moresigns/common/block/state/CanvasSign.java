@@ -27,7 +27,8 @@ public interface CanvasSign {
                 "havarti", "minerva", "rune", "wicky",
                 "abadom", "apoliom", "monsieur", "inkaris",
                 "loky", "light_gray", "aaliyah", "ronald",
-                "scratch", "matias"
+                "scratch", "matias", "luis", "indibot",
+                "yan", "avalom", "elyolai", "keeper"
 
         ).contains(backgroundDye);
     }

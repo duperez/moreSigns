@@ -6,7 +6,7 @@ license = "MIT License"
 
 [[mods]]
 modId="moresigns"
-version = "1.20.1-1.3.13"
+version = "1.20.1-1.3.14"
 displayName="TSMP Custom Signs"
 displayURL="https://github.com/duperez/moreSigns"
 logoFile="logo.png"

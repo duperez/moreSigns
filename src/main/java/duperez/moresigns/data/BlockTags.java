@@ -99,6 +99,15 @@ public class BlockTags extends BlockTagsProvider
 				ModBlocks.SCRATCH_SIGN.get(),
 				ModBlocks.MATIAS_SIGN.get(),
 				ModBlocks.SARAH_SIGN.get(),
+				ModBlocks.INDIBOT_SIGN.get(),
+				ModBlocks.YAN_SIGN.get(),
+				ModBlocks.AVALOM_SIGN.get(),
+				ModBlocks.LOBO_SIGN.get(),
+				ModBlocks.GUIDE_SIGN.get(),
+				ModBlocks.ELYOLAI_SIGN.get(),
+				ModBlocks.KUZCO_SIGN.get(),
+				ModBlocks.PATO_SIGN.get(),
+				ModBlocks.KEEPER_SIGN.get(),
 				ModBlocks.ANTHONY_SIGN.get());
 		tag(net.minecraft.tags.BlockTags.WALL_SIGNS).add(
 				ModBlocks.CANVAS_WALL_SIGN.get(),
@@ -176,6 +185,15 @@ public class BlockTags extends BlockTagsProvider
 				ModBlocks.SCRATCH_WALL_SIGN.get(),
 				ModBlocks.MATIAS_WALL_SIGN.get(),
 				ModBlocks.SARAH_WALL_SIGN.get(),
+				ModBlocks.INDIBOT_WALL_SIGN.get(),
+				ModBlocks.YAN_WALL_SIGN.get(),
+				ModBlocks.AVALOM_WALL_SIGN.get(),
+				ModBlocks.LOBO_WALL_SIGN.get(),
+				ModBlocks.GUIDE_WALL_SIGN.get(),
+				ModBlocks.ELYOLAI_WALL_SIGN.get(),
+				ModBlocks.KUZCO_WALL_SIGN.get(),
+				ModBlocks.PATO_WALL_SIGN.get(),
+				ModBlocks.KEEPER_WALL_SIGN.get(),
 				ModBlocks.ANTHONY_WALL_SIGN.get());
 	}
 }
