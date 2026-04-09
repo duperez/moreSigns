@@ -108,6 +108,7 @@ public class BlockTags extends BlockTagsProvider
 				ModBlocks.KUZCO_SIGN.get(),
 				ModBlocks.PATO_SIGN.get(),
 				ModBlocks.KEEPER_SIGN.get(),
+				ModBlocks.ZEN_SIGN.get(),
 				ModBlocks.ANTHONY_SIGN.get());
 		tag(net.minecraft.tags.BlockTags.WALL_SIGNS).add(
 				ModBlocks.CANVAS_WALL_SIGN.get(),
@@ -194,6 +195,7 @@ public class BlockTags extends BlockTagsProvider
 				ModBlocks.KUZCO_WALL_SIGN.get(),
 				ModBlocks.PATO_WALL_SIGN.get(),
 				ModBlocks.KEEPER_WALL_SIGN.get(),
+				ModBlocks.ZEN_WALL_SIGN.get(),
 				ModBlocks.ANTHONY_WALL_SIGN.get());
 	}
 }
