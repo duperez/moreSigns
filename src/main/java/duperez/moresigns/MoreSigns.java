@@ -19,13 +19,13 @@ public class MoreSigns {
     public static final String MODID = "moresigns";
     public static final Logger LOGGER = LogManager.getLogger();
 
-    public static final CreativeModeTab CREATIVE_TAB = new CreativeModeTab("moresignstab") {
-        @Nonnull
-        @Override
-        public ItemStack makeIcon() {
-            return new ItemStack(ModBlocks.ORANGE_PURPLE_SIGN.get());
-        }
-    };
+    //public static final CreativeModeTab CREATIVE_TAB = new CreativeModeTab("moresignstab") {
+    //    @Nonnull
+    //    @Override
+    //    public ItemStack makeIcon() {
+    //        return new ItemStack(ModBlocks.ORANGE_PURPLE_SIGN.get());
+    //    }
+    //};
 
     public MoreSigns() {
         final IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
@@ -41,10 +41,11 @@ public class MoreSigns {
         ModBlockEntityTypes.TILES.register(modEventBus);
         ModRecipeSerializers.RECIPE_SERIALIZERS.register(modEventBus);
         ModLootFunctions.LOOT_FUNCTIONS.register(modEventBus);
-        ModLootModifiers.LOOT_MODIFIERS.register(modEventBus);
+        //ModLootModifiers.LOOT_MODIFIERS.register(modEventBus);
         ModRecipeTypes.RECIPE_TYPES.register(modEventBus);
         ModEntityTypes.ENTITIES.register(modEventBus);
         ModPlacementModifiers.PLACEMENT_MODIFIERS.register(modEventBus);
+        ModCreativeTabs.CREATIVE_TABS.register(modEventBus);
 
         MinecraftForge.EVENT_BUS.register(this);
     }

@@ -66,6 +66,138 @@ public class ModBlocks
 			() -> new StandingCanvasSignBlock("orange_purple"));
 	public static final RegistryObject<Block> GREEN_GRADIENT_SIGN = BLOCKS.register("green_gradient_canvas_sign",
 			() -> new StandingCanvasSignBlock("green_gradient"));
+	public static final RegistryObject<Block> ANTHONY_SIGN = BLOCKS.register("anthony_canvas_sign",
+			() -> new StandingCanvasSignBlock("anthony"));
+	public static final RegistryObject<Block> HOTPINK_SIGN = BLOCKS.register("hotpink_canvas_sign",
+			() -> new StandingCanvasSignBlock("hotpink"));
+	public static final RegistryObject<Block> INDIGO_SIGN = BLOCKS.register("indigo_canvas_sign",
+			() -> new StandingCanvasSignBlock("indigo"));
+	public static final RegistryObject<Block> LIGHT_PINK_SIGN = BLOCKS.register("light_pink_canvas_sign",
+			() -> new StandingCanvasSignBlock("light_pink"));
+	public static final RegistryObject<Block> LOOSAZ_SIGN = BLOCKS.register("loosaz_canvas_sign",
+			() -> new StandingCanvasSignBlock("loosaz"));
+	public static final RegistryObject<Block> SPADES_SIGN = BLOCKS.register("spades_canvas_sign",
+			() -> new StandingCanvasSignBlock("spades"));
+	public static final RegistryObject<Block> JINX_SIGN = BLOCKS.register("jinx_canvas_sign",
+			() -> new StandingCanvasSignBlock("jinx"));
+	public static final RegistryObject<Block> ANHANGA_SIGN = BLOCKS.register("anhanga_canvas_sign",
+			() -> new StandingCanvasSignBlock("anhanga"));
+	public static final RegistryObject<Block> GOLD_SIGN = BLOCKS.register("gold_canvas_sign",
+			() -> new StandingCanvasSignBlock("gold"));
+	public static final RegistryObject<Block> MABHETIEL_SIGN = BLOCKS.register("mabhetiel_canvas_sign",
+			() -> new StandingCanvasSignBlock("mabhetiel"));
+	public static final RegistryObject<Block> POMPOM_SIGN = BLOCKS.register("pompom_canvas_sign",
+			() -> new StandingCanvasSignBlock("pompom"));
+	public static final RegistryObject<Block> RABBIT_SIGN = BLOCKS.register("rabbit_canvas_sign",
+			() -> new StandingCanvasSignBlock("rabbit"));
+	public static final RegistryObject<Block> SODA_SIGN = BLOCKS.register("soda_canvas_sign",
+			() -> new StandingCanvasSignBlock("soda"));
+	public static final RegistryObject<Block> CYBER_SIGN = BLOCKS.register("cyber_canvas_sign",
+			() -> new StandingCanvasSignBlock("cyber"));
+	public static final RegistryObject<Block> AUTISM_SIGN = BLOCKS.register("autism_canvas_sign",
+			() -> new StandingCanvasSignBlock("autism"));
+	public static final RegistryObject<Block> MARY_SIGN = BLOCKS.register("mary_canvas_sign",
+			() -> new StandingCanvasSignBlock("mary"));
+	public static final RegistryObject<Block> MEG_SIGN = BLOCKS.register("meg_canvas_sign",
+			() -> new StandingCanvasSignBlock("meg"));
+	public static final RegistryObject<Block> DELTA_SIGN = BLOCKS.register("delta_canvas_sign",
+			() -> new StandingCanvasSignBlock("delta"));
+	public static final RegistryObject<Block> JACK_SIGN = BLOCKS.register("jack_canvas_sign",
+			() -> new StandingCanvasSignBlock("jack"));
+	public static final RegistryObject<Block> KALYPSO_SIGN = BLOCKS.register("kalypso_canvas_sign",
+			() -> new StandingCanvasSignBlock("kalypso"));
+	public static final RegistryObject<Block> M1_SIGN = BLOCKS.register("m1_canvas_sign",
+			() -> new StandingCanvasSignBlock("m1"));
+	public static final RegistryObject<Block> MICHAEL_SIGN = BLOCKS.register("michael_canvas_sign",
+			() -> new StandingCanvasSignBlock("michael"));
+	public static final RegistryObject<Block> MONA_SIGN = BLOCKS.register("mona_canvas_sign",
+			() -> new StandingCanvasSignBlock("mona"));
+	public static final RegistryObject<Block> MOON_SIGN = BLOCKS.register("moon_canvas_sign",
+			() -> new StandingCanvasSignBlock("moon"));
+	public static final RegistryObject<Block> UKO_SIGN = BLOCKS.register("uko_canvas_sign",
+			() -> new StandingCanvasSignBlock("uko"));
+	public static final RegistryObject<Block> JAY_SIGN = BLOCKS.register("jay_canvas_sign",
+			() -> new StandingCanvasSignBlock("jay"));
+	public static final RegistryObject<Block> CELYNE_SIGN = BLOCKS.register("celyne_canvas_sign",
+			() -> new StandingCanvasSignBlock("celyne"));
+	public static final RegistryObject<Block> PEPPER_SIGN = BLOCKS.register("pepper_canvas_sign",
+			() -> new StandingCanvasSignBlock("pepper"));
+	public static final RegistryObject<Block> EPSILON_SIGN = BLOCKS.register("epsilon_canvas_sign",
+			() -> new StandingCanvasSignBlock("epsilon"));
+	public static final RegistryObject<Block> HAVARTI_SIGN = BLOCKS.register("havarti_canvas_sign",
+			() -> new StandingCanvasSignBlock("havarti"));
+	public static final RegistryObject<Block> MINERVA_SIGN = BLOCKS.register("minerva_canvas_sign",
+			() -> new StandingCanvasSignBlock("minerva"));
+	public static final RegistryObject<Block> RUNE_SIGN = BLOCKS.register("rune_canvas_sign",
+			() -> new StandingCanvasSignBlock("rune"));
+	public static final RegistryObject<Block> LAMBDA_SIGN = BLOCKS.register("lambda_canvas_sign",
+			() -> new StandingCanvasSignBlock("lambda"));
+	public static final RegistryObject<Block> OMICRON_SIGN = BLOCKS.register("omicron_canvas_sign",
+			() -> new StandingCanvasSignBlock("omicron"));
+	public static final RegistryObject<Block> PSI_SIGN = BLOCKS.register("psi_canvas_sign",
+			() -> new StandingCanvasSignBlock("psi"));
+	public static final RegistryObject<Block> TAU_SIGN = BLOCKS.register("tau_canvas_sign",
+			() -> new StandingCanvasSignBlock("tau"));
+	public static final RegistryObject<Block> WICKY_SIGN = BLOCKS.register("wicky_canvas_sign",
+			() -> new StandingCanvasSignBlock("wicky"));
+	public static final RegistryObject<Block> YUN_SIGN = BLOCKS.register("yun_canvas_sign",
+			() -> new StandingCanvasSignBlock("yun"));
+	public static final RegistryObject<Block> JUPITER_SIGN = BLOCKS.register("jupiter_canvas_sign",
+			() -> new StandingCanvasSignBlock("jupiter"));
+	public static final RegistryObject<Block> BENNY_SIGN = BLOCKS.register("benny_canvas_sign",
+			() -> new StandingCanvasSignBlock("benny"));
+	public static final RegistryObject<Block> TINKER_SIGN = BLOCKS.register("tinker_canvas_sign",
+			() -> new StandingCanvasSignBlock("tinker"));
+	public static final RegistryObject<Block> ABADOM_SIGN = BLOCKS.register("abadom_canvas_sign",
+			() -> new StandingCanvasSignBlock("abadom"));
+	public static final RegistryObject<Block> APOLIOM_SIGN = BLOCKS.register("apoliom_canvas_sign",
+			() -> new StandingCanvasSignBlock("apoliom"));
+	public static final RegistryObject<Block> CLOWN_SIGN = BLOCKS.register("clown_canvas_sign",
+			() -> new StandingCanvasSignBlock("clown"));
+	public static final RegistryObject<Block> SILVIR_SIGN = BLOCKS.register("silvir_canvas_sign",
+			() -> new StandingCanvasSignBlock("silvir"));
+	public static final RegistryObject<Block> MONSIEUR_SIGN = BLOCKS.register("monsieur_canvas_sign",
+			() -> new StandingCanvasSignBlock("monsieur"));
+	public static final RegistryObject<Block> INKARIS_SIGN = BLOCKS.register("inkaris_canvas_sign",
+			() -> new StandingCanvasSignBlock("inkaris"));
+	public static final RegistryObject<Block> LOKY_SIGN = BLOCKS.register("loky_canvas_sign",
+			() -> new StandingCanvasSignBlock("loky"));
+	public static final RegistryObject<Block> DESGRACA_SIGN = BLOCKS.register("desgraca_canvas_sign",
+			() -> new StandingCanvasSignBlock("desgraca"));
+	public static final RegistryObject<Block> AALIYAH_SIGN = BLOCKS.register("aaliyah_canvas_sign",
+			() -> new StandingCanvasSignBlock("aaliyah"));
+	public static final RegistryObject<Block> ALBIOM_SIGN = BLOCKS.register("albiom_canvas_sign",
+			() -> new StandingCanvasSignBlock("albiom"));
+	public static final RegistryObject<Block> LUIS_SIGN = BLOCKS.register("luis_canvas_sign",
+			() -> new StandingCanvasSignBlock("luis"));
+	public static final RegistryObject<Block> RONALD_SIGN = BLOCKS.register("ronald_canvas_sign",
+			() -> new StandingCanvasSignBlock("ronald"));
+	public static final RegistryObject<Block> SCRATCH_SIGN = BLOCKS.register("scratch_canvas_sign",
+			() -> new StandingCanvasSignBlock("scratch"));
+	public static final RegistryObject<Block> MATIAS_SIGN = BLOCKS.register("matias_canvas_sign",
+			() -> new StandingCanvasSignBlock("matias"));
+	public static final RegistryObject<Block> SARAH_SIGN = BLOCKS.register("sarah_canvas_sign",
+			() -> new StandingCanvasSignBlock("sarah"));
+	public static final RegistryObject<Block> INDIBOT_SIGN = BLOCKS.register("indibot_canvas_sign",
+			() -> new StandingCanvasSignBlock("indibot"));
+	public static final RegistryObject<Block> YAN_SIGN = BLOCKS.register("yan_canvas_sign",
+			() -> new StandingCanvasSignBlock("yan"));
+	public static final RegistryObject<Block> AVALOM_SIGN = BLOCKS.register("avalom_canvas_sign",
+			() -> new StandingCanvasSignBlock("avalom"));
+	public static final RegistryObject<Block> LOBO_SIGN = BLOCKS.register("lobo_canvas_sign",
+			() -> new StandingCanvasSignBlock("lobo"));
+	public static final RegistryObject<Block> GUIDE_SIGN = BLOCKS.register("guide_canvas_sign",
+			() -> new StandingCanvasSignBlock("guide"));
+	public static final RegistryObject<Block> ELYOLAI_SIGN = BLOCKS.register("elyolai_canvas_sign",
+			() -> new StandingCanvasSignBlock("elyolai"));
+	public static final RegistryObject<Block> KUZCO_SIGN = BLOCKS.register("kuzco_canvas_sign",
+			() -> new StandingCanvasSignBlock("kuzco"));
+	public static final RegistryObject<Block> PATO_SIGN = BLOCKS.register("pato_canvas_sign",
+			() -> new StandingCanvasSignBlock("pato"));
+	public static final RegistryObject<Block> KEEPER_SIGN = BLOCKS.register("keeper_canvas_sign",
+			() -> new StandingCanvasSignBlock("keeper"));
+	public static final RegistryObject<Block> ZEN_SIGN = BLOCKS.register("zen_canvas_sign",
+			() -> new StandingCanvasSignBlock("zen"));
 
 	// WALL_SIGN classes declaration
 
@@ -107,4 +239,137 @@ public class ModBlocks
 			() -> new WallCanvasSignBlock(Block.Properties.copy(Blocks.OAK_SIGN).lootFrom(ORANGE_PURPLE_SIGN), "orange_purple"));
 	public static final RegistryObject<Block> GREEN_GRADIENT_WALL_SIGN = BLOCKS.register("green_gradient_canvas_wall_sign",
 			() -> new WallCanvasSignBlock(Block.Properties.copy(Blocks.OAK_SIGN).lootFrom(GREEN_GRADIENT_SIGN), "green_gradient"));
+	public static final RegistryObject<Block> ANTHONY_WALL_SIGN = BLOCKS.register("anthony_canvas_wall_sign",
+			() -> new WallCanvasSignBlock(Block.Properties.copy(Blocks.OAK_SIGN).lootFrom(ANTHONY_SIGN), "anthony"));
+	public static final RegistryObject<Block> HOTPINK_WALL_SIGN = BLOCKS.register("hotpink_canvas_wall_sign",
+			() -> new WallCanvasSignBlock(Block.Properties.copy(Blocks.OAK_SIGN).lootFrom(HOTPINK_SIGN), "hotpink"));
+	public static final RegistryObject<Block> INDIGO_WALL_SIGN = BLOCKS.register("indigo_canvas_wall_sign",
+			() -> new WallCanvasSignBlock(Block.Properties.copy(Blocks.OAK_SIGN).lootFrom(INDIGO_SIGN), "indigo"));
+	public static final RegistryObject<Block> LIGHT_PINK_WALL_SIGN = BLOCKS.register("light_pink_canvas_wall_sign",
+			() -> new WallCanvasSignBlock(Block.Properties.copy(Blocks.OAK_SIGN).lootFrom(LIGHT_PINK_SIGN), "light_pink"));
+	public static final RegistryObject<Block> LOOSAZ_WALL_SIGN = BLOCKS.register("loosaz_canvas_wall_sign",
+			() -> new WallCanvasSignBlock(Block.Properties.copy(Blocks.OAK_SIGN).lootFrom(LOOSAZ_SIGN), "loosaz"));
+	public static final RegistryObject<Block> SPADES_WALL_SIGN = BLOCKS.register("spades_canvas_wall_sign",
+			() -> new WallCanvasSignBlock(Block.Properties.copy(Blocks.OAK_SIGN).lootFrom(SPADES_SIGN), "spades"));
+	public static final RegistryObject<Block> JINX_WALL_SIGN = BLOCKS.register("jinx_canvas_wall_sign",
+			() -> new WallCanvasSignBlock(Block.Properties.copy(Blocks.OAK_SIGN).lootFrom(JINX_SIGN), "jinx"));
+	public static final RegistryObject<Block> ANHANGA_WALL_SIGN = BLOCKS.register("anhanga_canvas_wall_sign",
+			() -> new WallCanvasSignBlock(Block.Properties.copy(Blocks.OAK_SIGN).lootFrom(ANHANGA_SIGN), "anhanga"));
+	public static final RegistryObject<Block> GOLD_WALL_SIGN = BLOCKS.register("gold_canvas_wall_sign",
+			() -> new WallCanvasSignBlock(Block.Properties.copy(Blocks.OAK_SIGN).lootFrom(GOLD_SIGN), "gold"));
+	public static final RegistryObject<Block> MABHETIEL_WALL_SIGN = BLOCKS.register("mabhetiel_canvas_wall_sign",
+			() -> new WallCanvasSignBlock(Block.Properties.copy(Blocks.OAK_SIGN).lootFrom(MABHETIEL_SIGN), "mabhetiel"));
+	public static final RegistryObject<Block> POMPOM_WALL_SIGN = BLOCKS.register("pompom_canvas_wall_sign",
+			() -> new WallCanvasSignBlock(Block.Properties.copy(Blocks.OAK_SIGN).lootFrom(POMPOM_SIGN), "pompom"));
+	public static final RegistryObject<Block> RABBIT_WALL_SIGN = BLOCKS.register("rabbit_canvas_wall_sign",
+			() -> new WallCanvasSignBlock(Block.Properties.copy(Blocks.OAK_SIGN).lootFrom(RABBIT_SIGN), "rabbit"));
+	public static final RegistryObject<Block> SODA_WALL_SIGN = BLOCKS.register("soda_canvas_wall_sign",
+			() -> new WallCanvasSignBlock(Block.Properties.copy(Blocks.OAK_SIGN).lootFrom(SODA_SIGN), "soda"));
+	public static final RegistryObject<Block> CYBER_WALL_SIGN = BLOCKS.register("cyber_canvas_wall_sign",
+			() -> new WallCanvasSignBlock(Block.Properties.copy(Blocks.OAK_SIGN).lootFrom(CYBER_SIGN), "cyber"));
+	public static final RegistryObject<Block> AUTISM_WALL_SIGN = BLOCKS.register("autism_canvas_wall_sign",
+			() -> new WallCanvasSignBlock(Block.Properties.copy(Blocks.OAK_SIGN).lootFrom(AUTISM_SIGN), "autism"));
+	public static final RegistryObject<Block> MARY_WALL_SIGN = BLOCKS.register("mary_canvas_wall_sign",
+			() -> new WallCanvasSignBlock(Block.Properties.copy(Blocks.OAK_SIGN).lootFrom(MARY_SIGN), "mary"));
+	public static final RegistryObject<Block> MEG_WALL_SIGN = BLOCKS.register("meg_canvas_wall_sign",
+			() -> new WallCanvasSignBlock(Block.Properties.copy(Blocks.OAK_SIGN).lootFrom(MEG_SIGN), "meg"));
+	public static final RegistryObject<Block> DELTA_WALL_SIGN = BLOCKS.register("delta_canvas_wall_sign",
+			() -> new WallCanvasSignBlock(Block.Properties.copy(Blocks.OAK_SIGN).lootFrom(DELTA_SIGN), "delta"));
+	public static final RegistryObject<Block> JACK_WALL_SIGN = BLOCKS.register("jack_canvas_wall_sign",
+			() -> new WallCanvasSignBlock(Block.Properties.copy(Blocks.OAK_SIGN).lootFrom(JACK_SIGN), "jack"));
+	public static final RegistryObject<Block> KALYPSO_WALL_SIGN = BLOCKS.register("kalypso_canvas_wall_sign",
+			() -> new WallCanvasSignBlock(Block.Properties.copy(Blocks.OAK_SIGN).lootFrom(KALYPSO_SIGN), "kalypso"));
+	public static final RegistryObject<Block> M1_WALL_SIGN = BLOCKS.register("m1_canvas_wall_sign",
+			() -> new WallCanvasSignBlock(Block.Properties.copy(Blocks.OAK_SIGN).lootFrom(M1_SIGN), "m1"));
+	public static final RegistryObject<Block> MICHAEL_WALL_SIGN = BLOCKS.register("michael_canvas_wall_sign",
+			() -> new WallCanvasSignBlock(Block.Properties.copy(Blocks.OAK_SIGN).lootFrom(MICHAEL_SIGN), "michael"));
+	public static final RegistryObject<Block> MONA_WALL_SIGN = BLOCKS.register("mona_canvas_wall_sign",
+			() -> new WallCanvasSignBlock(Block.Properties.copy(Blocks.OAK_SIGN).lootFrom(MONA_SIGN), "mona"));
+	public static final RegistryObject<Block> MOON_WALL_SIGN = BLOCKS.register("moon_canvas_wall_sign",
+			() -> new WallCanvasSignBlock(Block.Properties.copy(Blocks.OAK_SIGN).lootFrom(MOON_SIGN), "moon"));
+	public static final RegistryObject<Block> UKO_WALL_SIGN = BLOCKS.register("uko_canvas_wall_sign",
+			() -> new WallCanvasSignBlock(Block.Properties.copy(Blocks.OAK_SIGN).lootFrom(UKO_SIGN), "uko"));
+	public static final RegistryObject<Block> JAY_WALL_SIGN = BLOCKS.register("jay_canvas_wall_sign",
+			() -> new WallCanvasSignBlock(Block.Properties.copy(Blocks.OAK_SIGN).lootFrom(JAY_SIGN), "jay"));
+	public static final RegistryObject<Block> CELYNE_WALL_SIGN = BLOCKS.register("celyne_canvas_wall_sign",
+			() -> new WallCanvasSignBlock(Block.Properties.copy(Blocks.OAK_SIGN).lootFrom(CELYNE_SIGN), "celyne"));
+	public static final RegistryObject<Block> PEPPER_WALL_SIGN = BLOCKS.register("pepper_canvas_wall_sign",
+			() -> new WallCanvasSignBlock(Block.Properties.copy(Blocks.OAK_SIGN).lootFrom(PEPPER_SIGN), "pepper"));
+	public static final RegistryObject<Block> EPSILON_WALL_SIGN = BLOCKS.register("epsilon_canvas_wall_sign",
+			() -> new WallCanvasSignBlock(Block.Properties.copy(Blocks.OAK_SIGN).lootFrom(EPSILON_SIGN), "epsilon"));
+	public static final RegistryObject<Block> HAVARTI_WALL_SIGN = BLOCKS.register("havarti_canvas_wall_sign",
+			() -> new WallCanvasSignBlock(Block.Properties.copy(Blocks.OAK_SIGN).lootFrom(HAVARTI_SIGN), "havarti"));
+	public static final RegistryObject<Block> MINERVA_WALL_SIGN = BLOCKS.register("minerva_canvas_wall_sign",
+			() -> new WallCanvasSignBlock(Block.Properties.copy(Blocks.OAK_SIGN).lootFrom(MINERVA_SIGN), "minerva"));
+	public static final RegistryObject<Block> RUNE_WALL_SIGN = BLOCKS.register("rune_canvas_wall_sign",
+			() -> new WallCanvasSignBlock(Block.Properties.copy(Blocks.OAK_SIGN).lootFrom(RUNE_SIGN), "rune"));
+	public static final RegistryObject<Block> LAMBDA_WALL_SIGN = BLOCKS.register("lambda_canvas_wall_sign",
+			() -> new WallCanvasSignBlock(Block.Properties.copy(Blocks.OAK_SIGN).lootFrom(LAMBDA_SIGN), "lambda"));
+	public static final RegistryObject<Block> OMICRON_WALL_SIGN = BLOCKS.register("omicron_canvas_wall_sign",
+			() -> new WallCanvasSignBlock(Block.Properties.copy(Blocks.OAK_SIGN).lootFrom(OMICRON_SIGN), "omicron"));
+	public static final RegistryObject<Block> PSI_WALL_SIGN = BLOCKS.register("psi_canvas_wall_sign",
+			() -> new WallCanvasSignBlock(Block.Properties.copy(Blocks.OAK_SIGN).lootFrom(PSI_SIGN), "psi"));
+	public static final RegistryObject<Block> TAU_WALL_SIGN = BLOCKS.register("tau_canvas_wall_sign",
+			() -> new WallCanvasSignBlock(Block.Properties.copy(Blocks.OAK_SIGN).lootFrom(TAU_SIGN), "tau"));
+	public static final RegistryObject<Block> WICKY_WALL_SIGN = BLOCKS.register("wicky_canvas_wall_sign",
+			() -> new WallCanvasSignBlock(Block.Properties.copy(Blocks.OAK_SIGN).lootFrom(WICKY_SIGN), "wicky"));
+	public static final RegistryObject<Block> YUN_WALL_SIGN = BLOCKS.register("yun_canvas_wall_sign",
+			() -> new WallCanvasSignBlock(Block.Properties.copy(Blocks.OAK_SIGN).lootFrom(YUN_SIGN), "yun"));
+	public static final RegistryObject<Block> JUPITER_WALL_SIGN = BLOCKS.register("jupiter_canvas_wall_sign",
+			() -> new WallCanvasSignBlock(Block.Properties.copy(Blocks.OAK_SIGN).lootFrom(JUPITER_SIGN), "jupiter"));
+	public static final RegistryObject<Block> BENNY_WALL_SIGN = BLOCKS.register("benny_canvas_wall_sign",
+			() -> new WallCanvasSignBlock(Block.Properties.copy(Blocks.OAK_SIGN).lootFrom(BENNY_SIGN), "benny"));
+	public static final RegistryObject<Block> TINKER_WALL_SIGN = BLOCKS.register("tinker_canvas_wall_sign",
+			() -> new WallCanvasSignBlock(Block.Properties.copy(Blocks.OAK_SIGN).lootFrom(TINKER_SIGN), "tinker"));
+	public static final RegistryObject<Block> ABADOM_WALL_SIGN = BLOCKS.register("abadom_canvas_wall_sign",
+			() -> new WallCanvasSignBlock(Block.Properties.copy(Blocks.OAK_SIGN).lootFrom(ABADOM_SIGN), "abadom"));
+	public static final RegistryObject<Block> APOLIOM_WALL_SIGN = BLOCKS.register("apoliom_canvas_wall_sign",
+			() -> new WallCanvasSignBlock(Block.Properties.copy(Blocks.OAK_SIGN).lootFrom(APOLIOM_SIGN), "apoliom"));
+	public static final RegistryObject<Block> CLOWN_WALL_SIGN = BLOCKS.register("clown_canvas_wall_sign",
+			() -> new WallCanvasSignBlock(Block.Properties.copy(Blocks.OAK_SIGN).lootFrom(CLOWN_SIGN), "clown"));
+	public static final RegistryObject<Block> SILVIR_WALL_SIGN = BLOCKS.register("silvir_canvas_wall_sign",
+			() -> new WallCanvasSignBlock(Block.Properties.copy(Blocks.OAK_SIGN).lootFrom(SILVIR_SIGN), "silvir"));
+	public static final RegistryObject<Block> MONSIEUR_WALL_SIGN = BLOCKS.register("monsieur_canvas_wall_sign",
+			() -> new WallCanvasSignBlock(Block.Properties.copy(Blocks.OAK_SIGN).lootFrom(MONSIEUR_SIGN), "monsieur"));
+	public static final RegistryObject<Block> INKARIS_WALL_SIGN = BLOCKS.register("inkaris_canvas_wall_sign",
+			() -> new WallCanvasSignBlock(Block.Properties.copy(Blocks.OAK_SIGN).lootFrom(INKARIS_SIGN), "inkaris"));
+	public static final RegistryObject<Block> LOKY_WALL_SIGN = BLOCKS.register("loky_canvas_wall_sign",
+			() -> new WallCanvasSignBlock(Block.Properties.copy(Blocks.OAK_SIGN).lootFrom(LOKY_SIGN), "loky"));
+	public static final RegistryObject<Block> DESGRACA_WALL_SIGN = BLOCKS.register("desgraca_canvas_wall_sign",
+			() -> new WallCanvasSignBlock(Block.Properties.copy(Blocks.OAK_SIGN).lootFrom(DESGRACA_SIGN), "desgraca"));
+	public static final RegistryObject<Block> AALIYAH_WALL_SIGN = BLOCKS.register("aaliyah_canvas_wall_sign",
+			() -> new WallCanvasSignBlock(Block.Properties.copy(Blocks.OAK_SIGN).lootFrom(AALIYAH_SIGN), "aaliyah"));
+	public static final RegistryObject<Block> ALBIOM_WALL_SIGN = BLOCKS.register("albiom_canvas_wall_sign",
+			() -> new WallCanvasSignBlock(Block.Properties.copy(Blocks.OAK_SIGN).lootFrom(ALBIOM_SIGN), "albiom"));
+	public static final RegistryObject<Block> LUIS_WALL_SIGN = BLOCKS.register("luis_canvas_wall_sign",
+			() -> new WallCanvasSignBlock(Block.Properties.copy(Blocks.OAK_SIGN).lootFrom(LUIS_SIGN), "luis"));
+	public static final RegistryObject<Block> RONALD_WALL_SIGN = BLOCKS.register("ronald_canvas_wall_sign",
+			() -> new WallCanvasSignBlock(Block.Properties.copy(Blocks.OAK_SIGN).lootFrom(RONALD_SIGN), "ronald"));
+	public static final RegistryObject<Block> SCRATCH_WALL_SIGN = BLOCKS.register("scratch_canvas_wall_sign",
+			() -> new WallCanvasSignBlock(Block.Properties.copy(Blocks.OAK_SIGN).lootFrom(SCRATCH_SIGN), "scratch"));
+	public static final RegistryObject<Block> MATIAS_WALL_SIGN = BLOCKS.register("matias_canvas_wall_sign",
+			() -> new WallCanvasSignBlock(Block.Properties.copy(Blocks.OAK_SIGN).lootFrom(MATIAS_SIGN), "matias"));
+	public static final RegistryObject<Block> SARAH_WALL_SIGN = BLOCKS.register("sarah_canvas_wall_sign",
+			() -> new WallCanvasSignBlock(Block.Properties.copy(Blocks.OAK_SIGN).lootFrom(SARAH_SIGN), "sarah"));
+	public static final RegistryObject<Block> INDIBOT_WALL_SIGN = BLOCKS.register("indibot_canvas_wall_sign",
+			() -> new WallCanvasSignBlock(Block.Properties.copy(Blocks.OAK_SIGN).lootFrom(INDIBOT_SIGN), "indibot"));
+	public static final RegistryObject<Block> YAN_WALL_SIGN = BLOCKS.register("yan_canvas_wall_sign",
+			() -> new WallCanvasSignBlock(Block.Properties.copy(Blocks.OAK_SIGN).lootFrom(YAN_SIGN), "yan"));
+	public static final RegistryObject<Block> AVALOM_WALL_SIGN = BLOCKS.register("avalom_canvas_wall_sign",
+			() -> new WallCanvasSignBlock(Block.Properties.copy(Blocks.OAK_SIGN).lootFrom(AVALOM_SIGN), "avalom"));
+	public static final RegistryObject<Block> LOBO_WALL_SIGN = BLOCKS.register("lobo_canvas_wall_sign",
+			() -> new WallCanvasSignBlock(Block.Properties.copy(Blocks.OAK_SIGN).lootFrom(LOBO_SIGN), "lobo"));
+	public static final RegistryObject<Block> GUIDE_WALL_SIGN = BLOCKS.register("guide_canvas_wall_sign",
+			() -> new WallCanvasSignBlock(Block.Properties.copy(Blocks.OAK_SIGN).lootFrom(GUIDE_SIGN), "guide"));
+	public static final RegistryObject<Block> ELYOLAI_WALL_SIGN = BLOCKS.register("elyolai_canvas_wall_sign",
+			() -> new WallCanvasSignBlock(Block.Properties.copy(Blocks.OAK_SIGN).lootFrom(ELYOLAI_SIGN), "elyolai"));
+	public static final RegistryObject<Block> KUZCO_WALL_SIGN = BLOCKS.register("kuzco_canvas_wall_sign",
+			() -> new WallCanvasSignBlock(Block.Properties.copy(Blocks.OAK_SIGN).lootFrom(KUZCO_SIGN), "kuzco"));
+	public static final RegistryObject<Block> PATO_WALL_SIGN = BLOCKS.register("pato_canvas_wall_sign",
+			() -> new WallCanvasSignBlock(Block.Properties.copy(Blocks.OAK_SIGN).lootFrom(PATO_SIGN), "pato"));
+	public static final RegistryObject<Block> KEEPER_WALL_SIGN = BLOCKS.register("keeper_canvas_wall_sign",
+			() -> new WallCanvasSignBlock(Block.Properties.copy(Blocks.OAK_SIGN).lootFrom(KEEPER_SIGN), "keeper"));
+	public static final RegistryObject<Block> ZEN_WALL_SIGN = BLOCKS.register("zen_canvas_wall_sign",
+			() -> new WallCanvasSignBlock(Block.Properties.copy(Blocks.OAK_SIGN).lootFrom(ZEN_SIGN), "zen"));
+
 }

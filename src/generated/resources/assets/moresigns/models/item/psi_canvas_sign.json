@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "moresigns:item/psi_canvas_sign"
+  }
+}

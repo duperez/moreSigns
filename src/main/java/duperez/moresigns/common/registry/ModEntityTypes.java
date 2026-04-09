@@ -6,5 +6,5 @@ import net.minecraftforge.registries.ForgeRegistries;
 import duperez.moresigns.MoreSigns;
 
 public class ModEntityTypes {
-    public static final DeferredRegister<EntityType<?>> ENTITIES = DeferredRegister.create(ForgeRegistries.ENTITIES, MoreSigns.MODID);
+    public static final DeferredRegister<EntityType<?>> ENTITIES = DeferredRegister.create(ForgeRegistries.ENTITY_TYPES, MoreSigns.MODID);
 }

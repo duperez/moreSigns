@@ -3,6 +3,7 @@ package duperez.moresigns.data;
 import com.google.common.collect.Sets;
 import duperez.moresigns.common.registry.ModItems;
 import net.minecraft.data.DataGenerator;
+import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.client.model.generators.ItemModelProvider;
@@ -20,8 +21,8 @@ public class ItemModels extends ItemModelProvider
 {
 	public static final String GENERATED = "item/generated";
 
-	public ItemModels(DataGenerator generator, ExistingFileHelper existingFileHelper) {
-		super(generator, MoreSigns.MODID, existingFileHelper);
+	public ItemModels(PackOutput output, ExistingFileHelper existingFileHelper) {
+		super(output, MoreSigns.MODID, existingFileHelper);
 	}
 
 	@Override
@@ -50,6 +51,72 @@ public class ItemModels extends ItemModelProvider
 				ModItems.GREEN_CANVAS_SIGN.get(),
 				ModItems.RED_CANVAS_SIGN.get(),
 				ModItems.GREEN_GRADIENT_CANVAS_SIGN.get(),
+				ModItems.ANTHONY_CANVAS_SIGN.get(),
+				ModItems.HOTPINK_CANVAS_SIGN.get(),
+				ModItems.INDIGO_CANVAS_SIGN.get(),
+				ModItems.LIGHT_PINK_CANVAS_SIGN.get(),
+				ModItems.LOOSAZ_CANVAS_SIGN.get(),
+				ModItems.SPADES_CANVAS_SIGN.get(),
+				ModItems.ANHANGA_CANVAS_SIGN.get(),
+				ModItems.JINX_CANVAS_SIGN.get(),
+				ModItems.GOLD_CANVAS_SIGN.get(),
+				ModItems.MABHETIEL_CANVAS_SIGN.get(),
+				ModItems.POMPOM_CANVAS_SIGN.get(),
+				ModItems.RABBIT_CANVAS_SIGN.get(),
+				ModItems.SODA_CANVAS_SIGN.get(),
+				ModItems.CYBER_CANVAS_SIGN.get(),
+				ModItems.AUTISM_CANVAS_SIGN.get(),
+				ModItems.MARY_CANVAS_SIGN.get(),
+				ModItems.MEG_CANVAS_SIGN.get(),
+				ModItems.DELTA_CANVAS_SIGN.get(),
+				ModItems.JACK_CANVAS_SIGN.get(),
+				ModItems.KALYPSO_CANVAS_SIGN.get(),
+				ModItems.M1_CANVAS_SIGN.get(),
+				ModItems.MICHAEL_CANVAS_SIGN.get(),
+				ModItems.MONA_CANVAS_SIGN.get(),
+				ModItems.MOON_CANVAS_SIGN.get(),
+				ModItems.UKO_CANVAS_SIGN.get(),
+				ModItems.JAY_CANVAS_SIGN.get(),
+				ModItems.CELYNE_CANVAS_SIGN.get(),
+				ModItems.PEPPER_CANVAS_SIGN.get(),
+				ModItems.EPSILON_CANVAS_SIGN.get(),
+				ModItems.HAVARTI_CANVAS_SIGN.get(),
+				ModItems.MINERVA_CANVAS_SIGN.get(),
+				ModItems.RUNE_CANVAS_SIGN.get(),
+				ModItems.LAMBDA_CANVAS_SIGN.get(),
+				ModItems.OMICRON_CANVAS_SIGN.get(),
+				ModItems.PSI_CANVAS_SIGN.get(),
+				ModItems.TAU_CANVAS_SIGN.get(),
+				ModItems.WICKY_CANVAS_SIGN.get(),
+				ModItems.YUN_CANVAS_SIGN.get(),
+				ModItems.JUPITER_CANVAS_SIGN.get(),
+				ModItems.BENNY_CANVAS_SIGN.get(),
+				ModItems.TINKER_CANVAS_SIGN.get(),
+				ModItems.ABADOM_CANVAS_SIGN.get(),
+				ModItems.APOLIOM_CANVAS_SIGN.get(),
+				ModItems.CLOWN_CANVAS_SIGN.get(),
+				ModItems.SILVIR_CANVAS_SIGN.get(),
+				ModItems.MONSIEUR_CANVAS_SIGN.get(),
+				ModItems.INKARIS_CANVAS_SIGN.get(),
+				ModItems.LOKY_CANVAS_SIGN.get(),
+				ModItems.DESGRACA_CANVAS_SIGN.get(),
+				ModItems.AALIYAH_CANVAS_SIGN.get(),
+				ModItems.ALBIOM_CANVAS_SIGN.get(),
+				ModItems.LUIS_CANVAS_SIGN.get(),
+				ModItems.RONALD_CANVAS_SIGN.get(),
+				ModItems.SCRATCH_CANVAS_SIGN.get(),
+				ModItems.MATIAS_CANVAS_SIGN.get(),
+				ModItems.SARAH_CANVAS_SIGN.get(),
+				ModItems.INDIBOT_CANVAS_SIGN.get(),
+				ModItems.YAN_CANVAS_SIGN.get(),
+				ModItems.AVALOM_CANVAS_SIGN.get(),
+				ModItems.LOBO_CANVAS_SIGN.get(),
+				ModItems.GUIDE_CANVAS_SIGN.get(),
+				ModItems.ELYOLAI_CANVAS_SIGN.get(),
+				ModItems.KUZCO_CANVAS_SIGN.get(),
+				ModItems.PATO_CANVAS_SIGN.get(),
+				ModItems.KEEPER_CANVAS_SIGN.get(),
+				ModItems.ZEN_CANVAS_SIGN.get(),
 				ModItems.BLACK_CANVAS_SIGN.get()
 		);
 		takeAll(items, spriteBlockItems.toArray(new Item[0])).forEach(item -> withExistingParent(itemName(item), GENERATED).texture("layer0", resourceItem(itemName(item))));
@@ -63,7 +130,7 @@ public class ItemModels extends ItemModelProvider
 	}
 
 	private String itemName(Item item) {
-		return item.getRegistryName().getPath();
+		return ForgeRegistries.ITEMS.getKey(item).getPath();
 	}
 
 	public ResourceLocation resourceItem(String path) {

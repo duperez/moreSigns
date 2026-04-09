@@ -4,6 +4,7 @@ import com.google.common.collect.Sets;
 import duperez.moresigns.common.registry.ModBlocks;
 import net.minecraft.core.Direction;
 import net.minecraft.data.DataGenerator;
+import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.DoublePlantBlock;
@@ -17,6 +18,7 @@ import net.minecraftforge.client.model.generators.ConfiguredModel;
 import net.minecraftforge.client.model.generators.ModelFile;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import duperez.moresigns.MoreSigns;
+import net.minecraftforge.registries.ForgeRegistries;
 
 import javax.annotation.Nullable;
 import java.util.List;
@@ -27,12 +29,12 @@ public class BlockStates extends BlockStateProvider
 {
 	private static final int DEFAULT_ANGLE_OFFSET = 180;
 
-	public BlockStates(DataGenerator gen, ExistingFileHelper exFileHelper) {
-		super(gen, MoreSigns.MODID, exFileHelper);
+	public BlockStates(PackOutput output, ExistingFileHelper existingFileHelper) {
+		super(output, MoreSigns.MODID, existingFileHelper);
 	}
 
 	private String blockName(Block block) {
-		return block.getRegistryName().getPath();
+		return ForgeRegistries.BLOCKS.getKey(block).getPath();
 	}
 
 	public ResourceLocation resourceBlock(String path) {
@@ -68,6 +70,72 @@ public class BlockStates extends BlockStateProvider
 				ModBlocks.RED_CANVAS_SIGN.get(),
 				ModBlocks.BLACK_CANVAS_SIGN.get(),
 				ModBlocks.GREEN_GRADIENT_SIGN.get(),
+				ModBlocks.ANTHONY_SIGN.get(),
+				ModBlocks.HOTPINK_SIGN.get(),
+				ModBlocks.INDIGO_SIGN.get(),
+				ModBlocks.LIGHT_PINK_SIGN.get(),
+				ModBlocks.LOOSAZ_SIGN.get(),
+				ModBlocks.SPADES_SIGN.get(),
+				ModBlocks.JINX_SIGN.get(),
+				ModBlocks.ANHANGA_SIGN.get(),
+				ModBlocks.MABHETIEL_SIGN.get(),
+				ModBlocks.POMPOM_SIGN.get(),
+				ModBlocks.GOLD_SIGN.get(),
+				ModBlocks.RABBIT_SIGN.get(),
+				ModBlocks.SODA_SIGN.get(),
+				ModBlocks.CYBER_SIGN.get(),
+				ModBlocks.AUTISM_SIGN.get(),
+				ModBlocks.MARY_SIGN.get(),
+				ModBlocks.MEG_SIGN.get(),
+				ModBlocks.DELTA_SIGN.get(),
+				ModBlocks.JACK_SIGN.get(),
+				ModBlocks.KALYPSO_SIGN.get(),
+				ModBlocks.M1_SIGN.get(),
+				ModBlocks.MICHAEL_SIGN.get(),
+				ModBlocks.MONA_SIGN.get(),
+				ModBlocks.MOON_SIGN.get(),
+				ModBlocks.UKO_SIGN.get(),
+				ModBlocks.JAY_SIGN.get(),
+				ModBlocks.CELYNE_SIGN.get(),
+				ModBlocks.PEPPER_SIGN.get(),
+				ModBlocks.EPSILON_SIGN.get(),
+				ModBlocks.HAVARTI_SIGN.get(),
+				ModBlocks.MINERVA_SIGN.get(),
+				ModBlocks.RUNE_SIGN.get(),
+				ModBlocks.LAMBDA_SIGN.get(),
+				ModBlocks.OMICRON_SIGN.get(),
+				ModBlocks.PSI_SIGN.get(),
+				ModBlocks.TAU_SIGN.get(),
+				ModBlocks.WICKY_SIGN.get(),
+				ModBlocks.YUN_SIGN.get(),
+				ModBlocks.JUPITER_SIGN.get(),
+				ModBlocks.BENNY_SIGN.get(),
+				ModBlocks.TINKER_SIGN.get(),
+				ModBlocks.ABADOM_SIGN.get(),
+				ModBlocks.APOLIOM_SIGN.get(),
+				ModBlocks.SILVIR_SIGN.get(),
+				ModBlocks.MONSIEUR_SIGN.get(),
+				ModBlocks.INKARIS_SIGN.get(),
+				ModBlocks.LOKY_SIGN.get(),
+				ModBlocks.DESGRACA_SIGN.get(),
+				ModBlocks.CLOWN_SIGN.get(),
+				ModBlocks.AALIYAH_SIGN.get(),
+				ModBlocks.ALBIOM_SIGN.get(),
+				ModBlocks.LUIS_SIGN.get(),
+				ModBlocks.RONALD_SIGN.get(),
+				ModBlocks.SCRATCH_SIGN.get(),
+				ModBlocks.MATIAS_SIGN.get(),
+				ModBlocks.SARAH_SIGN.get(),
+				ModBlocks.INDIBOT_SIGN.get(),
+				ModBlocks.YAN_SIGN.get(),
+				ModBlocks.AVALOM_SIGN.get(),
+				ModBlocks.LOBO_SIGN.get(),
+				ModBlocks.GUIDE_SIGN.get(),
+				ModBlocks.ELYOLAI_SIGN.get(),
+				ModBlocks.KUZCO_SIGN.get(),
+				ModBlocks.PATO_SIGN.get(),
+				ModBlocks.KEEPER_SIGN.get(),
+				ModBlocks.ZEN_SIGN.get(),
 				ModBlocks.CANVAS_WALL_SIGN.get(),
 				ModBlocks.WHITE_CANVAS_WALL_SIGN.get(),
 				ModBlocks.ORANGE_CANVAS_WALL_SIGN.get(),
@@ -86,6 +154,73 @@ public class BlockStates extends BlockStateProvider
 				ModBlocks.RED_CANVAS_WALL_SIGN.get(),
 				ModBlocks.ORANGE_PURPLE_CANVAS_WALL_SIGN.get(),
 				ModBlocks.BLACK_CANVAS_WALL_SIGN.get(),
+				ModBlocks.PINK_CANVAS_WALL_SIGN.get(),
+				ModBlocks.HOTPINK_WALL_SIGN.get(),
+				ModBlocks.INDIGO_WALL_SIGN.get(),
+				ModBlocks.LIGHT_PINK_WALL_SIGN.get(),
+				ModBlocks.LOOSAZ_WALL_SIGN.get(),
+				ModBlocks.SPADES_WALL_SIGN.get(),
+				ModBlocks.JINX_WALL_SIGN.get(),
+				ModBlocks.ANHANGA_WALL_SIGN.get(),
+				ModBlocks.ANTHONY_WALL_SIGN.get(),
+				ModBlocks.MABHETIEL_WALL_SIGN.get(),
+				ModBlocks.GOLD_WALL_SIGN.get(),
+				ModBlocks.POMPOM_WALL_SIGN.get(),
+				ModBlocks.RABBIT_WALL_SIGN.get(),
+				ModBlocks.SODA_WALL_SIGN.get(),
+				ModBlocks.CYBER_WALL_SIGN.get(),
+				ModBlocks.AUTISM_WALL_SIGN.get(),
+				ModBlocks.MARY_WALL_SIGN.get(),
+				ModBlocks.MEG_WALL_SIGN.get(),
+				ModBlocks.DELTA_WALL_SIGN.get(),
+				ModBlocks.JACK_WALL_SIGN.get(),
+				ModBlocks.KALYPSO_WALL_SIGN.get(),
+				ModBlocks.M1_WALL_SIGN.get(),
+				ModBlocks.MICHAEL_WALL_SIGN.get(),
+				ModBlocks.MONA_WALL_SIGN.get(),
+				ModBlocks.MOON_WALL_SIGN.get(),
+				ModBlocks.UKO_WALL_SIGN.get(),
+				ModBlocks.JAY_WALL_SIGN.get(),
+				ModBlocks.CELYNE_WALL_SIGN.get(),
+				ModBlocks.PEPPER_WALL_SIGN.get(),
+				ModBlocks.EPSILON_WALL_SIGN.get(),
+				ModBlocks.HAVARTI_WALL_SIGN.get(),
+				ModBlocks.MINERVA_WALL_SIGN.get(),
+				ModBlocks.RUNE_WALL_SIGN.get(),
+				ModBlocks.LAMBDA_WALL_SIGN.get(),
+				ModBlocks.OMICRON_WALL_SIGN.get(),
+				ModBlocks.PSI_WALL_SIGN.get(),
+				ModBlocks.TAU_WALL_SIGN.get(),
+				ModBlocks.WICKY_WALL_SIGN.get(),
+				ModBlocks.YUN_WALL_SIGN.get(),
+				ModBlocks.JUPITER_WALL_SIGN.get(),
+				ModBlocks.BENNY_WALL_SIGN.get(),
+				ModBlocks.TINKER_WALL_SIGN.get(),
+				ModBlocks.ABADOM_WALL_SIGN.get(),
+				ModBlocks.APOLIOM_WALL_SIGN.get(),
+				ModBlocks.CLOWN_WALL_SIGN.get(),
+				ModBlocks.SILVIR_WALL_SIGN.get(),
+				ModBlocks.MONSIEUR_WALL_SIGN.get(),
+				ModBlocks.INKARIS_WALL_SIGN.get(),
+				ModBlocks.LOKY_WALL_SIGN.get(),
+				ModBlocks.DESGRACA_WALL_SIGN.get(),
+				ModBlocks.AALIYAH_WALL_SIGN.get(),
+				ModBlocks.ALBIOM_WALL_SIGN.get(),
+				ModBlocks.LUIS_WALL_SIGN.get(),
+				ModBlocks.RONALD_WALL_SIGN.get(),
+				ModBlocks.SCRATCH_WALL_SIGN.get(),
+				ModBlocks.MATIAS_WALL_SIGN.get(),
+				ModBlocks.SARAH_WALL_SIGN.get(),
+				ModBlocks.INDIBOT_WALL_SIGN.get(),
+				ModBlocks.YAN_WALL_SIGN.get(),
+				ModBlocks.AVALOM_WALL_SIGN.get(),
+				ModBlocks.LOBO_WALL_SIGN.get(),
+				ModBlocks.GUIDE_WALL_SIGN.get(),
+				ModBlocks.ELYOLAI_WALL_SIGN.get(),
+				ModBlocks.KUZCO_WALL_SIGN.get(),
+				ModBlocks.PATO_WALL_SIGN.get(),
+				ModBlocks.KEEPER_WALL_SIGN.get(),
+				ModBlocks.ZEN_WALL_SIGN.get(),
 				ModBlocks.GREEN_GRADIENT_WALL_SIGN.get());
 
 		for (Block sign : canvasSigns) {
