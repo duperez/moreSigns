@@ -23,13 +23,13 @@ public interface CanvasSign {
                 "rabbit", "gold", "mary", "cyber",
                 "meg", "delta", "jay", "kalypso",
                 "m1", "michael", "mona", "moon",
-                "uko", "celyne", "pepper","epsilon",
+                "uko", "echo", "pepper","epsilon",
                 "havarti", "minerva", "rune", "wicky",
                 "abadom", "apoliom", "monsieur", "inkaris",
                 "loky", "light_gray", "aaliyah", "ronald",
                 "scratch", "matias", "luis", "indibot",
                 "yan", "avalom", "elyolai", "keeper",
-                "zen"
+                "zen", "albiom"
 
         ).contains(backgroundDye);
     }

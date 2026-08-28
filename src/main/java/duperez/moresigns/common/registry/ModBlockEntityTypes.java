@@ -99,6 +99,7 @@ public class ModBlockEntityTypes
 							ModBlocks.PATO_SIGN.get(),
 							ModBlocks.KEEPER_SIGN.get(),
 							ModBlocks.ZEN_SIGN.get(),
+							ModBlocks.ECHO_SIGN.get(),
 							ModBlocks.WHITE_CANVAS_WALL_SIGN.get(),
 							ModBlocks.ORANGE_CANVAS_WALL_SIGN.get(),
 							ModBlocks.MAGENTA_CANVAS_WALL_SIGN.get(),
@@ -182,6 +183,7 @@ public class ModBlockEntityTypes
 							ModBlocks.PATO_WALL_SIGN.get(),
 							ModBlocks.KEEPER_WALL_SIGN.get(),
 							ModBlocks.ZEN_WALL_SIGN.get(),
+							ModBlocks.ECHO_WALL_SIGN.get(),
 							ModBlocks.BLACK_CANVAS_WALL_SIGN.get())
 					.build(null));
 }

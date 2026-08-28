@@ -47,7 +47,7 @@
   "block.moresigns.moon_canvas_sign": "Moon's Custom Sign",
   "block.moresigns.uko_canvas_sign": "Uko's Custom Sign",
   "block.moresigns.jay_canvas_sign": "Jay's Custom Sign",
-  "block.moresigns.celyne_canvas_sign": "Celyne's Custom Sign",
+  "block.moresigns.celyne_canvas_sign": "Melyssa's Custom Sign",
   "block.moresigns.pepper_canvas_sign": "Pepper's Custom Sign",
   "block.moresigns.epsilon_canvas_sign": "Epsilon's Custom Sign",
   "block.moresigns.havarti_canvas_sign": "Havarti's Custom Sign",
@@ -86,7 +86,8 @@
   "block.moresigns.kuzco_canvas_sign": "Kuzco's Custom Sign",
   "block.moresigns.pato_canvas_sign": "Pacato's Custom Sign",
   "block.moresigns.keeper_canvas_sign": "The Keeper's Custom Sign",
-  "block.moresigns.zen_canvas_sign": "TNPC24's Custom Sign",
+  "block.moresigns.zen_canvas_sign": "Zen's Custom Sign",
+  "block.moresigns.echo_canvas_sign": "Echo's Custom Sign",
   "item.moresigns.canvas": "Canvas",
   "itemGroup.moresignstab": "TSMP Custom Signs"
 }
