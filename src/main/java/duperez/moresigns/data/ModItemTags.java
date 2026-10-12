@@ -25,5 +25,6 @@ public class ModItemTags extends ItemTagsProvider {
             tag(ModTags.CANVAS_SIGNS).add(sign.get());
             tag(ItemTags.SIGNS).add(sign.get());
         });
+        tag(ItemTags.SIGNS).add(ModItems.CUSTOM_SIGN.get());
     }
 }

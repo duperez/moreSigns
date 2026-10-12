@@ -3,6 +3,8 @@ package duperez.moresigns;
 import duperez.moresigns.common.registry.ModBlockEntityTypes;
 import duperez.moresigns.common.registry.ModBlocks;
 import duperez.moresigns.common.registry.ModCreativeTabs;
+import duperez.moresigns.common.registry.ModDataComponents;
+import duperez.moresigns.common.registry.ModMenuTypes;
 import duperez.moresigns.common.registry.ModItems;
 import duperez.moresigns.common.registry.ModWoodTypes;
 import net.neoforged.bus.api.IEventBus;
@@ -19,9 +21,11 @@ public class MoreSigns {
         // Wood types must exist before the client builds its sign models and sprite sheet.
         ModWoodTypes.init();
 
+        ModDataComponents.DATA_COMPONENTS.register(modEventBus);
         ModBlocks.BLOCKS.register(modEventBus);
         ModItems.ITEMS.register(modEventBus);
         ModBlockEntityTypes.BLOCK_ENTITY_TYPES.register(modEventBus);
+        ModMenuTypes.MENU_TYPES.register(modEventBus);
         ModCreativeTabs.CREATIVE_TABS.register(modEventBus);
     }
 }

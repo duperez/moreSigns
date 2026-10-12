@@ -1,11 +1,16 @@
 package duperez.moresigns.common.registry;
 
 import duperez.moresigns.MoreSigns;
+import duperez.moresigns.common.block.CustomSignBlock;
+import duperez.moresigns.common.block.CustomWallSignBlock;
+import duperez.moresigns.common.block.SignWorkbenchBlock;
 import duperez.moresigns.common.block.StandingCanvasSignBlock;
 import duperez.moresigns.common.block.WallCanvasSignBlock;
 import duperez.moresigns.common.variant.CanvasVariant;
 import duperez.moresigns.common.variant.CanvasVariants;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.SoundType;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
@@ -17,6 +22,13 @@ import java.util.stream.Stream;
 
 public class ModBlocks {
     public static final DeferredRegister.Blocks BLOCKS = DeferredRegister.createBlocks(MoreSigns.MODID);
+
+    public static final DeferredBlock<CustomSignBlock> CUSTOM_SIGN = BLOCKS.register("custom_sign", CustomSignBlock::new);
+    public static final DeferredBlock<CustomWallSignBlock> CUSTOM_WALL_SIGN = BLOCKS.register("custom_wall_sign",
+            () -> new CustomWallSignBlock(CUSTOM_SIGN.get()));
+
+    public static final DeferredBlock<SignWorkbenchBlock> SIGN_WORKBENCH = BLOCKS.register("sign_workbench",
+            () -> new SignWorkbenchBlock(Block.Properties.ofFullCopy(Blocks.CRAFTING_TABLE).sound(SoundType.WOOD).noOcclusion()));
 
     private static final Map<CanvasVariant, DeferredBlock<StandingCanvasSignBlock>> STANDING_SIGNS = new LinkedHashMap<>();
     private static final Map<CanvasVariant, DeferredBlock<WallCanvasSignBlock>> WALL_SIGNS = new LinkedHashMap<>();

@@ -18,6 +18,7 @@ import net.minecraft.tags.ItemTags;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
+import net.minecraft.world.level.block.Blocks;
 
 import java.util.concurrent.CompletableFuture;
 
@@ -30,6 +31,13 @@ public class ModRecipes extends RecipeProvider {
 
     @Override
     protected void buildRecipes(RecipeOutput output) {
+        // Frames, boards and custom signs are made at this table, not in a crafting grid, so none of them can clash with a vanilla recipe.
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.DECORATIONS, ModItems.SIGN_WORKBENCH.get())
+                .requires(Blocks.CRAFTING_TABLE)
+                .requires(ItemTags.SIGNS)
+                .unlockedBy("has_sign", has(ItemTags.SIGNS))
+                .save(output);
+
         ShapedRecipeBuilder.shaped(RecipeCategory.DECORATIONS, ModItems.CANVAS.get(), 3)
                 .pattern("###")
                 .pattern("###")

@@ -35,6 +35,15 @@ public class DataGenerators {
 
         generator.addProvider(event.includeClient(), new ModBlockStates(output, existingFileHelper));
         generator.addProvider(event.includeClient(), new ModItemModels(output, existingFileHelper));
-        generator.addProvider(event.includeClient(), new ModLang(output));
+        // Minecraft does not fall back from one regional locale to another, so each region gets the language's file.
+        for (String locale : List.of("en_us")) {
+            generator.addProvider(event.includeClient(), new ModLang(output, locale, Translations.Language.ENGLISH));
+        }
+        for (String locale : List.of("pt_br", "pt_pt")) {
+            generator.addProvider(event.includeClient(), new ModLang(output, locale, Translations.Language.PORTUGUESE));
+        }
+        for (String locale : List.of("es_es", "es_mx", "es_ar", "es_cl", "es_uy", "es_ve")) {
+            generator.addProvider(event.includeClient(), new ModLang(output, locale, Translations.Language.SPANISH));
+        }
     }
 }

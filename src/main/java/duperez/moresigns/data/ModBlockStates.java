@@ -21,5 +21,11 @@ public class ModBlockStates extends BlockStateProvider {
         ModelFile signModel = new ModelFile.ExistingModelFile(
                 ResourceLocation.fromNamespaceAndPath(MoreSigns.MODID, SIGN_MODEL), models().existingFileHelper);
         ModBlocks.allSigns().forEach(sign -> simpleBlock(sign, signModel));
+        simpleBlock(ModBlocks.CUSTOM_SIGN.get(), signModel);
+        simpleBlock(ModBlocks.CUSTOM_WALL_SIGN.get(), signModel);
+
+        // The model faces north, which is how a block facing north is meant to look.
+        horizontalBlock(ModBlocks.SIGN_WORKBENCH.get(),
+                new ModelFile.ExistingModelFile(ResourceLocation.fromNamespaceAndPath(MoreSigns.MODID, "block/sign_workbench"), models().existingFileHelper));
     }
 }

@@ -1,0 +1,21 @@
+{
+  "values": [
+    "#minecraft:planks",
+    "#minecraft:wool",
+    "#minecraft:terracotta",
+    "#minecraft:stone_bricks",
+    "#c:storage_blocks",
+    "#c:glass_blocks",
+    "#c:concretes",
+    "#c:stones",
+    "#c:cobblestones",
+    "#c:obsidians",
+    "minecraft:bricks",
+    "minecraft:nether_bricks",
+    "minecraft:quartz_block",
+    "minecraft:smooth_stone",
+    "minecraft:bone_block",
+    "minecraft:prismarine",
+    "minecraft:cut_copper"
+  ]
+}

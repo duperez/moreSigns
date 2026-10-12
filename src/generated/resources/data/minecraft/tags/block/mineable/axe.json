@@ -37,6 +37,9 @@
     "moresigns:red_canvas_wall_sign",
     "moresigns:black_canvas_wall_sign",
     "moresigns:orange_purple_canvas_wall_sign",
-    "moresigns:green_gradient_canvas_wall_sign"
+    "moresigns:green_gradient_canvas_wall_sign",
+    "moresigns:custom_sign",
+    "moresigns:custom_wall_sign",
+    "moresigns:sign_workbench"
   ]
 }

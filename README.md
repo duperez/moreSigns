@@ -4,35 +4,54 @@
   <img src="https://cf.way2muchnoise.eu/moresigns.svg" alt="Curseforge Downloads">
 </a>
 
-**More Signs** adds canvas signs to Minecraft. This branch is the port of the mod from Forge 1.20.1 to NeoForge 1.21.1.
+**More Signs** adds signs you build yourself, and a set of canvas signs. This branch is the port of the mod from Forge 1.20.1 to NeoForge 1.21.1.
 
 - Minecraft 1.21.1, NeoForge 21.1.259, Java 21, built with ModDevGradle
 - Version 2.0.0 (`moresigns-1.21.1-2.0.0.jar`)
 
 ## Features
 
-- 19 canvas signs: plain, the 16 dye colors, and 2 hand-painted ones (`orange_purple`, `green_gradient`). Each has a standing and a wall variant.
-- Canvas item, usable as furnace fuel (400 ticks).
-- Recipes: canvas from string, canvas sign from canvas, recoloring with dye from any canvas sign, plus book, painting and scaffolding from canvas. The two hand-painted signs have no dye recipe and are creative-only.
-- Registry names of all existing signs and the block entity id `moresigns:canvas_sign` are unchanged from 1.20.1, so existing worlds keep their signs.
+- **Custom signs.** A sign is a frame (border and post) plus a board (the plate you write on). Each part is a block plus an optional dye tint, and uses the texture of that block. Standing and wall versions. Drops and pick block keep the parts. The text color is chosen once, white or black, by contrast against the board (glass-like blocks count as light).
+- **Sign Workbench.** Crafting table + any sign (shapeless). Four tabs: make parts, paint, assemble, take apart. Live rotating 3D preview.
+- **Canvas signs.** 19 signs: plain, the 16 dye colors, and 2 hand-painted ones (`orange_purple`, `green_gradient`), each with standing and wall variants. Canvas item (furnace fuel, 400 ticks), and recipes for canvas, canvas signs, dye recoloring, book, painting and scaffolding. The hand-painted signs are creative-only.
+- Registry names of the canvas signs and the block entity id `moresigns:canvas_sign` are unchanged from 1.20.1, so existing worlds keep their signs.
+- Languages: English, Portuguese (pt_br, pt_pt) and Spanish (es_es, es_mx, es_ar, es_cl, es_uy, es_ve).
+
+## Making a sign at the workbench
+
+1. **Make parts**: put a block in the slot, then pick frame (1 block gives 1 frame) or board (1 block gives 2 boards). The block is consumed.
+2. **Paint** (optional): put a frame or board and a dye. A dye tints the part and is not consumed. The wash button removes paint.
+3. **Assemble**: a frame and a board give a sign.
+4. **Take apart**: a custom sign gives back its frame and board with their colors. Taking either result gives the other too. Shift-click does a whole stack.
+
+Accepted blocks are in the block tag `moresigns:sign_materials`: planks, wool, terracotta, stone bricks, bricks, nether bricks, quartz block, smooth stone, bone block, prismarine, cut copper, and the shared `c:` tags for storage blocks, glass, concrete, stones, cobblestones and obsidian (so blocks from other mods in those tags work). The creative tab has the workbench, canvas, the canvas signs, and sample frames, boards and signs.
+
+### Allowing more materials
+
+A data pack can add blocks by overriding `data/moresigns/tags/block/sign_materials.json` (or adding entries with `"replace": false`). In the mod itself, edit the tag provider in `data/` and run `./gradlew runData`.
 
 ## Building and development
 
 ```
 ./gradlew build              # build the jar
-./gradlew test               # JUnit tests (variant naming)
-./gradlew runGameTestServer  # game tests (src/test) on a headless server
-./gradlew runData            # regenerate src/generated
+./gradlew test               # JUnit tests (variant naming, language files)
+./gradlew runGameTestServer  # game tests on a headless server (include the workbench menu flows)
+./gradlew runData            # regenerate src/generated (recipes, tags, models, lang)
 ./gradlew runClient          # launch a dev client
+python3 tools/generate_art.py  # regenerate workbench block textures and GUI sprites (no dependencies, deterministic; run from the repo root)
 ```
+
+The game tests are in `src/test/java/.../gametest`, in the test source set, so they are not in the jar.
 
 ## Architecture
 
-`src/main/java/duperez/moresigns/common/variant/CanvasVariants.java` is the single list of signs. It drives blocks, items, WoodTypes, blockstates, item models, recipes, loot, tags and lang (the data generators are in `data/`).
+- `common/sign/Part` and the data components `moresigns:part` (frame and board items) and `moresigns:sign_parts` (sign item and block entity) hold what a sign is made of.
+- Rendering is custom: `client/renderer/CustomSignModel`, `CustomSignRenderer`, `CustomSignItemRenderer`. Faces hidden against another part are not drawn, which avoids z-fighting on glass. The edit screen is swapped on `ScreenEvent.Opening` and an access transformer (`META-INF/accesstransformer.cfg`), and draws the real sign.
+- The workbench logic is `SignWorkbenchLogic` (costs and yields: `FRAME_COST`, `FRAME_YIELD`, `BOARD_COST`, `BOARD_YIELD`), the menu is `SignWorkbenchMenu`, the screen is `SignWorkbenchScreen`. Design reasoning for the screen: `docs/workbench-ui-design.md`.
+- `common/variant/CanvasVariants.java` is the single list of canvas signs. It drives their blocks, items, WoodTypes, blockstates, item models, recipes, loot, tags and lang. Each has its own vanilla `WoodType` (`moresigns:canvas_<key>`).
+- Translations are generated by datagen from one table, `data/Translations.java`. `LanguageFilesTest` checks that every language has the same keys and placeholders as English.
 
-Each variant has its own vanilla `WoodType` (`moresigns:canvas_<key>`), so vanilla's sign renderer and edit screen draw `textures/entity/signs/canvas_<key>.png`. There is no custom renderer, edit screen or mixin.
-
-## Adding a sign
+## Adding a canvas sign variant
 
 1. Add `textures/entity/signs/canvas_<key>.png` and `textures/item/<key>_canvas_sign.png` to the resources.
 2. Add a line in `CanvasVariants`.
@@ -40,11 +59,16 @@ Each variant has its own vanilla `WoodType` (`moresigns:canvas_<key>`), so vanil
 
 Never rename the registry name of an existing entry; it breaks signs in existing worlds.
 
-## Status and known gaps
+## Status and known limitations
 
-- Nothing has been checked visually in a real client yet (sprites, edit screen, item models).
-- Sign text may sit about 1px differently than in 1.20.1, since the old custom renderer's -1 vertical offset is gone.
-- Gradient signs have no dye recipe (creative only).
+The mod has been played in a real client, and the unit tests and the 19 game tests pass.
+
+- The canvas signs are separate from the custom signs and cannot be taken apart.
+- Paint is a tint of the block texture, with the 16 vanilla dyes only, so it can look muddy on blocks that already have color.
+- Every material costs 1 block, whatever its rarity (a block of iron costs the same as a plank).
+- Taking a sign apart with a nearly full inventory can drop one of the two parts on the ground. Nothing is lost.
+- No JEI/REI integration for the workbench.
+- Gradient canvas signs have no dye recipe (creative only).
 - The Canvas Rug from 1.20.1 was removed (see changelog); it can be restored from branch `1.20.x`.
 
 ## Contributing

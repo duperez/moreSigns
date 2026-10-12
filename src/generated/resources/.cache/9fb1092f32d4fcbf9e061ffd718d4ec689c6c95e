@@ -1,4 +1,4 @@
-// 1.21.1	2026-10-12T14:16:27.273301	Recipes
+// 1.21.1	2026-10-12T15:23:03.148077	Recipes
 eae09dd9f95e76ad99dc74b51cdc966b5df6bb9b data/moresigns/advancement/recipes/decorations/black_canvas_sign.json
 c4c68cb6e94681058dfe6651881de92c34c0162a data/moresigns/advancement/recipes/decorations/blue_canvas_sign.json
 09d12191a9cc6d03e24567c6da6fb6c0a1d2ec23 data/moresigns/advancement/recipes/decorations/brown_canvas_sign.json
@@ -17,6 +17,7 @@ eafcbe335cd7e48e869720cc7ea70773d82787e1 data/moresigns/advancement/recipes/deco
 9d422230ec7600f268d0e58dbf9cf227bd06dd9f data/moresigns/advancement/recipes/decorations/purple_canvas_sign.json
 4e9bcdb0b0bf4fa664e87c947733676391dd66ca data/moresigns/advancement/recipes/decorations/red_canvas_sign.json
 1c868e9807d2e0b9d3eb1a61ea16ff46328caf25 data/moresigns/advancement/recipes/decorations/scaffolding_from_canvas.json
+7d29feb3c7f9af5465fb4882c0c15b496767de0b data/moresigns/advancement/recipes/decorations/sign_workbench.json
 02b7b503c9a4a7a1a23788d32c39d640321b3a8d data/moresigns/advancement/recipes/decorations/white_canvas_sign.json
 4aa75c502c017d76aae4324a918fc6d6be9c3a56 data/moresigns/advancement/recipes/decorations/yellow_canvas_sign.json
 188f94721d70d6fbdc5f3b5265638df0855ac6cb data/moresigns/advancement/recipes/misc/book_from_canvas.json
@@ -39,5 +40,6 @@ ba3d200608e694a41e7cecc691960fbf620ddbe4 data/moresigns/recipe/painting_from_can
 702e52a28a187d3ab4b189a3432ad0a7e9ccceb7 data/moresigns/recipe/purple_canvas_sign.json
 3fa582317ff551249a2480220a6598f93aab4737 data/moresigns/recipe/red_canvas_sign.json
 b15c31d0fcf2be12b4798a22d11b288f637453d1 data/moresigns/recipe/scaffolding_from_canvas.json
+b4a6a73add919185987cc7c7338c3d0147302ee8 data/moresigns/recipe/sign_workbench.json
 ba51ec0def912fe676820fd7aa34648f6a3c1b4c data/moresigns/recipe/white_canvas_sign.json
 c2b2ee48852260d8be84e462e9c88181200ef7a3 data/moresigns/recipe/yellow_canvas_sign.json

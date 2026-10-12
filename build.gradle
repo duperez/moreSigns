@@ -16,6 +16,8 @@ java.toolchain.languageVersion = JavaLanguageVersion.of(21)
 neoForge {
     version = neo_version
 
+    accessTransformers.from('src/main/resources/META-INF/accesstransformer.cfg')
+
     // The game tests under src/test use Minecraft classes.
     addModdingDependenciesTo(sourceSets.test)
 
