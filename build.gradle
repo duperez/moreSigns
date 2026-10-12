@@ -1,94 +1,96 @@
 buildscript {
     repositories {
-        maven { url = 'https://files.minecraftforge.net' }
-        maven { url = 'https://maven.parchmentmc.org' }
-        maven {
-            url "https://repo.spongepowered.org/repository/maven-public/"
-            // content { includeGroup "org.spongepowered" }
-        }
+        maven { url = 'https://maven.minecraftforge.net' }
         mavenCentral()
     }
     dependencies {
         classpath group: 'net.minecraftforge.gradle', name: 'ForgeGradle', version: '5.1.+', changing: true
-        classpath group: 'org.spongepowered', name: 'mixingradle', version: '0.7-SNAPSHOT'
-        classpath 'org.parchmentmc:librarian:1.+'
     }
 }
+
 apply plugin: 'net.minecraftforge.gradle'
-// Only edit below this line, the above code adds and enables the necessary things for Forge to be setup.
-apply plugin: 'org.parchmentmc.librarian.forgegradle'
 apply plugin: 'eclipse'
 apply plugin: 'maven-publish'
-apply plugin: "org.spongepowered.mixin"
-
-mixin {
-    add sourceSets.main, "moresigns.refmap.json"
-}
 
 version = "${mc_version}-${mod_version}"
-group = 'duperez.moresigns' // http://maven.apache.org/guides/mini/guide-naming-conventions.html
-archivesBaseName = 'moresigns'
+group = 'duperez.moresigns'
+archivesBaseName = mod_id
 
-//sourceCompatibility = targetCompatibility = compileJava.sourceCompatibility = compileJava.targetCompatibility = '1.8' // Need this here so eclipse task generates correctly.
 java.toolchain.languageVersion = JavaLanguageVersion.of(17)
 
+// Minecraft 1.18.2 ships LWJGL 3.2.1, whose macOS natives are Intel-only, so the dev client cannot start on Apple Silicon.
+// On an ARM Mac, use the LWJGL 3.3 the later versions use, with its ARM natives unpacked into a folder LWJGL is pointed at.
+// Other machines are left alone.
+def appleSilicon = System.getProperty('os.name').toLowerCase().contains('mac') && System.getProperty('os.arch') == 'aarch64'
+def armNativesDir = layout.buildDirectory.dir('natives-arm64')
+configurations {
+    armNatives
+}
+if (appleSilicon) {
+    configurations.configureEach {
+        resolutionStrategy.eachDependency { details ->
+            if (details.requested.group == 'org.lwjgl') {
+                details.useVersion '3.3.1'
+            }
+        }
+    }
+}
+
 minecraft {
-    mappings channel: 'parchment', version: '2022.08.02-1.18.2'
-//    mappings channel: 'official', version: "${mc_version}"
-    // makeObfSourceJar = false // an Srg named sources jar is made by default. uncomment this to disable.
+    mappings channel: 'official', version: mc_version
 
     accessTransformer = file('src/main/resources/META-INF/accesstransformer.cfg')
 
     runs {
         client {
             workingDirectory project.file('run')
-            arg '-mixin.config=moresigns.mixins.json'
-
-            // Recommended logging data for a userdev environment
-            property 'forge.logging.markers', 'SCAN,REGISTRIES,REGISTRYDUMP'
-
-            // Recommended logging level for the console
+            property 'forge.logging.markers', 'REGISTRIES'
             property 'forge.logging.console.level', 'debug'
-
+            property 'forge.enabledGameTestNamespaces', mod_id
+            if (appleSilicon) {
+                property 'org.lwjgl.librarypath', armNativesDir.get().asFile.absolutePath
+            }
             mods {
-                moresigns {
+                "${mod_id}" {
                     source sourceSets.main
+                    source sourceSets.test // the game tests live here so they do not ship in the jar
                 }
             }
         }
 
         server {
             workingDirectory project.file('run')
-            arg "-mixin.config=moresigns.mixins.json"
-
-            // Recommended logging data for a userdev environment
-            property 'forge.logging.markers', 'SCAN,REGISTRIES,REGISTRYDUMP'
-
-            // Recommended logging level for the console
+            property 'forge.logging.markers', 'REGISTRIES'
             property 'forge.logging.console.level', 'debug'
-
+            property 'forge.enabledGameTestNamespaces', mod_id
             mods {
-                moresigns {
+                "${mod_id}" {
                     source sourceSets.main
+                    source sourceSets.test
+                }
+            }
+        }
+
+        gameTestServer {
+            workingDirectory project.file('run')
+            property 'forge.logging.markers', 'REGISTRIES'
+            property 'forge.logging.console.level', 'debug'
+            property 'forge.enabledGameTestNamespaces', mod_id
+            mods {
+                "${mod_id}" {
+                    source sourceSets.main
+                    source sourceSets.test
                 }
             }
         }
 
         data {
-            workingDirectory project.file('run')
-
-            // Recommended logging data for a userdev environment
-            property 'forge.logging.markers', 'SCAN,REGISTRIES,REGISTRYDUMP'
-
-            // Recommended logging level for the console
+            workingDirectory project.file('run-data')
+            property 'forge.logging.markers', 'REGISTRIES'
             property 'forge.logging.console.level', 'debug'
-
-            args '--mod', 'moresigns', '--all', '--output', file('src/generated/resources/'), '--existing', file('src/main/resources/')
-
-            environment 'target', 'fmluserdevdata'
-
+            args '--mod', mod_id, '--all', '--output', file('src/generated/resources/'), '--existing', file('src/main/resources/')
             mods {
-                moresigns {
+                "${mod_id}" {
                     source sourceSets.main
                 }
             }
@@ -96,76 +98,74 @@ minecraft {
     }
 }
 
-repositories {
-    maven {
-        // JEI
-        name = "Progwml6 maven"
-        url = "https://dvs1.progwml6.com/files/maven/"
-    }
-    maven {
-        // CraftTweaker
-        name = "BlameJared"
-        url = "https://maven.blamejared.com/"
-    }
-    maven { url "https://maven.ryanliptak.com/" }
-}
-
+// Datagen output is committed, so it is part of the jar like any other resource.
 sourceSets.main.resources {
-    srcDirs += 'src/generated/resources'
+    srcDir 'src/generated/resources'
 }
 
 dependencies {
     minecraft "net.minecraftforge:forge:${mc_version}-${forge_version}"
 
-    compileOnly fg.deobf("mezz.jei:jei-${mc_version}:${jei_version}:api")
-    runtimeOnly fg.deobf("mezz.jei:jei-${mc_version}:${jei_version}")
+    if (appleSilicon) {
+        ['lwjgl', 'lwjgl-glfw', 'lwjgl-jemalloc', 'lwjgl-openal', 'lwjgl-opengl', 'lwjgl-stb', 'lwjgl-tinyfd'].each {
+            armNatives "org.lwjgl:${it}:3.3.1:natives-macos-arm64"
+        }
+    }
 
-    compileOnly fg.deobf("squeek.appleskin:appleskin-forge:${appleskin_version}:api")
-    runtimeOnly fg.deobf("squeek.appleskin:appleskin-forge:${appleskin_version}")
+    testImplementation platform('org.junit:junit-bom:5.10.3')
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+    testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+}
 
-    def ctDep = fg.deobf("com.blamejared.crafttweaker:CraftTweaker-forge-${mc_version}:${crafttweaker_version}")
-    compileOnly ctDep
-    //runtimeOnly ctDep
+test {
+    useJUnitPlatform()
+}
 
-    annotationProcessor ctDep
-    annotationProcessor "com.blamejared.crafttweaker:Crafttweaker_Annotation_Processors:${crafttweaker_ap_version}"
-    annotationProcessor "org.reflections:reflections:0.9.10" // CT dep
-    annotationProcessor "com.google.code.gson:gson:2.8.7" // CT dep
+tasks.register('extractArmNatives', Copy) {
+    from { configurations.armNatives.collect { zipTree(it) } }
+    include '**/*.dylib'
+    eachFile { path = name } // flat, as LWJGL looks for them
+    includeEmptyDirs = false
+    into armNativesDir
+}
 
-    annotationProcessor 'org.spongepowered:mixin:0.8.5:processor'
+if (appleSilicon) {
+    tasks.configureEach { task ->
+        if (task.name == 'runClient') {
+            task.dependsOn 'extractArmNatives'
+        }
+    }
+}
 
+processResources {
+    exclude '.cache' // datagen's incremental cache, not a resource
+    def replaceProperties = [
+            mod_id: mod_id, mod_name: mod_name, mod_version: mod_version,
+            mod_authors: mod_authors, mod_license: mod_license, mod_description: mod_description,
+            minecraft_version_range: mc_version_range, forge_version_range: forge_version_range,
+            loader_version_range: loader_version_range
+    ]
+    inputs.properties replaceProperties
+    filesMatching(['META-INF/mods.toml']) {
+        expand replaceProperties
+    }
 }
 
 jar {
     manifest {
         attributes([
-                "Specification-Title"     : "moresigns",
-                "Specification-Vendor"    : "duperez",
-                "Specification-Version"   : "1", // We are version 1 of ourselves
-                "Implementation-Title"    : project.name,
-                "Implementation-Version"  : "${version}",
-                "Implementation-Vendor"   : "moresigns",
-                "Implementation-Timestamp": new Date().format("yyyy-MM-dd'T'HH:mm:ssZ"),
-                "MixinConfigs"            : "moresigns.mixins.json"
+                'Specification-Title'     : mod_id,
+                'Specification-Vendor'    : mod_authors,
+                'Specification-Version'   : '1',
+                'Implementation-Title'    : project.name,
+                'Implementation-Version'  : project.jar.archiveVersion,
+                'Implementation-Vendor'   : mod_authors
         ])
     }
 }
 
 jar.finalizedBy('reobfJar')
 
-publishing {
-    publications {
-        mavenJava(MavenPublication) {
-            artifact jar
-        }
-    }
-    repositories {
-        maven {
-            url "file:///${project.projectDir}/mcmodsrepo"
-        }
-    }
-}
-
-compileJava {
-    options.compilerArgs << "-Acrafttweaker.processor.document.output_directory=${file('docsOut')}"
+tasks.withType(JavaCompile).configureEach {
+    options.encoding = 'UTF-8'
 }

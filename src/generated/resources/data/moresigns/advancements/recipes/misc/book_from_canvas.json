@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "moresigns:book_from_canvas"
+    ]
+  },
+  "criteria": {
+    "has_canvas": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "moresigns:canvas"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "moresigns:book_from_canvas"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_canvas",
+      "has_the_recipe"
+    ]
+  ]
+}

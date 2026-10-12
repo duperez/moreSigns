@@ -1,30 +1,27 @@
-
-modLoader="javafml"
-loaderVersion="[40,)"
-license="MIT License"
+modLoader = "javafml"
+loaderVersion = "${loader_version_range}"
+license = "${mod_license}"
+issueTrackerURL = "https://github.com/duperez/moreSigns/issues"
 
 [[mods]]
-modId="moresigns"
-version="1.18.2-1.2.5"
-displayName="More Signs"
-displayURL="https://github.com/duperez/moreSigns"
-logoFile="logo.png"
-logoBlur=false
-authors="duperez, LoosaZ"
-description="A Mod that adds a bigger variety of signs to Minecraft, enhancing the looks on your pretty words!"
-itemIcon="moresigns:black_canvas_sign"
-configBackground="minecraft:textures/block/bricks.png"
+modId = "${mod_id}"
+version = "${mod_version}"
+displayName = "${mod_name}"
+displayURL = "https://github.com/duperez/moreSigns"
+logoFile = "logo.png"
+authors = "${mod_authors}"
+description = '''${mod_description}'''
 
-[[dependencies.moresigns]]
-    modId="forge"
-    mandatory=true
-    versionRange="[40.1.46,)"
-    ordering="NONE"
-    side="BOTH"
+[[dependencies.${mod_id}]]
+modId = "forge"
+mandatory = true
+versionRange = "${forge_version_range}"
+ordering = "NONE"
+side = "BOTH"
 
-[[dependencies.moresigns]]
-    modId="minecraft"
-    mandatory=true
-    versionRange="[1.18.2]"
-    ordering="NONE"
-    side="BOTH"
+[[dependencies.${mod_id}]]
+modId = "minecraft"
+mandatory = true
+versionRange = "${minecraft_version_range}"
+ordering = "NONE"
+side = "BOTH"
