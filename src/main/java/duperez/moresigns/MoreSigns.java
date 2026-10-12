@@ -1,52 +1,27 @@
 package duperez.moresigns;
 
-import duperez.moresigns.client.ClientSetup;
-import duperez.moresigns.common.CommonSetup;
-import duperez.moresigns.common.registry.*;
-import net.minecraft.world.item.CreativeModeTab;
-import net.minecraft.world.item.ItemStack;
-import net.minecraftforge.common.MinecraftForge;
-import net.minecraftforge.eventbus.api.IEventBus;
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
-
-import javax.annotation.Nonnull;
+import duperez.moresigns.common.registry.ModBlockEntityTypes;
+import duperez.moresigns.common.registry.ModBlocks;
+import duperez.moresigns.common.registry.ModCreativeTabs;
+import duperez.moresigns.common.registry.ModItems;
+import duperez.moresigns.common.registry.ModWoodTypes;
+import net.neoforged.bus.api.IEventBus;
+import net.neoforged.fml.common.Mod;
+import org.slf4j.Logger;
+import com.mojang.logging.LogUtils;
 
 @Mod(MoreSigns.MODID)
 public class MoreSigns {
     public static final String MODID = "moresigns";
-    public static final Logger LOGGER = LogManager.getLogger();
+    public static final Logger LOGGER = LogUtils.getLogger();
 
-    //public static final CreativeModeTab CREATIVE_TAB = new CreativeModeTab("moresignstab") {
-    //    @Nonnull
-    //    @Override
-    //    public ItemStack makeIcon() {
-    //        return new ItemStack(ModBlocks.ORANGE_PURPLE_SIGN.get());
-    //    }
-    //};
+    public MoreSigns(IEventBus modEventBus) {
+        // Wood types must exist before the client builds its sign models and sprite sheet.
+        ModWoodTypes.init();
 
-    public MoreSigns() {
-        final IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
-
-        modEventBus.addListener(CommonSetup::init);
-        modEventBus.addListener(ClientSetup::init);
-
-        //ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, Configuration.COMMON_CONFIG);
-        //ModLoadingContext.get().registerConfig(ModConfig.Type.CLIENT, Configuration.CLIENT_CONFIG);
-
-        ModItems.ITEMS.register(modEventBus);
         ModBlocks.BLOCKS.register(modEventBus);
-        ModBlockEntityTypes.TILES.register(modEventBus);
-        ModRecipeSerializers.RECIPE_SERIALIZERS.register(modEventBus);
-        ModLootFunctions.LOOT_FUNCTIONS.register(modEventBus);
-        //ModLootModifiers.LOOT_MODIFIERS.register(modEventBus);
-        ModRecipeTypes.RECIPE_TYPES.register(modEventBus);
-        ModEntityTypes.ENTITIES.register(modEventBus);
-        ModPlacementModifiers.PLACEMENT_MODIFIERS.register(modEventBus);
+        ModItems.ITEMS.register(modEventBus);
+        ModBlockEntityTypes.BLOCK_ENTITY_TYPES.register(modEventBus);
         ModCreativeTabs.CREATIVE_TABS.register(modEventBus);
-
-        MinecraftForge.EVENT_BUS.register(this);
     }
 }

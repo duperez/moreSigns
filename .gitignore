@@ -21,7 +21,6 @@ build
 eclipse
 run
 logs
-docsOut
-
-# Files from Forge MDK
-forge*changelog.txt
+repo
+.DS_Store
+.fastRequest

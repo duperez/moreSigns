@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "canvas_sign",
+  "ingredients": [
+    {
+      "tag": "moresigns:canvas_signs"
+    },
+    {
+      "tag": "c:dyes/purple"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "moresigns:purple_canvas_sign"
+  }
+}

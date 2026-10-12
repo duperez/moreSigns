@@ -1,34 +1,40 @@
 package duperez.moresigns.data;
 
+import duperez.moresigns.MoreSigns;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.PackOutput;
-import net.minecraftforge.common.data.ExistingFileHelper;
-import net.minecraftforge.data.event.GatherDataEvent;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.fml.common.Mod;
-import duperez.moresigns.MoreSigns;
+import net.minecraft.data.loot.LootTableProvider;
+import net.minecraft.world.level.storage.loot.parameters.LootContextParamSets;
+import net.neoforged.bus.api.SubscribeEvent;
+import net.neoforged.fml.common.EventBusSubscriber;
+import net.neoforged.neoforge.common.data.BlockTagsProvider;
+import net.neoforged.neoforge.common.data.ExistingFileHelper;
+import net.neoforged.neoforge.data.event.GatherDataEvent;
 
+import java.util.List;
+import java.util.Set;
 import java.util.concurrent.CompletableFuture;
 
-@SuppressWarnings("unused")
-@Mod.EventBusSubscriber(modid = MoreSigns.MODID, bus = Mod.EventBusSubscriber.Bus.MOD)
-public class DataGenerators
-{
-	@SubscribeEvent
-	public static void gatherData(GatherDataEvent event) {
-		DataGenerator generator = event.getGenerator();
-		PackOutput output = generator.getPackOutput();
-		CompletableFuture<HolderLookup.Provider> lookupProvider = event.getLookupProvider();
-		ExistingFileHelper helper = event.getExistingFileHelper();
+@EventBusSubscriber(modid = MoreSigns.MODID)
+public class DataGenerators {
 
-		BlockTags blockTags = new BlockTags(output, lookupProvider, helper);
-		generator.addProvider(event.includeServer(), blockTags);
-		generator.addProvider(event.includeServer(), new ItemTags(output, lookupProvider, blockTags.contentsGetter(), helper));
-		generator.addProvider(event.includeServer(), new EntityTags(output, lookupProvider, helper));
-		generator.addProvider(event.includeServer(), new Recipes(output));
-		BlockStates blockStates = new BlockStates(output, helper);
-		generator.addProvider(event.includeClient(), blockStates);
-		generator.addProvider(event.includeClient(), new ItemModels(output, blockStates.models().existingFileHelper));
-	}
+    @SubscribeEvent
+    public static void gatherData(GatherDataEvent event) {
+        DataGenerator generator = event.getGenerator();
+        PackOutput output = generator.getPackOutput();
+        CompletableFuture<HolderLookup.Provider> lookupProvider = event.getLookupProvider();
+        ExistingFileHelper existingFileHelper = event.getExistingFileHelper();
+
+        BlockTagsProvider blockTags = new ModBlockTags(output, lookupProvider, existingFileHelper);
+        generator.addProvider(event.includeServer(), blockTags);
+        generator.addProvider(event.includeServer(), new ModItemTags(output, lookupProvider, blockTags.contentsGetter(), existingFileHelper));
+        generator.addProvider(event.includeServer(), new ModRecipes(output, lookupProvider));
+        generator.addProvider(event.includeServer(), new LootTableProvider(output, Set.of(),
+                List.of(new LootTableProvider.SubProviderEntry(ModBlockLoot::new, LootContextParamSets.BLOCK)), lookupProvider));
+
+        generator.addProvider(event.includeClient(), new ModBlockStates(output, existingFileHelper));
+        generator.addProvider(event.includeClient(), new ModItemModels(output, existingFileHelper));
+        generator.addProvider(event.includeClient(), new ModLang(output));
+    }
 }
