@@ -1,22 +1,19 @@
 package duperez.moresigns.common.tag;
 
 import duperez.moresigns.MoreSigns;
-import net.minecraft.core.Registry;
+import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.tags.ItemTags;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.level.block.Block;
 
-/**
- * References to tags under the Farmer's Delight namespace.
- * These tags are used for mod mechanics.
- */
-public class ModTags
-{
+public class ModTags {
+    /** Every canvas sign item. A dye recipe takes any of them as input. */
+    public static final TagKey<Item> CANVAS_SIGNS = TagKey.create(Registries.ITEM, new ResourceLocation(MoreSigns.MODID, "canvas_signs"));
 
-	public static final TagKey<Item> CANVAS_SIGNS = modItemTag("canvas_signs");
+    /** Blocks the sign workbench accepts as material for a frame or a board. */
+    public static final TagKey<Block> SIGN_MATERIALS = TagKey.create(Registries.BLOCK, new ResourceLocation(MoreSigns.MODID, "sign_materials"));
 
-	private static TagKey<Item> modItemTag(String path) {
-		return ItemTags.create(new ResourceLocation(MoreSigns.MODID, path));
-	}
+    private ModTags() {
+    }
 }

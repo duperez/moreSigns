@@ -1,5 +1,4 @@
 {
-  "replace": false,
   "values": [
     "moresigns:canvas_wall_sign",
     "moresigns:white_canvas_wall_sign",
@@ -17,8 +16,9 @@
     "moresigns:brown_canvas_wall_sign",
     "moresigns:green_canvas_wall_sign",
     "moresigns:red_canvas_wall_sign",
-    "moresigns:green_gradient_canvas_wall_sign",
+    "moresigns:black_canvas_wall_sign",
     "moresigns:orange_purple_canvas_wall_sign",
-    "moresigns:black_canvas_wall_sign"
+    "moresigns:green_gradient_canvas_wall_sign",
+    "moresigns:custom_wall_sign"
   ]
 }

@@ -1,0 +1,104 @@
+# Sign Workbench UI design notes
+
+Reference for reviewing changes to `client/gui/SignWorkbenchScreen.java` and `common/inventory/SignWorkbenchMenu.java`. The numbers below are the ones in the code; if you change a layout constant, update this file.
+
+## Goals
+
+- The player should see the result before taking it (live 3D preview).
+- Four jobs, one screen: make parts, paint, assemble, take apart.
+- Look like vanilla. No custom palette beyond one accent.
+- Little text. The screen has to work in every language the mod ships.
+
+## Why tabs on the left
+
+There are four modes (`SignWorkbenchLogic.Mode`: MAKE, PAINT, ASSEMBLE, DISASSEMBLE). Tabs on the left edge add to the window's width, which has room, and not its height, which is already used by the 3x9 inventory. A tab strip on top would make the window taller and push the inventory down on small GUI scales. Switching a tab is a menu button (ids 0 to 3), so the server owns the mode. On a switch the input slots are returned to the player, so nothing stays in a slot the new mode would not accept, and wash is reset.
+
+## Why one hint line instead of labels
+
+Each mode uses different slots for different things, so fixed labels over the slots would need to change with the mode and would not fit in all languages. Instead:
+
+- One line at y=71 (`HINT_Y`), centered, says what the bench will do or what it still needs. It comes from `SignWorkbenchLogic.Result.message()`. It is shrunk, never wrapped, when wider than the panel minus 12 px.
+- Empty slots show a faint ghost icon of what goes there (material, dye, frame, board, sign), drawn at 55% alpha.
+- Hovering an empty input or result slot names it in a tooltip. Dye also has a second tooltip line.
+
+The line is dark gray (`0x404040`) when the bench cannot do anything yet, and green (`0x2F6B2F`) when a result is ready.
+
+## Layout
+
+All coordinates are relative to the panel's top-left corner.
+
+| Element | Position | Size |
+| --- | --- | --- |
+| Panel | 0, 0 | 176 x 174 |
+| Preview stage | 56, 16 | 52 x 52 (3D drawing is scissored 3 px inside) |
+| Arrow | 110, 35 | 22 x 15 |
+| Input slot 1 | 20, 17 | 18 x 18 |
+| Input slot 2 | 20, 51 | 18 x 18 |
+| Result slot (make, paint, assemble) | 139, 34 | 18 x 18, 26 x 26 frame sprite |
+| Frame result (take apart) | 139, 22 | 18 x 18 |
+| Board result (take apart) | 139, 46 | 18 x 18 |
+| Make buttons: frame, board | 8, 40 and 31, 40 | 22 x 22 |
+| Wash button | 84, 44 | 22 x 22 |
+| Hint line | centered at x=88, y=71 | |
+| Player inventory | 8, 93 (3 rows of 9, 18 px pitch) | |
+| Hotbar | 8, 151 | |
+| Inventory label | y=82 | |
+
+Tabs: 30 x 28 sprites, 26 px visible, 2 px gap, first tab at y=8, each next one 30 px lower. They stand left of the panel (x from -26 to 0).
+
+Which slots show depends on the mode:
+
+- Make: slot 1 only (material), plus the two buttons for frame or board. The button icons are small live 3D renders of the chosen material.
+- Paint: slot 1 (frame or board), slot 2 (dye), and the wash button.
+- Assemble: slot 1 (frame), slot 2 (board).
+- Take apart: slot 1 (sign) and the two results, frame above and board below.
+
+## The three states of a tab
+
+- Normal: drawn behind the panel, so the panel hides its inner edge and it looks attached to it.
+- Hover: same position, lighter sprite.
+- Selected: drawn after the panel, 3 px further out than the tab strip (`leftPos - TAB_WIDTH + 3`), so it overlaps the panel edge and reads as one surface with it. The icon moves with it.
+
+Icon buttons (make frame, make board, wash) use the same three states (normal, hover, selected). The selected state shows which part will be made, or that wash is on.
+
+## Color and accent
+
+- The panel is vanilla gray. Slots use the `SLOT` sprite of the sheet, drawn like the vanilla slot.
+- Amber is the only accent, used for the active state (selected tab and selected button, and the ready arrow `arrow_ready`).
+- The result slot has a larger framed sprite so it reads as the output.
+- Ready text is green, idle text is vanilla dark gray.
+- This Minecraft version has no GUI sprite system, so all sprites are on one sheet, `textures/gui/sign_workbench.png` (256 x 256). Their positions are in `client/gui/WorkbenchSprites.java`, and `SpriteDrawer` does the blitting, the faint ghost drawing and the nine-slice (panel border 4 px, preview border 3 px). The sheet and `WorkbenchSprites.java` are both written by `tools/generate_art.py`. Do not edit either by hand; change the script and rerun it.
+
+## Preview
+
+- Rotating slowly: yaw `-24 + 16*sin(t/750 ms)` degrees, so it sways instead of spinning.
+- A small "pop" (up to 14% bigger, 220 ms) whenever the output changes, as feedback.
+- A soft top-down gradient on the stage so it is not a flat slab.
+- When there is nothing to show, a faint ghost of the expected thing (frame, board or sign) is drawn in the stage.
+- Lit with the same 3D-item lighting as the rest of the GUI; it is restored after the preview so slot items are not left flat-lit.
+- A board alone is centered on the plate, not on the whole sign height.
+- Take apart uses an exploded view: the frame stays, the board is lifted 0.1 up and 0.4 toward the viewer, so the player sees the two things they will get.
+- The wash button is drawn 200 z-units up, above the 3D layer, so the preview does not cover it.
+
+## Sounds
+
+| Action | Sound |
+| --- | --- |
+| Switch tab | `UI_BUTTON_CLICK` |
+| Choose frame or board (make) | `UI_STONECUTTER_SELECT_RECIPE` |
+| Toggle wash | `UI_LOOM_SELECT_PATTERN` |
+| Take a result (server side) | `UI_STONECUTTER_TAKE_RESULT` |
+
+## Behavior the UI relies on
+
+- Shift-click on a result keeps crafting until ingredients run out or the inventory cannot hold the output (at most 64 crafts).
+- Taking either result of take apart gives the other one too.
+- Paint never consumes the dye.
+- Shift-click on an input item moves it into the first input slot that accepts it.
+
+## Checklist for changes
+
+- Does the new text fit when translated (Portuguese and Spanish are longer)? Prefer a tooltip to a label.
+- Does a new control have normal, hover and selected states, a tooltip, and a sound?
+- Is the accent still used only for the active state?
+- Do the slots in the menu and the coordinates in the screen still agree? Both files hardcode them.

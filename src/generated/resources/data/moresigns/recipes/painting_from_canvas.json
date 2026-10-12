@@ -1,19 +1,21 @@
 {
   "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "c": {
+      "item": "moresigns:canvas"
+    },
+    "s": {
+      "item": "minecraft:stick"
+    }
+  },
   "pattern": [
     "sss",
     "scs",
     "sss"
   ],
-  "key": {
-    "s": {
-      "item": "minecraft:stick"
-    },
-    "c": {
-      "item": "moresigns:canvas"
-    }
-  },
   "result": {
     "item": "minecraft:painting"
-  }
+  },
+  "show_notification": true
 }

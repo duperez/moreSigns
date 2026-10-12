@@ -1,20 +1,22 @@
 {
   "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "moresigns:canvas"
+    },
+    "b": {
+      "item": "minecraft:bamboo"
+    }
+  },
   "pattern": [
     "b#b",
     "b b",
     "b b"
   ],
-  "key": {
-    "b": {
-      "item": "minecraft:bamboo"
-    },
-    "#": {
-      "item": "moresigns:canvas"
-    }
-  },
   "result": {
-    "item": "minecraft:scaffolding",
-    "count": 6
-  }
+    "count": 6,
+    "item": "minecraft:scaffolding"
+  },
+  "show_notification": true
 }

@@ -1,15 +1,18 @@
 {
   "type": "minecraft:crafting_shaped",
-  "pattern": [
-    "###",
-    "###"
-  ],
+  "category": "misc",
   "key": {
     "#": {
       "item": "minecraft:string"
     }
   },
+  "pattern": [
+    "###",
+    "###"
+  ],
   "result": {
+    "count": 3,
     "item": "moresigns:canvas"
-  }
+  },
+  "show_notification": true
 }

@@ -1,0 +1,5 @@
+// 1.20.1	2026-10-12T16:08:39.415816	Tags for minecraft:block mod id moresigns
+7a2967fe9394989b207793d7864362c8b314ce6f data/minecraft/tags/blocks/mineable/axe.json
+384ad6e2bd2df79922fc19f8c2d194f6b78feb8f data/minecraft/tags/blocks/standing_signs.json
+6342b5b33ac1602cb16779aeac017f6e3be5850f data/minecraft/tags/blocks/wall_signs.json
+b015b6604227b3bc154be39136e5698e632e82af data/moresigns/tags/blocks/sign_materials.json
