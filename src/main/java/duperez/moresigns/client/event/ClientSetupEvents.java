@@ -16,19 +16,16 @@ import duperez.moresigns.common.registry.ModBlockEntityTypes;
 @Mod.EventBusSubscriber(modid = MoreSigns.MODID, bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 public class ClientSetupEvents {
 
-    @SubscribeEvent
-    public static void onStitchEvent(TextureStitchEvent.Pre event) {
-        ResourceLocation stitching = event.getAtlas().location();
-        if (stitching.equals(new ResourceLocation("textures/atlas/signs.png"))) {
-            event.addSprite(ModAtlases.BLANK_CANVAS_SIGN_MATERIAL.texture());
-            for (Material material : ModAtlases.DYED_CANVAS_SIGN_MATERIALS.values()) {
-                event.addSprite(material.texture());
-            }
-        }
-        if (!stitching.equals(TextureAtlas.LOCATION_BLOCKS)) {
-            return;
-        }
-    }
+    //@SubscribeEvent
+    //public static void onTextureStitchEvent(TextureStitchEvent event) {
+    //    ResourceLocation stitching = event.getAtlas().location();
+    //    if (stitching.equals(TextureAtlas.LOCATION_BLOCKS)) {
+    //        event.addSprite(ModAtlases.BLANK_CANVAS_SIGN_MATERIAL.texture());
+    //        for (Material material : ModAtlases.DYED_CANVAS_SIGN_MATERIALS.values()) {
+    //            event.addSprite(material.texture());
+    //        }
+    //    }
+    //}
 
     @SubscribeEvent
     public static void onRegisterRenderers(EntityRenderersEvent.RegisterRenderers event) {

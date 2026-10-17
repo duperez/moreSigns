@@ -12,19 +12,19 @@ import org.spongepowered.asm.mixin.injection.ModifyVariable;
 import duperez.moresigns.client.renderer.CanvasSignRenderer;
 import duperez.moresigns.common.block.state.CanvasSign;
 
-@Mixin(SignEditScreen.class)
-public class CanvasSignMaterialMixin
-{
-	@Shadow
-	@Final
-	private SignBlockEntity sign;
-
-	@ModifyVariable(at = @At(value = "STORE", ordinal = 0), method = "render")
-	public Material useCanvasSignMaterials(Material material) {
-		Block block = sign.getBlockState().getBlock();
-		if (block instanceof CanvasSign canvasSign) {
-			return CanvasSignRenderer.getMaterial(canvasSign.getBackgroundColor());
-		}
-		return material;
-	}
-}
+//@Mixin(SignEditScreen.class)
+//public class CanvasSignMaterialMixin
+//{
+//	@Shadow
+//	@Final
+//	private SignBlockEntity sign;
+//
+//	@ModifyVariable(at = @At(value = "STORE", ordinal = 0), method = "render")
+//	public Material useCanvasSignMaterials(Material material) {
+//		Block block = sign.getBlockState().getBlock();
+//		if (block instanceof CanvasSign canvasSign) {
+//			return CanvasSignRenderer.getMaterial(canvasSign.getBackgroundColor());
+//		}
+//		return material;
+//	}
+//}
