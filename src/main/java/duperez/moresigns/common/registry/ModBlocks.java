@@ -200,6 +200,8 @@ public class ModBlocks
 			() -> new StandingCanvasSignBlock("zen"));
 	public static final RegistryObject<Block> ECHO_SIGN = BLOCKS.register("echo_canvas_sign",
 			() -> new StandingCanvasSignBlock("echo"));
+	public static final RegistryObject<Block> LION_SIGN = BLOCKS.register("lion_canvas_sign",
+			() -> new StandingCanvasSignBlock("lion"));
 
 	// WALL_SIGN classes declaration
 
@@ -375,5 +377,7 @@ public class ModBlocks
 			() -> new WallCanvasSignBlock(Block.Properties.copy(Blocks.OAK_SIGN).lootFrom(ZEN_SIGN), "zen"));
 	public static final RegistryObject<Block> ECHO_WALL_SIGN = BLOCKS.register("echo_canvas_wall_sign",
 			() -> new WallCanvasSignBlock(Block.Properties.copy(Blocks.OAK_SIGN).lootFrom(ECHO_SIGN), "echo"));
+	public static final RegistryObject<Block> LION_WALL_SIGN = BLOCKS.register("lion_canvas_wall_sign",
+			() -> new WallCanvasSignBlock(Block.Properties.copy(Blocks.OAK_SIGN).lootFrom(LION_SIGN), "lion"));
 
 }

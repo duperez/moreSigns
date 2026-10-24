@@ -112,6 +112,7 @@ public class ItemTags extends ItemTagsProvider
 				.add(ModItems.KEEPER_CANVAS_SIGN.get())
 				.add(ModItems.ZEN_CANVAS_SIGN.get())
 				.add(ModItems.ECHO_CANVAS_SIGN.get())
+				.add(ModItems.LION_CANVAS_SIGN.get())
 				.add(ModItems.BLACK_CANVAS_SIGN.get());
 	}
 }

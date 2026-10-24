@@ -137,6 +137,7 @@ public class BlockStates extends BlockStateProvider
 				ModBlocks.KEEPER_SIGN.get(),
 				ModBlocks.ZEN_SIGN.get(),
 				ModBlocks.ECHO_SIGN.get(),
+				ModBlocks.LION_SIGN.get(),
 				ModBlocks.CANVAS_WALL_SIGN.get(),
 				ModBlocks.WHITE_CANVAS_WALL_SIGN.get(),
 				ModBlocks.ORANGE_CANVAS_WALL_SIGN.get(),
@@ -223,6 +224,7 @@ public class BlockStates extends BlockStateProvider
 				ModBlocks.KEEPER_WALL_SIGN.get(),
 				ModBlocks.ZEN_WALL_SIGN.get(),
 				ModBlocks.ECHO_WALL_SIGN.get(),
+				ModBlocks.LION_WALL_SIGN.get(),
 				ModBlocks.GREEN_GRADIENT_WALL_SIGN.get());
 
 		for (Block sign : canvasSigns) {
