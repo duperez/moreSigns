@@ -201,4 +201,6 @@ public class ModItems {
             () -> new SignItem(basicItem(), ModBlocks.ECHO_SIGN.get(), ModBlocks.ECHO_WALL_SIGN.get()));
     public static final RegistryObject<Item> LION_CANVAS_SIGN = registerWithTab("lion_canvas_sign",
             () -> new SignItem(basicItem(), ModBlocks.LION_SIGN.get(), ModBlocks.LION_WALL_SIGN.get()));
+    public static final RegistryObject<Item> BETA_CANVAS_SIGN = registerWithTab("beta_canvas_sign",
+            () -> new SignItem(basicItem(), ModBlocks.BETA_SIGN.get(), ModBlocks.BETA_WALL_SIGN.get()));
 }

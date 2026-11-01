@@ -88,7 +88,8 @@
   "block.moresigns.keeper_canvas_sign": "The Keeper's Custom Sign",
   "block.moresigns.zen_canvas_sign": "Zen's Custom Sign",
   "block.moresigns.echo_canvas_sign": "Echo's Custom Sign",
-  "block.moresigns.lion_canvas_sign": "TNPC25's Custom Sign",
+  "block.moresigns.lion_canvas_sign": "Achille's Custom Sign",
+  "block.moresigns.beta_canvas_sign": "Beta's Custom Sign",
   "item.moresigns.canvas": "Canvas",
   "itemGroup.moresignstab": "TSMP Custom Signs"
 }
